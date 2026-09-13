@@ -74,6 +74,28 @@ permit redistribution.
 
 
 ---
+## Contact
+
+Lumen Forge is an independent project by **Vice**.
+
+For questions, feedback, suggestions, collaboration, or project-related
+inquiries, you can reach me through GitHub:
+
+- GitHub: https://github.com/Vice13th 
+ 
+For security-related issues, please follow the instructions in 
+[`SECURITY.md`](docs/SECURITY.md). 
+ 
+I'd love to hear your feedback and ideas for future versions of Lumen Forge. 
+
+Email: Vicewashere@proton.me
+Telegram: @vicewashere
+Matrix.org: @vicewashere:matrix.org
+
+---
+
+
+
 
 > **Beyond the interface, something waits.**
 >
