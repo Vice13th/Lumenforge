@@ -1,11 +1,34 @@
 # Publishing Guide
 
-Before pushing this folder to a public GitHub repository:
+This guide describes the recommended workflow for publishing Lumen Forge as
+an open-source project and distributing release builds.
 
-1. Push only the contents of `LumenForge_GitHub_Public`.
-2. Keep `LumenForge_Private_Source` completely outside the public repository.
-3. Do not upload `*.py`, private test fixtures, unpublished LUTs, internal exports, or development archives.
-4. Keep the authorized release executable at `dist/LumenForge.exe` and optionally attach the same binary to the corresponding GitHub Release.
-5. Keep the proprietary `LICENSE` and third-party notices with every public release.
+## Repository
 
-GitHub is a public distribution surface here, not a source-code repository.
+The public GitHub repository contains the Lumen Forge source code, supporting
+documentation, assets, dependency declarations, and release metadata.
+
+The repository is an open-source development and distribution surface.
+
+## Before Publishing
+
+Verify the following:
+
+- `LICENSE` is present and contains the MIT License.
+- `README.md` accurately describes the current release.
+- `CHANGELOG.md` contains the release notes.
+- `lumenforge.py` is the current release source.
+- `requirements.txt` is current.
+- `requirements-optional.txt` is current.
+- `docs/THIRD_PARTY_NOTICES.md` is current.
+- `docs/SECURITY.md` is current.
+- `SHA256SUMS.txt` matches published release artifacts.
+- No credentials, API keys, private user data, or local development files are
+  included.
+
+## Source Release
+
+The main application source is:
+
+```text
+lumenforge.py

@@ -1,33 +1,97 @@
 # Third-Party Notices
 
-LumenForge is proprietary software. Its third-party dependencies are not relicensed by the LumenForge license.
+Lumen Forge includes and/or depends on third-party software.
 
-## Required runtime dependencies
+The Lumen Forge project-owned source code is released under the MIT License.
+That license does not replace or override the licenses of third-party
+libraries, assets, trademarks, or other externally owned materials.
+
+## Python Dependencies
 
 ### NumPy
-License: BSD 3-Clause
 
-NumPy is used for numerical/image-array processing. Its copyright and license terms remain with the NumPy project.
+Lumen Forge uses NumPy for numerical and image-processing operations.
+
+NumPy is distributed under its own open-source license.
+
+Project:
+
+https://numpy.org/
 
 ### Pillow
-License: HPND-style Pillow license (see the installed Pillow distribution for the exact applicable notice and bundled third-party notices).
 
-Pillow is used for image loading, transforms, filtering, and UI image presentation.
+Lumen Forge uses Pillow for image loading, manipulation, and export.
 
-## Optional dependencies
+Pillow is distributed under its own open-source license.
 
-### OpenCV
-License: Apache License 2.0
+Project:
 
-OpenCV is optional and is used for computer-vision functionality when available.
+https://python-pillow.org/
 
 ### rawpy
-License: BSD-style open-source license as distributed by the rawpy project.
 
-rawpy is optional and is used for RAW-camera decoding when installed.
+Lumen Forge can optionally use rawpy for RAW image processing.
 
-## Important
+rawpy is distributed under its own license and is an optional dependency.
 
-Each dependency must be obtained and used under its own license. The LumenForge proprietary license applies only to LumenForge code, assets, branding, presets, and other project-owned materials.
+Project:
 
-For redistribution of a bundled application, include the corresponding third-party notices required by each dependency's license and the exact notices shipped with the versions used in the release.
+https://github.com/letmaik/rawpy
+
+### OpenCV
+
+Lumen Forge can optionally use OpenCV for additional image-processing
+functionality.
+
+OpenCV is distributed under its own license and is an optional dependency.
+
+Project:
+
+https://opencv.org/
+
+## Trademarks and Camera Names
+
+Lumen Forge may reference camera manufacturers, camera families, image
+formats, software, or other product names when describing compatibility,
+profiles, comparisons, or creative looks.
+
+Such names and trademarks belong to their respective owners.
+
+Lumen Forge does not claim ownership of third-party trademarks.
+
+## Camera and Look Emulations
+
+Camera profiles and creative looks described by Lumen Forge are intended as
+look or color-science approximations.
+
+They are not proprietary manufacturer IDTs, proprietary LUT matrices, or
+official manufacturer color transforms unless explicitly stated otherwise.
+
+Where applicable, the application uses "-inspired" terminology to distinguish
+creative approximations from official manufacturer technology.
+
+## Assets
+
+Project-owned Lumen Forge branding and assets are covered by the licensing
+terms specified by the project.
+
+Third-party assets, if included in a release, remain subject to their
+respective licenses and attribution requirements.
+
+## License Boundary
+
+The MIT License applies to Lumen Forge project-owned source code and
+materials that are explicitly released under that license.
+
+It does not grant rights to:
+
+- third-party trademarks
+- third-party logos
+- proprietary camera technology
+- proprietary manufacturer IDTs
+- third-party software
+- third-party assets
+- materials owned by external projects
+
+Users are responsible for complying with applicable third-party licenses and
+terms.
