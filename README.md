@@ -71,3 +71,14 @@ This repository is intended to be a clean open-source distribution of the
 Lumen Forge application source. Do not add third-party proprietary LUTs,
 IDTs, presets, images, trademarks, or other assets unless their licenses
 permit redistribution.
+
+
+---
+
+> **Beyond the interface, something waits.**
+>
+> Lumen Forge has a secret that was never meant to be announced.
+>
+> No button.  
+> No shortcut.  
+> Just type her name. Anywhere.
