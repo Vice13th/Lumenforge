@@ -1,2 +1,6 @@
-numpy>=1.24,<3
-Pillow>=10,<13
+numpy
+Pillow
+# Optional RAW support:
+# rawpy
+# Optional OpenCV support:
+# opencv-python

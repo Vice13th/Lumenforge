@@ -1,31 +1,17 @@
-# Proprietary source / private development material
-*.py
-*.pyw
-src/
-private_source/
-private/
-internal/
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-*.pyd
-
-# Local state
 .venv/
 venv/
+env/
 .env
-*.log
-imported_presets.json
-
-# Build output
+.idea/
+.vscode/
 build/
 dist/
 *.spec
 *.exe
-*.msi
-
-# IDE / OS
-.vscode/
-.idea/
+*.log
 .DS_Store
 Thumbs.db
+imported_presets.json

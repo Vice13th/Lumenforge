@@ -1,64 +1,73 @@
-# LumenForge
+# Lumen Forge
 
-**A color engine for real creators.**
+Lumen Forge is a Python desktop photo editing and color-grading application.
 
-LumenForge started as a personal tool for shaping the color and character of my own photos, then grew into a serious image-processing project that I decided to make freely available to creators.
+## Open-source license
 
-The application is built around a layered color pipeline covering camera character, white balance, fused tone + gamma, HSL, curves, 3D LUT processing, skin protection, film/analog character, and cached render stages.
+The Lumen Forge source code in this repository is released under the **MIT License**.
+See `LICENSE`.
 
-> **Important:** LumenForge is free to use, but it is **not open source**. The application source code, processing implementation, preset definitions, and related intellectual property remain proprietary and are not licensed for public modification, redistribution, or reuse.
-
-## Current release
-**
-
-LUMENFORGE
-A COLOR ENGINE FOR REAL CREATORS.
-LumenForge started as a personal project — built to give my own photos the color and character I was looking for. Over time, it grew into a serious image-processing engine, and I decided to open it up and keep building it with other creators.
-At its core is a layered color-processing pipeline designed around camera character, tonal response, color transformation and creative look development.
-Camera DNA.
-OKLab color processing.
-Fused Tone + Gamma.
-HSL & Curves.
-True 3D LUTs with Tetrahedral Interpolation.
-Skin protection.
-Layered render caching.
-The goal isn't to add more filters.
-It's to give you more control over how an image feels.
-Natural. Cinematic. Analog. Personal.
-Shape light. Build character.
-LumenForge is still evolving.
-This is just the beginning.
-
-A ready-to-run Windows build is included at `dist/LumenForge.exe`.
-
-The repository is the public distribution/documentation surface; proprietary source is intentionally kept outside the public repository.
-
-## Processing note
-
-The current verified v12 source uses **trilinear interpolation** for `.cube` 3D LUT evaluation. Earlier project copy and promotional wording referenced tetrahedral interpolation, but the implementation was audited before this release and that claim is deliberately not repeated here until the engine actually implements it.
+> Third-party Python packages are not relicensed by this project. Their own
+> licenses and terms continue to apply.
 
 ## Requirements
 
-### Windows users
+- Python 3
+- Tkinter (normally included with standard Python installations)
+- NumPy
+- Pillow
+- Optional: `rawpy` for RAW formats
+- Optional: `opencv-python` for OpenCV-backed functionality
 
-No Python installation is required for the included executable. Run:
+## Install
 
-`dist/LumenForge.exe`
+```bash
+pip install numpy pillow
+# Optional RAW support:
+pip install rawpy
+# Optional OpenCV support:
+pip install opencv-python
+```
 
-### Private development
+## Run
 
-For authorized source development, Python 3.10+ with NumPy and Pillow is required. OpenCV and rawpy are optional dependencies.
+```bash
+python lumenforge.py
+```
 
-See `docs/BUILD.md` for the development/private-source setup and `docs/THIRD_PARTY_NOTICES.md` for dependency licensing.
+## Build a Windows executable
 
-## License
+```bash
+pyinstaller --onefile --noconsole --name "LumenForge" lumenforge.py
+```
 
-LumenForge itself is distributed under the **LumenForge Free Use License**, a proprietary, non-open-source license.
+## Supported source formats
 
-You may use the released application for personal and commercial creative work at no charge, subject to the license. You may not publish, sell, sublicense, modify, reverse engineer, extract, or redistribute the proprietary source or internal implementation.
+The application includes support for common image formats and RAW extensions
+such as ARW, CR2, CR3, NEF, NRW, RAF, ORF, RW2, DNG, PEF, SRW, 3FR and RAW,
+with RAW loading dependent on `rawpy`.
 
-See `LICENSE` for the full terms.
+## Presets and LUT import
 
-## Easter egg
+Lumen Forge includes its built-in preset system and supports importing:
 
-There is a small personal Easter egg in the application. Try typing `negin` in the command/preset search area.
+- `.xmp`
+- `.cube`
+- `.json`
+
+CUBE LUTs are applied through the application's 3D LUT/trilinear pipeline.
+
+## Camera DNA
+
+The Camera DNA system provides camera matching using metadata and/or pixel
+appearance analysis, with confidence states rather than unconditional claims.
+Where proprietary manufacturer color science is unavailable, camera character
+is implemented as a documented mathematical approximation rather than a
+bit-exact proprietary IDT/LUT.
+
+## Project note
+
+This repository is intended to be a clean open-source distribution of the
+Lumen Forge application source. Do not add third-party proprietary LUTs,
+IDTs, presets, images, trademarks, or other assets unless their licenses
+permit redistribution.

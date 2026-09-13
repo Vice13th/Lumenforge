@@ -1,29 +1,21 @@
-LUMENFORGE FREE USE LICENSE
-Copyright (c) 2026 LumenForge. All rights reserved.
+MIT License
 
-1. GRANT OF USE
-The copyright holder grants you a free, non-exclusive, non-transferable license to run and use an authorized release of LumenForge for personal and commercial creative work.
+Copyright (c) 2026 Lumen Forge
 
-2. NO OPEN-SOURCE GRANT
-This license does not grant rights to access, copy, modify, publish, distribute, sublicense, sell, or create derivative works from the LumenForge source code, processing algorithms, preset definitions, or other proprietary implementation materials.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-3. REDISTRIBUTION
-You may not redistribute the application or any component of it as your own product, service, library, package, installer, or modified distribution without prior written permission from the copyright holder.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-4. REVERSE ENGINEERING
-To the maximum extent permitted by applicable law, you may not reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code or proprietary implementation, except where a mandatory legal right cannot lawfully be excluded.
-
-5. TRADEMARKS
-LumenForge, its name, logo, and associated branding remain the property of the copyright holder. This license grants no trademark rights.
-
-6. THIRD-PARTY SOFTWARE
-Third-party dependencies remain subject to their own licenses. See docs/THIRD_PARTY_NOTICES.md.
-
-7. WARRANTY
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, TO THE MAXIMUM EXTENT PERMITTED BY LAW.
-
-8. TERMINATION
-This license terminates automatically if you materially breach its terms. Rights to use authorized copies obtained before termination may be affected as provided by applicable law.
-
-9. GOVERNING LAW
-This license is intended as a proprietary software license. Applicable mandatory local law controls where it conflicts with these terms.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
