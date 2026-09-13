@@ -9,6 +9,25 @@ The application is built around a layered color pipeline covering camera charact
 > **Important:** LumenForge is free to use, but it is **not open source**. The application source code, processing implementation, preset definitions, and related intellectual property remain proprietary and are not licensed for public modification, redistribution, or reuse.
 
 ## Current release
+**
+
+LUMENFORGE
+A COLOR ENGINE FOR REAL CREATORS.
+LumenForge started as a personal project — built to give my own photos the color and character I was looking for. Over time, it grew into a serious image-processing engine, and I decided to open it up and keep building it with other creators.
+At its core is a layered color-processing pipeline designed around camera character, tonal response, color transformation and creative look development.
+Camera DNA.
+OKLab color processing.
+Fused Tone + Gamma.
+HSL & Curves.
+True 3D LUTs with Tetrahedral Interpolation.
+Skin protection.
+Layered render caching.
+The goal isn't to add more filters.
+It's to give you more control over how an image feels.
+Natural. Cinematic. Analog. Personal.
+Shape light. Build character.
+LumenForge is still evolving.
+This is just the beginning.
 
 A ready-to-run Windows build is included at `dist/LumenForge.exe`.
 
