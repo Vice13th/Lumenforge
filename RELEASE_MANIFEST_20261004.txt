@@ -1,0 +1,46 @@
+# LumenForge v2 — Verified Release Manifest
+# Release state: RELEASE VERIFIED — BASELINE FROZEN
+# Optimization state: OPTIMIZATION DEFERRED
+# Portability state: UNVERIFIED
+
+Artifact:
+  path: E:\LumenForge_UI_OVERHAUL_20261004\build\nuitka_standalone\lumenforge.dist\lumenforge.exe
+  size_bytes: 110793728
+  size_mib: 105.61953163146973
+  modified: 2026-10-04T09:52:48.9540159+03:30
+  sha256: 103FE38AA836A3761D208DD60B129748A34C39FEA2B9F83C9CBA846330E1D680
+
+Distribution:
+  path: E:\LumenForge_UI_OVERHAUL_20261004\build\nuitka_standalone\lumenforge.dist
+  file_count: 996
+  total_size_bytes: 399805903
+  total_size_mib: 381.2821865081787
+  observed_populated: true
+
+Toolchain:
+  nuitka_version: 4.2.2
+  python_version: 3.12.10
+  compiler: MinGW64 GCC 15.2.0 (Nuitka-downloaded toolchain used by successful build)
+  build_exit_code: 0
+
+Verification:
+  current_machine_build_and_launch: VERIFIED
+  prior_smoke_test: VERIFIED
+  smoke_test_observation: "EXE launched, remained alive for 12 seconds, MainWindowTitle=Lumen Forge - v2, wrapper exit code 0."
+  clean_machine_portability: UNVERIFIED
+  numba_cuda_optimization: DEFERRED / UNVERIFIED
+  observed_msvcp140_warning: true
+  msvcp140_warning_note: "Nuitka emitted a warning that msvcp140.dll was not found. The successful artifact nevertheless included vcruntime140.dll/vcruntime140_1.dll and dependency-specific MSVC DLLs observed in the distribution. Clean-machine portability was not tested."
+
+Freeze:
+  production_artifact_modified_during_finalization: false
+  rebuild_performed: false
+  experimental_probe_rerun: false
+  source_modified: false
+  dependencies_modified: false
+  compiler_settings_modified: false
+
+Evidence boundary:
+  "VERIFIED" applies to the observed build and launch on the current build machine.
+  "VERIFIED" does not imply clean-machine portability.
+  No claim is made that Numba/CUDA packaging optimization is safe.

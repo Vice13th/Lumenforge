@@ -1,0 +1,55 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Test/tool caches
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build/package output
+build/
+dist/
+*.spec
+*.exe
+
+# Nuitka/compiled intermediates
+*.c
+*.cpp
+*.o
+*.obj
+*.pdb
+*.exp
+*.lib
+*.res
+*.manifest
+*.bin
+*.cmd
+
+# Temporary experiments/profiling
+verification/experiments/
+verification/reports/_*.py
+verification/reports/*.log
+verification/reports/*.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets / machine-local configuration
+.env
+.env.*
+*.pem
+*.key
+
+# Local package/import artifacts
+imported_presets.json

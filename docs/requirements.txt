@@ -1,0 +1,24 @@
+# Core (required to run lumenforge.py)
+numpy>=1.24
+Pillow>=10.0
+
+# Optional acceleration — app runs correctly without it, just slower
+# on full-res export (falls back to pure numpy automatically)
+numba>=0.58
+
+# Optional RAW file support (.arw/.cr2/.cr3/.nef/.dng/...) — without
+# it, RAW files simply won't open; everything else is unaffected
+rawpy>=0.19
+
+# Optional — used for a couple of blur/resize fast-paths if present;
+# app runs fine without it
+opencv-python-headless>=4.8
+
+# Optional real ACES/OpenColorIO color management. Not pip-installable
+# on every platform (it's a compiled C++ binding) — install via conda
+# if you want it: `conda install -c conda-forge opencolorio-python`.
+# Without it, ColorManager uses a pure-numpy ACES-inspired fallback fit.
+# PyOpenColorIO   (pip package `opencolorio` also provides it; verified on Linux/py3.12, v2.5.2)
+
+# Only needed for `pytest tests/test_lumenforge.py`
+pytest>=7.4
