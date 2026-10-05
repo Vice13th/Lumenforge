@@ -652,6 +652,35 @@ def test_xtrans_raw_postprocess_is_repeatable(lf):
     assert np.array_equal(np.asarray(a), np.asarray(b))
 
 
+def test_xtrans_raw_postprocess_serializes_global_omp_state(lf):
+    if lf.rawpy is None:
+        pytest.skip("rawpy not installed")
+    path = os.environ.get("LUMENFORGE_GOLDEN_RAW")
+    if not path or not os.path.isfile(path):
+        pytest.skip("golden RAW fixture not configured")
+    if not bool(getattr(lf.rawpy, "flags", {}).get("OPENMP", False)):
+        pytest.skip("rawpy OpenMP support unavailable")
+
+    import concurrent.futures
+    import ctypes
+
+    omp_path = os.path.join(os.path.dirname(lf.rawpy.__file__), "vcomp140.dll")
+    omp = ctypes.CDLL(omp_path)
+    omp.omp_get_max_threads.restype = ctypes.c_int
+    omp.omp_get_dynamic.restype = ctypes.c_int
+    before = (omp.omp_get_max_threads(), omp.omp_get_dynamic())
+
+    def decode():
+        return np.asarray(lf._raw_postprocess(path, preview=True))
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:
+        a, b = ex.map(lambda _: decode(), range(2))
+
+    after = (omp.omp_get_max_threads(), omp.omp_get_dynamic())
+    assert np.array_equal(a, b)
+    assert after == before
+
+
 # ---- OCIO path ---------------------------------------------------------------
 def test_ocio_to_display_valid_and_differs_from_fallback(lf):
     if not lf.HAVE_OCIO:

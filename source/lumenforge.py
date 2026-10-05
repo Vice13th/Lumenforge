@@ -273,6 +273,10 @@ RENDER_TILE_BUDGET_MIB = 48
 ZOOM_MAX = 8.0
 RAW_EXT = {".arw",".cr2",".cr3",".nef",".nrw",".raf",".orf",".rw2",
            ".dng",".pef",".srw",".3fr",".raw"}
+# LibRaw/OpenMP thread-count controls are process-global; serialize the
+# affected X-Trans postprocess so concurrent RAW loads cannot restore a
+# thread state captured by another invocation.
+_RAW_XTRANS_OMP_LOCK = threading.Lock()
 
 try:
     LANCZOS = Image.Resampling.LANCZOS
@@ -457,15 +461,16 @@ def _raw_postprocess(path, *, preview=False):
                     "the rawpy OpenMP runtime"
                 ) from exc
 
-            previous_threads = get_max_threads()
-            previous_dynamic = get_dynamic()
-            set_dynamic(0)
-            set_num_threads(1)
-            try:
-                rgb = r.postprocess(**kwargs)
-            finally:
-                set_num_threads(previous_threads)
-                set_dynamic(previous_dynamic)
+            with _RAW_XTRANS_OMP_LOCK:
+                previous_threads = get_max_threads()
+                previous_dynamic = get_dynamic()
+                set_dynamic(0)
+                set_num_threads(1)
+                try:
+                    rgb = r.postprocess(**kwargs)
+                finally:
+                    set_num_threads(previous_threads)
+                    set_dynamic(previous_dynamic)
         else:
             rgb = r.postprocess(**kwargs)
 
