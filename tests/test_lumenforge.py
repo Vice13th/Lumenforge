@@ -640,6 +640,18 @@ def test_corrupt_raw_with_rawpy_fails_loudly(lf, tmp_path):
         lf.load_src(str(p))
 
 
+def test_xtrans_raw_postprocess_is_repeatable(lf):
+    if lf.rawpy is None:
+        pytest.skip("rawpy not installed")
+    path = os.environ.get("LUMENFORGE_GOLDEN_RAW")
+    if not path or not os.path.isfile(path):
+        pytest.skip("golden RAW fixture not configured")
+    a = lf._raw_postprocess(path, preview=False)
+    b = lf._raw_postprocess(path, preview=False)
+    assert a.size == b.size
+    assert np.array_equal(np.asarray(a), np.asarray(b))
+
+
 # ---- OCIO path ---------------------------------------------------------------
 def test_ocio_to_display_valid_and_differs_from_fallback(lf):
     if not lf.HAVE_OCIO:

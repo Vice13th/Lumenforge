@@ -416,16 +416,59 @@ def _meta(img, path):
 def _raw_postprocess(path, *, preview=False):
     if rawpy is None:
         raise RuntimeError("RAW needs rawpy: pip install rawpy")
+
+    kwargs = {
+        "use_camera_wb": True,
+        "output_color": rawpy.ColorSpace.sRGB,
+        "output_bps": 8,
+    }
+    if preview:
+        kwargs["half_size"] = True
+
     with rawpy.imread(path) as r:
-        if preview:
-            rgb = r.postprocess(use_camera_wb=True,
-                                output_color=rawpy.ColorSpace.sRGB,
-                                output_bps=8,
-                                half_size=True)
+        # LibRaw currently has a reproducibility race for Fujifilm X-Trans
+        # RAF postprocessing when its OpenMP path is enabled (LibRaw #845).
+        # Keep the workaround scoped to the affected RAW family so unrelated
+        # RAW decodes and the rest of the application's thread pool retain
+        # their normal parallelism.
+        pattern = getattr(r, "raw_pattern", None)
+        xtrans = pattern is not None and tuple(pattern.shape) == (6, 6)
+        if xtrans and bool(getattr(rawpy, "flags", {}).get("OPENMP", False)):
+            try:
+                import ctypes
+
+                omp_path = os.path.join(
+                    os.path.dirname(rawpy.__file__), "vcomp140.dll"
+                )
+                omp = ctypes.CDLL(omp_path)
+                get_max_threads = omp.omp_get_max_threads
+                get_max_threads.restype = ctypes.c_int
+                set_num_threads = omp.omp_set_num_threads
+                set_num_threads.argtypes = [ctypes.c_int]
+                set_num_threads.restype = None
+                get_dynamic = omp.omp_get_dynamic
+                get_dynamic.restype = ctypes.c_int
+                set_dynamic = omp.omp_set_dynamic
+                set_dynamic.argtypes = [ctypes.c_int]
+                set_dynamic.restype = None
+            except (AttributeError, OSError) as exc:
+                raise RuntimeError(
+                    "Deterministic Fujifilm X-Trans RAW processing requires "
+                    "the rawpy OpenMP runtime"
+                ) from exc
+
+            previous_threads = get_max_threads()
+            previous_dynamic = get_dynamic()
+            set_dynamic(0)
+            set_num_threads(1)
+            try:
+                rgb = r.postprocess(**kwargs)
+            finally:
+                set_num_threads(previous_threads)
+                set_dynamic(previous_dynamic)
         else:
-            rgb = r.postprocess(use_camera_wb=True,
-                                output_color=rawpy.ColorSpace.sRGB,
-                                output_bps=8)
+            rgb = r.postprocess(**kwargs)
+
     return Image.fromarray(rgb, "RGB")
 
 
