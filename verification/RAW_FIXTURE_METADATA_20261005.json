@@ -1,0 +1,27 @@
+﻿{
+    "policy":  "RAW fixtures must remain outside source repository and verification tree",
+    "fixtures":  [
+                     {
+                         "fixture_path":  "E:\\Remote\\DSCF0833.RAF",
+                         "status":  "external_test_input",
+                         "purpose":  "real RAW end-to-end verification input",
+                         "bytes":  28365392,
+                         "sha256":  "2746DAE753858897FDD5DC75A4E6C87254FB73C3E853A626075A4F996117AAED",
+                         "verification_timestamp_utc":  "2026-10-05T18:14:07.1888247Z",
+                         "camera_metadata":  "not_collected; not required for artifact-hygiene gate",
+                         "repository_copy_present":  false
+                     },
+                     {
+                         "fixture_path":  "E:\\LumenForge_VERIFICATION_ARCHIVE_20261005\\raw_fixtures\\DSCF0839.RAF",
+                         "original_path":  "E:\\LumenForge_UI_OVERHAUL_20261004\\DSCF0839.RAF",
+                         "status":  "relocated_external_test_input",
+                         "purpose":  "legacy real RAW verification fixture retained outside the repository",
+                         "bytes":  28095648,
+                         "sha256":  "32DC5260D247E9B57763985E3359444A1677D800687A0017B917BA886990D592",
+                         "verification_timestamp_utc":  "2026-10-05T18:14:07.1888247Z",
+                         "camera_metadata":  "not_collected; not required for artifact-hygiene gate",
+                         "repository_copy_present":  false
+                     }
+                 ],
+    "retention_policy":  "retain external fixture only while corresponding verification campaign is active; never commit"
+}

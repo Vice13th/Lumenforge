@@ -53,3 +53,47 @@ Thumbs.db
 
 # Local package/import artifacts
 imported_presets.json
+# Artifact hygiene / hard protection
+# Real RAW and large binary test inputs must remain outside the repository.
+*.RAF
+*.CR2
+*.CR3
+*.NEF
+*.ARW
+*.DNG
+*.ORF
+*.RW2
+*.MP4
+*.MOV
+*.AVI
+*.MKV
+*.WAV
+*.MP3
+*.zip
+*.7Z
+*.RAR
+*.tar
+*.gz
+*.iso
+*.dmp
+*.core
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.sqlite
+*.db
+*.pkl
+*.npy
+*.npz
+
+# Generated verification payloads that must remain outside the lightweight evidence tree.
+verification/handoff/
+verification/**/screenshots/
+verification/**/*.bmp
+verification/**/*.npy
+verification/**/raw_open_*.png
+verification/**/runtime_focus_20261005_g.png
+verification/**/runtime_normal_20261005.png
+verification/**/DSCF0839*.png
+verification/raw_e2e_*/
