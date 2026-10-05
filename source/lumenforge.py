@@ -440,10 +440,18 @@ def _raw_postprocess(path, *, preview=False):
         if xtrans and bool(getattr(rawpy, "flags", {}).get("OPENMP", False)):
             try:
                 import ctypes
+                import sys
 
-                omp_path = os.path.join(
-                    os.path.dirname(rawpy.__file__), "vcomp140.dll"
+                omp_candidates = [
+                    os.path.join(os.path.dirname(rawpy.__file__), "vcomp140.dll"),
+                    os.path.join(os.path.dirname(sys.executable), "vcomp140.dll"),
+                ]
+                omp_path = next(
+                    (candidate for candidate in omp_candidates if os.path.isfile(candidate)),
+                    None,
                 )
+                if omp_path is None:
+                    raise OSError("vcomp140.dll not found beside rawpy or the executable")
                 omp = ctypes.CDLL(omp_path)
                 get_max_threads = omp.omp_get_max_threads
                 get_max_threads.restype = ctypes.c_int
