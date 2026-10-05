@@ -6965,7 +6965,7 @@ class App(tk.Tk):
         self._workspace_rail["Edit"].set_active(True)
         tk.Frame(ws, bg=T["stroke"], height=1).pack(fill="x", padx=8, pady=10)
         self._focus_button = Btn(ws, "FOCUS", lambda: self._enter_focus_workspace(self._workspace),
-                                 w=58, h=32, fs=8, accent=T["accent2"], icon=ICON["focus"])
+                                 w=58, h=32, fs=8, accent=T["accent2"])
         self._focus_button.pack(fill="x", padx=5, pady=3)
         # Populate the real preset library before the first frame is shown.
         # Without this explicit initial refresh, the library starts empty
