@@ -3,7 +3,7 @@
 # ============================================================
 #  LUMEN FORGE v12.0 — RENDER ENGINE v12 — CAMERA DNA 2.3
 #  Fused per-channel Tone+Gamma LUT • Layered Cache •
-#  109 presets (incl. 17 Vintage Cameras, 8 Modern / Unique) • Mobile DNA v2
+#  121 built-in preset definitions (incl. 17 Vintage Cameras, 8 Modern / Unique) • Mobile DNA v2
 #  Camera DNA 2.3: 53 camera profiles, metadata+pixel Camera Match,
 #  evidence/margin-gated confidence (Detected/Estimated/Low confidence/
 #  Unknown), exposure-robust relative-shape pixel features, source-
@@ -1108,7 +1108,7 @@ def print_op(rgb, s=1):
 
 
 # ============================================================
-#  PRESETS (93 total)
+#  PRESETS (121 built-in definitions)
 # ============================================================
 
 def FP(name, fam, gamma, rms, bal, sd, hal=0, hc=(1,.22,.08),
