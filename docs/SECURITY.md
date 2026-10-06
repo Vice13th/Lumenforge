@@ -1,61 +1,74 @@
 # Security Policy
 
-## Reporting a Security Issue
+Lumen Forge is a local desktop application that processes user-provided image and preset data.
 
-Please do not publicly disclose sensitive security issues before there is an
-opportunity to investigate and address them.
+Security reports are welcome for issues that can materially affect a user's machine, files, secrets, privacy, or the integrity of the application.
 
-For security-sensitive reports, contact the project owner privately before
-public disclosure.
+---
 
-When reporting a vulnerability, provide enough information to reproduce the
-issue without including unnecessary personal information or credentials.
+## Reporting
 
-## Do Not Include
+For a security-sensitive issue, contact the project owner privately before public disclosure.
 
-Never include the following in a public issue or security report:
+Provide enough information to reproduce the issue while avoiding unnecessary credentials, private images, personal data or other secrets.
 
-- passwords
-- API keys
-- authentication tokens
-- private certificates
-- personal information
-- private user images
-- private build credentials
-- other sensitive secrets
+For ordinary, non-sensitive defects, use GitHub Issues.
 
-## Public Issues
+---
 
-Use GitHub Issues for normal:
+## Do not include
 
-- bug reports
-- feature requests
-- documentation issues
-- reproducible non-sensitive problems
+Never place the following into a public issue:
 
-Security-sensitive vulnerabilities should be reported privately.
+- passwords;
+- API keys;
+- access tokens;
+- private certificates;
+- private user images;
+- personal information;
+- private build credentials;
+- unpublished proprietary material;
+- complete exploit payloads when a safe reproduction is sufficient.
 
-## Scope
+---
 
-Security concerns may include:
+## Relevant security surfaces
 
-- arbitrary code execution
-- unsafe file handling
-- malicious image-processing payloads
-- dependency vulnerabilities affecting Lumen Forge
-- unintended access to local files
-- credential or secret exposure
-- other vulnerabilities that could compromise a user's system or data
+The following surfaces are particularly relevant because of the application's behavior:
 
-## Third-Party Dependencies
+### File handling
 
-Lumen Forge uses third-party libraries and may optionally use additional
-packages for RAW processing and computer-vision functionality.
+Lumen Forge opens image files and can read optional RAW inputs.
 
-Security issues originating in a third-party dependency should also be
-reported to the relevant upstream project when appropriate.
+### Preset / LUT import
 
-## Responsible Disclosure
+The application accepts imported `.xmp`, `.cube` and `.json` content. Treat imported files as untrusted input.
 
-Please allow reasonable time for investigation and remediation before
-publicly disclosing a confirmed vulnerability.
+### Image-processing paths
+
+Malformed or adversarial image data may exercise large memory allocations, decoder behavior or numerical edge cases.
+
+### Third-party dependencies
+
+NumPy, Pillow, and optional RAW/computer-vision packages form part of the executable's attack surface when installed or bundled.
+
+### Packaging
+
+PyInstaller builds and bundled runtime files must be checked for accidental inclusion of secrets or development-only material.
+
+---
+
+## Security claims
+
+This document defines reporting scope; it does **not** certify the application as vulnerability-free.
+
+No statement such as "secure", "safe", or "fully audited" should be inferred without a dedicated security assessment and current evidence.
+
+---
+
+## Responsible disclosure
+
+Please allow reasonable time for investigation and remediation before public disclosure of a confirmed vulnerability.
+
+For dependency-originated issues, coordinate with the upstream project when appropriate.
+
