@@ -1,78 +1,172 @@
-# LUMEN FORGE — MASTER EXECUTION ROADMAP
+# Lumen Forge — Master Execution Roadmap
 
-Status: BOOTSTRAP / RECONCILIATION REQUIRED
+> **Purpose:** one durable source of truth for autonomous engineering state, delivery gates and evidence.
 
-This file is the durable project execution ledger for autonomous engineering agents.
+**Current branch:** `main`  
+**Current repository state:** active development snapshot  
+**Public release:** `v1.0.0`  
+**Application/render-engine version in source:** `12.0`
 
-## Operating Contract
+---
 
-Follow:
+## 0. Operating contract
 
 `INSPECT → RECONCILE → PLAN → IMPLEMENT → TEST → BUILD/PACKAGE → VERIFY → DOCUMENT → NEXT GATE`
 
-Use `reasoning_effort=high` for the entire task/session whenever the host exposes it.
+- Keep `reasoning_effort=high` for the task/session when the host exposes it.
+- Discover and use relevant installed tools/plugins automatically.
+- Prefer local execution; use remote only for evidence that requires the real target environment.
+- Never overwrite uncommitted or unpushed user work.
+- **NO RECEIPT → NO EPISTEMIC UPGRADE.**
 
-Use relevant installed tools/plugins automatically. Do not wait for the user to repeat tool-selection instructions.
+Evidence vocabulary:
 
-Prefer local execution. Use remote only for evidence that requires the real target environment.
+`VERIFIED` · `OBSERVED` · `MEASURED` · `UNVERIFIED` · `BLOCKED` · `FAILED` · `INFERRED`
 
-No hallucination:
-**NO RECEIPT → NO EPISTEMIC UPGRADE**
+---
 
-## Current State
+## 1. Current repository baseline
 
-The current repository state must be reconciled from the actual repository/worktree before any milestone is marked complete.
+### Repository structure
 
-Required first action:
+The current source distribution contains:
 
-### B0 — Repository / Worktree Reconciliation
+- `lumenforge.py` — the application and processing engine;
+- `assets/` — project branding assets;
+- `requirements.txt` — core dependencies;
+- `requirements-optional.txt` — optional RAW/computer-vision dependencies;
+- `docs/` — build, publishing, security, licensing, architecture and execution records;
+- `SHA256SUMS.txt` — integrity manifest.
 
-- inspect current branch and worktree;
-- detect uncommitted/unpushed changes;
-- identify active or conflicting work when observable;
-- inspect current source/build/test layout;
-- establish current baseline;
-- record findings in `docs/AGENT_EXECUTION_LEDGER.md`.
+### Source inventory
 
-Do not overwrite or discard existing local work.
+Static source inspection of the current `main` snapshot found:
 
-## Delivery Tracks
+- 7,295 lines in `lumenforge.py`;
+- 18 classes;
+- 107 top-level function definitions;
+- 121 built-in preset definitions (`FP(...)` registry entries);
+- 53 Camera DNA profile definitions (`make_profile(...)` registry entries).
 
-### Track A — Stability
-Build reproducible baseline, regression coverage, crash/exception isolation, lifecycle/state correctness, and deterministic behavior.
+These are source-level observations, not runtime test results.
+
+---
+
+## 2. Release comparison
+
+Reference release:
+
+`v1.0.0` → commit `da7daecf976890942f45429bcd8b7e1e47098fc1`
+
+Current `main` snapshot:
+
+`59a4458f237e2509d0f1a761180a73e411bd66484`
+
+Git comparison reports the current branch **10 commits ahead** of `v1.0.0`.
+
+The major repository-level changes are:
+
+- full application source published in `main`;
+- open-source documentation and licensing model established;
+- build/publishing/security/third-party documentation expanded;
+- autonomous agent governance added;
+- master roadmap and evidence ledger added;
+- native Windows dark title-bar implementation added.
+
+The historical `v1.0.0` executable has not been silently replaced by these source changes.
+
+See [`docs/VERSION_COMPARISON.md`](VERSION_COMPARISON.md).
+
+---
+
+## 3. Delivery tracks
+
+### Track A — Correctness & Stability
+
+- maintain the built-in self-test path;
+- add regression coverage for real defects;
+- preserve numerical finiteness and valid colour ranges;
+- investigate crashes and memory pressure with reproducible evidence.
 
 ### Track B — UI
-Recover/validate UI architecture and interaction performance without coupling heavy image processing to the UI thread.
 
-### Track C — Image / Color Science
-Protect numerical correctness, color-space conversions, RAW handling, LUT behavior, Camera DNA behavior, and deterministic image-processing paths.
+- verify native window chrome;
+- preserve the dark visual system;
+- keep heavy processing out of interaction-critical paths;
+- maintain predictable viewport, zoom, crop, mask and command interactions.
+
+### Track C — Colour Science
+
+- preserve the documented processing order;
+- protect OKLab/HSL/curve/LUT behavior;
+- distinguish camera-inspired approximations from proprietary manufacturer transforms;
+- keep live and staged/export processing aligned.
 
 ### Track D — Performance
-Measure CPU, memory, GPU acceleration where actually available, image pipeline latency, large-image behavior, and sustained-session stability.
 
-### Track E — Packaging / Release
-Validate clean-environment installation, resource inclusion, executable startup, dependency boundaries, licensing, and reproducibility.
+- measure preview latency;
+- measure memory behavior on large images;
+- validate layered cache invalidation;
+- measure optional acceleration only when the build actually provides it.
 
-### Track F — Security / Supply Chain
-Review dependencies, secrets, unsafe file handling, plugin surfaces, untrusted image/RAW/LUT inputs, and distributable assets when relevant.
+### Track E — Packaging
 
-## Gate Rule
+- reproduce clean source environments;
+- package Windows builds;
+- verify startup and key workflows;
+- publish hashes;
+- keep source/build/release states distinct.
 
-Do not advance on assumptions.
+### Track F — Security & Supply Chain
 
-Each gate requires fresh evidence.
+- review file parsing/import paths;
+- review dependency versions;
+- review bundled assets and licenses;
+- ensure release packages contain no secrets or private material.
 
-When a gate passes, immediately:
-1. record evidence;
+---
+
+## 4. Immediate gates
+
+| Gate | State | Evidence needed |
+|---|---|---|
+| Source publication | VERIFIED | `lumenforge.py` present on `main` |
+| Documentation bootstrap | VERIFIED | `AGENTS.md`, roadmap, ledger present |
+| Dark Windows title bar | OBSERVED | Real Windows runtime/EXE visual confirmation |
+| Current self-test | UNVERIFIED | Fresh test receipt from current source |
+| Current packaged EXE | UNVERIFIED | New build + launch verification |
+| Performance baseline | UNVERIFIED | Fresh measured benchmark |
+| New public release | NOT STARTED | Release-specific validation |
+
+---
+
+## 5. Gate discipline
+
+A gate passes only with fresh evidence.
+
+When a gate passes:
+
+1. record the evidence in `docs/AGENT_EXECUTION_LEDGER.md`;
 2. update this roadmap;
-3. continue to the next unblocked gate.
+3. continue automatically to the next unblocked gate.
 
-When a gate is blocked, preserve the evidence and continue independent tracks.
+When a gate is blocked:
 
-## Terminal Definition
+- preserve the evidence;
+- mark it `BLOCKED`;
+- continue independent workstreams.
 
-Lumen Forge is release-ready only when the relevant stability, correctness, performance, packaging, security, and target-environment gates have current evidence.
+Do not turn documentation into a substitute for validation.
 
-Do not mark the project COMPLETE merely because source changes compile.
+---
 
-END.
+## 6. Terminal definition of release readiness
+
+A release candidate is ready only when the relevant:
+
+`SOURCE → TEST → BUILD → PACKAGE → VERIFY → SECURITY → LICENSE → HASH → RELEASE`
+
+chain has current evidence.
+
+A successful commit is not itself a release.
+
