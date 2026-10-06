@@ -5,8 +5,9 @@
 This document compares the published **Git tag `v1.0.0`** with the current **`main`** snapshot.
 
 - v1.0.0 commit: `da7daecf976890942f45429bcd8b7e1e47098fc1`
-- current main head: `59a4458f237e2509d0f1a761180a73e411bd66484`
-- Git status: current main is **10 commits ahead**, 0 behind.
+- audit snapshot on main before this documentation pass: `59a4458f237e2509d0f1a761180a73e411bd66484`
+- Git status at that snapshot: **10 commits ahead**, 0 behind.
+- Subsequent commits in this documentation pass are control-plane/documentation changes and do not change the substantive code comparison.
 - Changed paths reported by GitHub: **13**.
 
 This is a repository comparison, not a claim that the current source is the same binary as v1.0.0.
