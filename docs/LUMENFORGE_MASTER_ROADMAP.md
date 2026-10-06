@@ -58,11 +58,11 @@ Reference release:
 
 `v1.0.0` → commit `da7daecf976890942f45429bcd8b7e1e47098fc1`
 
-Current `main` snapshot:
+Audit snapshot used for the repository-wide comparison:
 
 `59a4458f237e2509d0f1a761180a73e411bd66484`
 
-Git comparison reports the current branch **10 commits ahead** of `v1.0.0`.
+At that audit snapshot, Git comparison reported `main` **10 commits ahead** of `v1.0.0`. The documentation commits produced by this pass occur after that snapshot and are documentation/control-plane changes; they do not alter the substantive release comparison.
 
 The major repository-level changes are:
 
