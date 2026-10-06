@@ -61,6 +61,9 @@ Before calling the visual handoff complete:
 
 This document defines design intent; it is not evidence that the implementation has already been visually verified.
 
+> WORKFLOW: INSPECT → REPORT → IMPLEMENT → VERIFY
+> BEFORE IMPLEMENTATION: Read AGENTS.md, CHECKPOINT.md, and the current roadmap/technical-gap document. Reconcile this handoff with those sources before changing code.
+
 ## Execution hardening
 
 ### OBSERVED implementation anchors
