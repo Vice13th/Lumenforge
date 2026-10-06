@@ -37,3 +37,13 @@ Do not create repetitive progress entries with no new evidence.
 - Commit: `04bc03dc916ef0a09c6e29d8f49344e8f653d7a5`
 - Target-machine visual result: UNVERIFIED (runtime Windows visual check not performed in this pass).
 - Next action: verify on Windows build/EXE and confirm title bar is dark while minimize/maximize/close remain native and functional.
+
+## 2026-10-06 — Documentation Overhaul Completed
+
+- Work: repository-wide documentation reconciliation after comparison with the `v1.0.0` Git tag.
+- Audit snapshot: `59a4458f237e2509d0f1a761180a73e411bd66484`.
+- Created/updated: README, CHANGELOG, BUILD, PUBLISHING_GUIDE, SECURITY, THIRD_PARTY_NOTICES, MASTER_ROADMAP, ARCHITECTURE, VERSION_COMPARISON, SHA256SUMS, and source inventory comments.
+- Key corrections: source-backed LUT terminology is trilinear; current preset registry contains 121 `FP(...)` definitions; public release version `v1.0.0` is distinct from source Render Engine `12.0`.
+- Release boundary: `v1.0.0` Windows EXE remains the historical published binary; current `main` is not silently represented by that artifact.
+- Runtime gates: current source self-test, newly packaged EXE, performance baseline, and Windows title-bar visual verification remain UNVERIFIED.
+- Result: OBSERVED.
