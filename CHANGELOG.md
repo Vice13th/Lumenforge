@@ -1,56 +1,93 @@
 # Changelog
 
-All notable changes to Lumen Forge are documented here.
+All notable Lumen Forge changes are documented here.
 
-## v12.0 — Open Source Release
+The project uses two versioning layers:
 
-### Highlights
+- **Distribution release:** the published desktop release currently remains `v1.0.0`.
+- **Application/render-engine version:** the current source identifies itself as **Render Engine 12.0**.
 
-- Released the Lumen Forge application source under the MIT License.
-- Published the main Python application source in the public repository.
-- Introduced the LUMEN FORGE v12.0 Render Engine.
-- Added fused per-channel Tone + Gamma LUT processing.
-- Added layered render and display caching.
-- Added 109 presets, including vintage-camera and modern/unique looks.
-- Added Mobile DNA v2.
-- Added Camera DNA 2.3 with 53 camera profiles.
-- Added metadata + pixel-based Camera Match analysis.
-- Added evidence- and margin-gated confidence reporting.
-- Added exposure-robust relative-shape pixel features.
-- Added source → neutral → target → creative processing in OKLab.
-- Added explicit "-inspired" labeling for camera/look emulations rather than proprietary IDTs.
-- Added Preset Search and Favorites.
-- Added the Phones preset category.
-- Added the Cinematic Cameras preset category.
-- Added `.xmp`, `.cube`, and `.json` LUT import support.
-- Added full trilinear interpolation for CUBE LUTs.
-- Added HSL Mixer and Tone Curve controls.
-- Added Pick Gray Point and Auto WB tools.
-- Added Color Grade controls.
-- Added Local Masks for Exposure, Contrast, Temperature, Saturation, and Clarity.
-- Added adaptive preview rendering, zoom, pan, and display caching.
-- Added integrated Lumen Forge branding and application icon.
-- Added the `Ctrl+K` Command Palette.
+A newer source snapshot on `main` does not automatically mean a new binary release.
 
-## v12.0 — Documentation & Distribution
+---
 
-- Updated the public repository for an open-source distribution model.
-- Added MIT licensing documentation.
-- Added build and publishing documentation for the public source tree.
-- Added third-party licensing and attribution guidance.
-- Added security reporting guidance.
-- Added SHA-256 release verification support.
-- Added Windows executable distribution guidance.
+## [Unreleased] — 2026-10-06
+
+### Repository & Source
+
+- Published the complete `lumenforge.py` application source in the Git repository.
+- Added an autonomous-agent bootstrap contract in `AGENTS.md`.
+- Added a durable master execution roadmap.
+- Added a durable execution/evidence ledger.
+- Reconciled the repository documentation with the current open-source state.
+
+### UI
+
+- Added a Windows-native dark title-bar request through DWM for the main Tk window.
+- The title-bar change is intentionally limited to native window chrome and does not alter the image-rendering pipeline.
+
+### Documentation
+
+- Reworked the README around the actual current source architecture.
+- Added a detailed processing architecture document.
+- Added an exact `v1.0.0 → main` repository comparison.
+- Expanded build, publishing, security and third-party documentation.
+- Clarified the boundary between source state, release artifacts and verification evidence.
+- Corrected authoritative LUT terminology to **trilinear interpolation** based on the current source path.
+- Reconciled the current source preset inventory at **121 built-in preset definitions**.
+
+### Verification state
+
+- The dark title-bar implementation is **OBSERVED at source level**.
+- A real Windows runtime/EXE visual verification has not yet been recorded for that change.
+- The published `v1.0.0` executable remains the previously released binary; no new versioned executable has been claimed here.
+
+---
+
+## v1.0.0 — First Public Windows Release
+
+Published: 2026-09-12
+
+The first public Lumen Forge desktop release introduced the application as a Windows distribution built around:
+
+- layered image processing;
+- camera-inspired colour rendering;
+- perceptual OKLab processing;
+- HSL colour control;
+- editable curves;
+- 3D LUT processing;
+- non-destructive editing;
+- a dark desktop UI;
+- cinematic and photographic colour workflows.
+
+Release artifact:
+
+`LumenForge.exe`
+
+SHA-256:
+
+`349361449982613edad854fee9f968f687cd6868040ac51f645e25f9c5df7`
+
+See the historical release page for the exact v1.0.0 packaging and release text.
+
+---
+
+## Documentation history
+
+The public repository evolved from a release-oriented distribution surface into a source-available project with:
+
+- MIT source licensing;
+- source build instructions;
+- publishing controls;
+- security guidance;
+- third-party notices;
+- integrity/checksum records;
+- agent bootstrap and execution governance.
+
+---
 
 ## Licensing
 
 Lumen Forge project-owned source code is released under the MIT License.
 
-Third-party libraries, dependencies, assets, trademarks, and other externally
-owned materials remain subject to their respective licenses and terms.
-
-See:
-
-- `LICENSE`
-- `docs/THIRD_PARTY_NOTICES.md`
-- `docs/SECURITY.md`
+Third-party software, assets, trademarks, camera names, and other externally owned materials remain subject to their own licenses and terms.
