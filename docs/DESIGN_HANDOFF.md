@@ -60,3 +60,32 @@ Before calling the visual handoff complete:
 6. Record visual verification separately from design intent.
 
 This document defines design intent; it is not evidence that the implementation has already been visually verified.
+
+## Execution hardening
+
+### OBSERVED implementation anchors
+- Primary UI and processing source: lumenforge.py
+- Primary logo asset: assets/lumenforge_logo.png
+- Existing startup surface: Splash class
+- Existing startup progress is tied to real initialization milestones.
+- Existing render activity surface: _render_hud_show.
+- Existing Easter Egg implementation exists in the source and must be inventoried before changes.
+- Existing design tokens are centralized in T; do not scatter new colors through widgets.
+
+### CURRENT baseline versus TARGET
+The current source palette is Burgundy Noir / purple-oriented and includes semantic green/red values. This is the baseline that the visual redesign is expected to migrate coherently toward the LumenForge target palette. Do not confuse the current palette with the target, and do not perform a mechanical global replace.
+
+### Loading hard rule
+There must remain exactly one deliberate product startup splash path. Preserve real progress calls and the Splash-to-main-window lifecycle. Do not create a second splash or replace real progress with a timer/fake percentage.
+
+### Logo defect hard rule
+The logo-inside-logo composition is a defect to trace at source/asset/layout level. The fix must remove the unintended duplicate while preserving the intended single LumenForge mark.
+
+### Change boundary
+A visual task must not modify rendering math, RAW decoding, Camera DNA, LUT processing, caching, presets, export semantics, or numerical behavior except for the smallest behavior-preserving fix needed for a transient UI defect.
+
+### Stop and report
+Stop instead of guessing if the duplicate logo cannot be traced, a new dependency is required for a visual effect, an existing lifecycle state has no real UI anchor, or the requested redesign would require replacing Tkinter.
+
+### Evidence required before completion
+Capture or otherwise verify cold launch, every real splash milestone, splash handoff, render HUD, import/editor state, export, error state, resize/high-DPI behavior, and Easter Egg states. Mark visual verification separately from design intent.
