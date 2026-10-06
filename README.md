@@ -155,7 +155,7 @@ For packaging instructions, see [`docs/BUILD.md`](docs/BUILD.md).
 
 The first public release is **LumenForge v1.0.0**.
 
-The executable is distributed through GitHub Releases rather than tracked in the source tree:
+Download the published executable from [GitHub Releases](https://github.com/Vice13th/Lumenforge/releases/tag/v1.0.0); it is not tracked in the source tree:
 
 **LumenForge.exe — SHA-256**
 
