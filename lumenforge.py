@@ -55,6 +55,35 @@ def _dpi():
             pass
 _dpi()
 
+def _set_windows_dark_titlebar(window):
+    """Request the native Windows title bar to use its dark appearance.
+
+    This affects only the OS-provided caption/title bar. Tkinter controls,
+    canvases, and the image-rendering pipeline are intentionally untouched.
+    Unsupported Windows versions simply keep their native title-bar behavior.
+    """
+    if not sys.platform.startswith("win"):
+        return False
+    try:
+        import ctypes
+        from ctypes import wintypes
+        hwnd = wintypes.HWND(window.winfo_id())
+        dwmapi = ctypes.windll.dwmapi
+        value = ctypes.c_int(1)
+        size = ctypes.sizeof(value)
+
+        # DWMWA_USE_IMMERSIVE_DARK_MODE is 20 on current Windows builds.
+        # 19 is retained as a compatibility fallback used by some older
+        # Windows 10 builds.
+        for attribute in (20, 19):
+            rc = dwmapi.DwmSetWindowAttribute(
+                hwnd, attribute, ctypes.byref(value), size)
+            if rc == 0:
+                return True
+    except Exception:
+        pass
+    return False
+
 # ---- Design tokens ----
 \
 # Burgundy Noir — deep wine/plum base with a vivid burgundy-magenta
@@ -4478,6 +4507,7 @@ class App(tk.Tk):
         super().__init__()
         self.title(f"{APP_NAME} — v{VERSION}")
         self.configure(bg=T["bg"])
+        _set_windows_dark_titlebar(self)
         self.withdraw()
         self._boot_splash = Splash(self)
         self._boot_splash.set_status("Starting engine…", .04)
