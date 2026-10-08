@@ -1,0 +1,21 @@
+﻿{
+    "regression_result":  "139 passed, 2 skipped, 2 warnings in 7.30s",
+    "timestamp_utc":  "2026-10-08T18:20:05.5307928Z",
+    "sequence_length":  128,
+    "adapter_sha256":  "AA3C793B748D3E8627B52F73CDF05E4BFACF28DF09A85585B9AE6A4BD2D2B951",
+    "tokenizer_sha256":  "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+    "sandbox_receipt":  "artifacts/OFFLINE_AI_INFERENCE_RECEIPT_20261008.json",
+    "batch_size":  3,
+    "adapter":  "source/v2_offline_ai.py",
+    "limitations":  "Local deterministic inference plumbing only; no semantic quality or production AI certification.",
+    "focused_result":  "1 passed in 1.07s",
+    "sandbox_source":  "source/lumenforge_core/offline_ai.py",
+    "sandbox_source_sha256":  "064D69E5DE465408AC7CB989ED2AA3246C729C1DD982D133A6DCE4667992F752",
+    "embedding_dim":  384,
+    "component":  "offline_ai_local_inference",
+    "focused_tests":  "python -m pytest -q tests/test_v2_offline_ai.py",
+    "provider":  "CPUExecutionProvider",
+    "status":  "PASS",
+    "model_sha256":  "6fd5d72fe4589f189f8ebc006442dbb529bb7ce38f8082112682524616046452",
+    "regression":  "python -m pytest -q tests"
+}
