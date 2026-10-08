@@ -2,7 +2,7 @@
 
 ## Release candidate
 - Version: 2.0.0
-- Branch: integration-v2`n- Source commit: 78d33fb6b1a2022b6d6dea7395be0e0c11dbd5dc
+- Branch: integration-v2`n- Source/release branch HEAD: fd6ea6f2a1353823f8cd172421f3ca1c4e2c15a8
 - Build: PyInstaller 6.22.3 / Python 3.12.10 / Windows 11
 - Artifact: D:\Lumenlabs\RELEASE_CANDIDATES\LumenForge-2.0.0\dist_final\dist\LumenForge-2.0.0
 - Executable SHA256: C338A6830E8467CB6874B63A0389BF7A4A99758A5D9CD9042DBB2F94617A9E7B
@@ -28,4 +28,11 @@
 - Root LICENSE: present
 - Declaration: MIT
 - Copyright notice: LumenForge contributors
+
+
+## Independent source package
+- Directory: D:\Lumenlabs\RELEASE_CANDIDATES\LumenForge-2.0.0\source-package
+- ZIP: D:\Lumenlabs\RELEASE_CANDIDATES\LumenForge-2.0.0\LumenForge-2.0.0-source.zip
+- Files: 47
+- ZIP SHA256: 4C7DD26F253961326E0BCC7EE96576BBBF523148EC989B96A87971782279E486
 

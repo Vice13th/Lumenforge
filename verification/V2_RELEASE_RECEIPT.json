@@ -1,7 +1,7 @@
 ﻿{
     "repository":  "Vice13th/Lumenforge",
     "branch":  "integration-v2",
-    "source_commit":  "78d33fb6b1a2022b6d6dea7395be0e0c11dbd5dc",
+    "source_commit":  "fd6ea6f2a1353823f8cd172421f3ca1c4e2c15a8",
     "version":  "2.0.0",
     "sandbox_package":  {
                             "path":  "D:\\Lumenlabs\\SANDBOX_LAB\\LumenParallel_20261008_OCIOGPU.zip",
@@ -75,5 +75,11 @@
                         "Clean-machine portability has not been independently verified.",
                         "Numba TBB dependency warning remains; packaged startup smoke passed."
                     ],
-    "generated_utc":  "2026-10-08T19:02:10.5043462Z"
+    "generated_utc":  "2026-10-08T19:02:10.5043462Z",
+    "source_package":  {
+                           "path":  "D:\\Lumenlabs\\RELEASE_CANDIDATES\\LumenForge-2.0.0\\source-package",
+                           "zip":  "D:\\Lumenlabs\\RELEASE_CANDIDATES\\LumenForge-2.0.0\\LumenForge-2.0.0-source.zip",
+                           "file_count":  47,
+                           "zip_sha256":  "4C7DD26F253961326E0BCC7EE96576BBBF523148EC989B96A87971782279E486"
+                       }
 }
