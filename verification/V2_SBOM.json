@@ -1,0 +1,60 @@
+﻿{
+  "format": "minimal-runtime-sbom",
+  "generated_by": "LumenForge V2 release verification",
+  "packages": [
+    {
+      "license": "",
+      "name": "numpy",
+      "summary": "Fundamental package for array computing in Python",
+      "version": "2.5.3"
+    },
+    {
+      "license": "",
+      "name": "pillow",
+      "summary": "Python Imaging Library (Fork)",
+      "version": "11.3.0"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "name": "tifffile",
+      "summary": "Read and write TIFF files",
+      "version": "2026.9.20"
+    },
+    {
+      "license": "",
+      "name": "OpenEXR",
+      "summary": "Python bindings for the OpenEXR image file format",
+      "version": "3.5.2"
+    },
+    {
+      "license": "Copyright Contributors to the OpenColorIO Project.",
+      "name": "opencolorio",
+      "summary": "OpenColorIO (OCIO) is a complete color management solution geared towards motion picture production with an emphasis on visual effects and computer animation.",
+      "version": "2.6.0"
+    },
+    {
+      "license": "",
+      "name": "cupy-cuda12x",
+      "summary": "CuPy: NumPy & SciPy for GPU",
+      "version": "14.2.0"
+    },
+    {
+      "license": "MIT License",
+      "name": "onnxruntime",
+      "summary": "ONNX Runtime is a runtime accelerator for Machine Learning models",
+      "version": "1.30.0"
+    },
+    {
+      "license": "",
+      "name": "tokenizers",
+      "summary": "",
+      "version": "0.23.2"
+    },
+    {
+      "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+      "name": "pyinstaller",
+      "summary": "PyInstaller bundles a Python application and all its dependencies into a single package.",
+      "version": "6.22.3"
+    }
+  ]
+}

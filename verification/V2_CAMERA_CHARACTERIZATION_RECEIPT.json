@@ -1,0 +1,19 @@
+﻿{
+    "gate_2A":  "NOT CLOSED",
+    "component":  "camera_characterization_infrastructure",
+    "focused_tests":  "python -m pytest -q tests/test_v2_camera_characterization.py",
+    "focused_result":  "4 passed in 0.11s",
+    "sandbox_receipt":  "artifacts/CAMERA_CHARACTERIZATION_INFRA_RECEIPT_20261008.json",
+    "regression_result":  "143 passed, 2 skipped, 2 warnings in 7.56s",
+    "status":  "PASS_WITH_SCIENTIFIC_LIMITATION",
+    "regression":  "python -m pytest -q tests",
+    "gate_2B":  "BLOCKED",
+    "research_manifest":  "artifacts/RESEARCH_CAMERA_DATASET_MANIFEST_20261008.json",
+    "sandbox_source_sha256":  "570949EFECEB1397FBA1DC8F1CF03D1BF9A68D1196CFA6B42302998DA2B73229",
+    "limitations":  "No measured camera IDT/profile signoff; traceable local RAW/reference bundle still missing; no generic Fuji transform promoted.",
+    "sandbox_source":  "source/lumenforge_core/camera_characterization.py",
+    "adapter":  "source/v2_camera_characterization.py",
+    "timestamp_utc":  "2026-10-08T18:22:04.5423410Z",
+    "scientific_gate_status":  "infrastructure_only",
+    "adapter_sha256":  "261069F04C216778E5CDD8B48832283FF5C95778ECD8C0B6DF2273F967196973"
+}

@@ -1,0 +1,26 @@
+﻿{
+    "sandbox_sha256":  [
+                           "F308BBEDE68E097FB6F14EE0E85B7704C8782B5640E4B2DE429D0F5C80AD1DD3",
+                           "934CA1943F06D3FD517D301140A27A1E2A7B47039527E7053E1392EA8B9E840D",
+                           "520BE1D23F0CFF6491209CD85E3D327C24F88F3CC4352854D6DABC56FC4C0A95",
+                           "7209FBA63D55911963DEB5A2C81175F72AB7D99F8221B23BFA5D6C590C17E893"
+                       ],
+    "adapters":  [
+                     "source/v2_scene_graph_contract.py"
+                 ],
+    "focused_result":  "5 passed",
+    "adapter_sha256":  "7420F09CAE2ED5C2A0CE3BF2D9182BC1E2F9E5015A27DAE31186D9BFB5B1088A",
+    "timestamp_utc":  "2026-10-08T18:10:29.3300387Z",
+    "regression_result":  "119 passed, 2 skipped in 5.16s",
+    "sandbox_sources":  [
+                            "source/lumenforge_core/frame.py",
+                            "source/lumenforge_core/graph.py",
+                            "source/lumenforge_core/render.py",
+                            "source/lumenforge_core/cache.py"
+                        ],
+    "component":  "scene_linear_graph_contract",
+    "focused_tests":  "python -m pytest -q tests/test_v2_scene_graph_contract.py",
+    "limitations":  "Contract bridge integrated; existing V2 executor remains authoritative; universal backend portability not claimed.",
+    "status":  "PASS",
+    "regression":  "python -m pytest -q tests"
+}

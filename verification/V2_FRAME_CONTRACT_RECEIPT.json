@@ -1,0 +1,14 @@
+﻿{
+    "focused_tests":  "python -m pytest -q tests/test_v2_frame_contract.py",
+    "sandbox_source_sha256":  "F308BBEDE68E097FB6F14EE0E85B7704C8782B5640E4B2DE429D0F5C80AD1DD3",
+    "focused_result":  "5 passed",
+    "adapter_sha256":  "BC59A027A270A950CFDEB3E89DE87AEA5A058C67E58159861CD936C68C15A527",
+    "timestamp_utc":  "2026-10-08T18:08:24.1427412Z",
+    "regression_result":  "114 passed, 2 skipped in 6.03s",
+    "component":  "frame_state_contract",
+    "sandbox_source":  "D:\\Lumenlabs\\SANDBOX_LAB\\LumenParallel\\source\\lumenforge_core\\frame.py",
+    "limitations":  "Adapter contract integrated; existing V2 engine remains unchanged; scene-linear numerical transforms remain next integration unit.",
+    "status":  "PASS",
+    "regression":  "python -m pytest -q tests",
+    "adapter":  "source/v2_frame_contract.py"
+}

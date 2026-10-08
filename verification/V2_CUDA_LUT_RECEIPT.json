@@ -1,0 +1,26 @@
+﻿{
+    "component":  "cuda_lut_backend",
+    "adapter":  "source/v2_cuda_lut.py",
+    "status":  "PASS",
+    "focused_tests":  "python -m pytest -q tests/test_v2_cuda_lut.py",
+    "sandbox_source_sha256":  "BC35A7414E016A21F6B829A692848C17918C856E1A8CD2AA502A465567E70118",
+    "limitations":  "Optional backend; CPU remains reference; evidence applies to tested RTX 2070 runtime only; no universal GPU claim.",
+    "sandbox_source":  "source/lumenforge_core/cuda_lut.py",
+    "regression_result":  "129 passed, 2 skipped, 1 warning in 5.79s",
+    "regression":  "python -m pytest -q tests",
+    "focused_result":  "2 passed, 1 warning in 2.18s",
+    "parity_receipt":  "artifacts/CUDA_PARITY_RECEIPT_20261008.json",
+    "timestamp_utc":  "2026-10-08T18:15:16.7186619Z",
+    "runtime_receipt":  "artifacts/RUNTIME_DEPENDENCY_RECEIPT_20261008.json",
+    "measured_scope":  {
+                           "rms_error":  2.3693711881378476E-08,
+                           "cuda_runtime":  "12090",
+                           "max_abs_error":  1.1920928955078125E-07,
+                           "probe_shape":  "96x113x3",
+                           "driver":  "610.62",
+                           "lut_shape":  "17x17x17x3",
+                           "tolerance":  2E-05,
+                           "gpu":  "NVIDIA GeForce RTX 2070 with Max-Q Design"
+                       },
+    "adapter_sha256":  "EAF5D0019BD505413E2190B6F25F5AF11AB0B8DC2331C09C9102B22A01A674C6"
+}

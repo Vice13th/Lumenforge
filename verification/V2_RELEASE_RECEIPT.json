@@ -1,0 +1,85 @@
+﻿{
+    "repository":  "Vice13th/Lumenforge",
+    "branch":  "integration-v2",
+    "source_commit":  "fd6ea6f2a1353823f8cd172421f3ca1c4e2c15a8",
+    "version":  "2.0.0",
+    "sandbox_package":  {
+                            "path":  "D:\\Lumenlabs\\SANDBOX_LAB\\LumenParallel_20261008_OCIOGPU.zip",
+                            "sha256":  "b4e63f22045d1926ec4c5937b9819f8becce2792f0128bb9a75a7c0aa9881265"
+                        },
+    "integrated_components":  [
+                                  "frame_state_contract",
+                                  "scene_linear_graph_contract",
+                                  "cache_determinism_contract",
+                                  "ocio_boundary",
+                                  "cuda_lut_backend",
+                                  "native_and_raster_export",
+                                  "icc_conversion_boundary",
+                                  "offline_ai_local_inference",
+                                  "camera_characterization_infrastructure",
+                                  "packaged_entrypoint_import"
+                              ],
+    "tests":  {
+                  "command":  "python -m pytest -q tests",
+                  "result":  "143 passed, 2 skipped, 2 warnings in 6.51s",
+                  "warnings":  [
+                                   "CuPy CUDA_PATH warning",
+                                   "Pillow mode parameter deprecation warning"
+                               ]
+              },
+    "build":  {
+                  "tool":  "PyInstaller 6.22.3",
+                  "python":  "3.12.10",
+                  "platform":  "Windows 11",
+                  "artifact_type":  "onedir distribution",
+                  "artifact_path":  "D:\\Lumenlabs\\RELEASE_CANDIDATES\\LumenForge-2.0.0\\dist_final\\dist\\LumenForge-2.0.0",
+                  "executable":  "LumenForge-2.0.0.exe",
+                  "executable_sha256":  "C338A6830E8467CB6874B63A0389BF7A4A99758A5D9CD9042DBB2F94617A9E7B",
+                  "file_count":  1128,
+                  "total_size_bytes":  349868017,
+                  "build_exit":  0,
+                  "packaged_runtime_smoke":  {
+                                                 "alive_after_seconds":  8,
+                                                 "window_title":  "Lumen Forge - v2",
+                                                 "clean_launch":  true,
+                                                 "terminated_after_smoke":  true
+                                             },
+                  "source_import_from_bundle":  "PASS",
+                  "loading_branding":  "PASS: Splash uses the same canonical _lumenforge_icon() mark as the application icon."
+              },
+    "security":  {
+                     "secret_scan":  "NO_MATCHES",
+                     "hygiene_scan":  "PASS",
+                     "packaging_warning":  "tbb12.dll unresolved for optional Numba TBB pool dependency; startup smoke PASS; no crash observed."
+                 },
+    "license":  {
+                    "declared_in_docs":  "MIT",
+                    "root_license_file":  "PRESENT",
+                    "status":  "VERIFIED_DECLARATION"
+                },
+    "sbom":  {
+                 "path":  "verification/V2_SBOM.json",
+                 "status":  "GENERATED"
+             },
+    "blocked_research_gates":  [
+                                   "CAMERA_GATE_2A_NOT_CLOSED",
+                                   "CAMERA_GATE_2B_BLOCKED",
+                                   "EXIF_XMP_CERTIFICATION_BLOCKED",
+                                   "CLEAN_MACHINE_PORTABILITY_UNVERIFIED",
+                                   "UNIVERSAL_GPU_BACKEND_PORTABILITY_NOT_CLAIMED"
+                               ],
+    "release_status":  "RELEASE READY",
+    "limitations":  [
+                        "Camera scientific gates remain open and are not falsely closed.",
+                        "EXIF/XMP certification remains blocked.",
+                        "Clean-machine portability has not been independently verified.",
+                        "Numba TBB dependency warning remains; packaged startup smoke passed."
+                    ],
+    "generated_utc":  "2026-10-08T19:02:10.5043462Z",
+    "source_package":  {
+                           "path":  "D:\\Lumenlabs\\RELEASE_CANDIDATES\\LumenForge-2.0.0\\source-package",
+                           "zip":  "D:\\Lumenlabs\\RELEASE_CANDIDATES\\LumenForge-2.0.0\\LumenForge-2.0.0-source.zip",
+                           "file_count":  47,
+                           "zip_sha256":  "NOT_EMBEDDED_TO_AVOID_CIRCULAR_HASH"
+                       }
+}
