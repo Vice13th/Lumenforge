@@ -1,0 +1,24 @@
+﻿{
+    "component":  "ocio_boundary",
+    "receipts":  [
+                     "artifacts/OCIO_RECEIPT_20261008.json",
+                     "artifacts/OCIO_GPU_EXECUTION_RECEIPT_20261008.json"
+                 ],
+    "focused_tests":  "python -m pytest -q tests/test_v2_ocio_contract.py",
+    "sandbox_source_sha256":  "4B47F394A885CB154B78D6DFA955017DF79EA18A8E16B329ECF8367F444EE189",
+    "gpu_execution_scope":  {
+                                "gpu":  "Intel UHD Graphics",
+                                "claim":  "tested pixel execution only; no universal backend portability claim",
+                                "max_abs_error":  6.198883056640625E-06,
+                                "shader_sha256":  "768b95a722400df7f942319d59cd70c841531d76f4ffef18f129c38c2c365b50",
+                                "tolerance":  2E-05
+                            },
+    "sandbox_source":  "source/lumenforge_core/ocio.py",
+    "regression_result":  "127 passed, 2 skipped in 6.13s",
+    "config_uri":  "ocio://cg-config-latest",
+    "focused_result":  "4 passed in 0.28s",
+    "ocio_version":  "2.6.0",
+    "status":  "PASS",
+    "regression":  "python -m pytest -q tests",
+    "timestamp_utc":  "2026-10-08T18:13:50.1320921Z"
+}
