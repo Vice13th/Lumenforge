@@ -80,6 +80,6 @@
                            "path":  "D:\\Lumenlabs\\RELEASE_CANDIDATES\\LumenForge-2.0.0\\source-package",
                            "zip":  "D:\\Lumenlabs\\RELEASE_CANDIDATES\\LumenForge-2.0.0\\LumenForge-2.0.0-source.zip",
                            "file_count":  47,
-                           "zip_sha256":  "4C7DD26F253961326E0BCC7EE96576BBBF523148EC989B96A87971782279E486"
+                           "zip_sha256":  "NOT_EMBEDDED_TO_AVOID_CIRCULAR_HASH"
                        }
 }

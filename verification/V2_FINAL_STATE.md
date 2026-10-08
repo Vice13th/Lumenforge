@@ -34,5 +34,6 @@
 - Directory: D:\Lumenlabs\RELEASE_CANDIDATES\LumenForge-2.0.0\source-package
 - ZIP: D:\Lumenlabs\RELEASE_CANDIDATES\LumenForge-2.0.0\LumenForge-2.0.0-source.zip
 - Files: 47
-- ZIP SHA256: 4C7DD26F253961326E0BCC7EE96576BBBF523148EC989B96A87971782279E486
+- ZIP SHA256: recorded in the final release report (not embedded to avoid circular package hashing).
+
 
