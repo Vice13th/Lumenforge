@@ -5786,6 +5786,7 @@ class Splash(tk.Toplevel):
         self._frac = 0.0
         self._status = "Starting…"
         self._pulse = 0.0
+        self._mark = _lumenforge_icon()
         self._draw()
         self._anim()
     def _draw(self):
@@ -5798,8 +5799,7 @@ class Splash(tk.Toplevel):
         rnd(cv, m, m, self.W-m, self.H-m, T["radius_lg"], fill="",
            outline=glow, width=2)
         cy = 98
-        cv.create_text(self.W//2, cy, text="◈", fill=T["accent"],
-                       font=("Segoe UI", 26, "bold"))
+        cv.create_image(self.W//2, cy, image=self._mark, anchor="center")
         cv.create_text(self.W//2, cy+40, text="LUMEN FORGE",
                        fill=T["text"], font=("Segoe UI", 17, "bold"))
         cv.create_text(self.W//2, cy+62, text="CINEMA COLOUR",
