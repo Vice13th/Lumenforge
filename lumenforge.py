@@ -7,6 +7,11 @@ import sys as _sys
 
 _HERE = _os.path.dirname(_os.path.abspath(__file__))
 _IMPL = _os.path.join(_HERE, "source", "lumenforge.py")
+if _HERE not in _sys.path:
+    _sys.path.insert(0, _HERE)
+_SOURCE_DIR = _os.path.join(_HERE, "source")
+if _SOURCE_DIR not in _sys.path:
+    _sys.path.insert(0, _SOURCE_DIR)
 _spec = _importlib_util.spec_from_file_location("lumenforge_impl", _IMPL)
 if _spec is None or _spec.loader is None:
     raise ImportError(f"Cannot load LumenForge implementation: {_IMPL}")
