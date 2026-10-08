@@ -1,0 +1,82 @@
+{
+  "repository": "Vice13th/Lumenforge",
+  "branch": "integration-v2",
+  "source_commit": "c863a043658252ace0e1c8d612873e0fd8e175c4",
+  "version": "2.0.0",
+  "sandbox_package": {
+    "path": "D:\\Lumenlabs\\SANDBOX_LAB\\LumenParallel_20261008_OCIOGPU.zip",
+    "sha256": "b4e63f22045d1926ec4c5937b9819f8becce2792f0128bb9a75a7c0aa9881265"
+  },
+  "integrated_components": [
+    "frame_state_contract",
+    "scene_linear_graph_contract",
+    "cache_determinism_contract",
+    "ocio_boundary",
+    "cuda_lut_backend",
+    "native_and_raster_export",
+    "icc_conversion_boundary",
+    "offline_ai_local_inference",
+    "camera_characterization_infrastructure"
+  ],
+  "test_commands": [
+    "python -m pytest -q tests/test_v2_frame_contract.py",
+    "python -m pytest -q tests/test_v2_scene_graph_contract.py",
+    "python -m pytest -q tests/test_v2_cache_contract.py",
+    "python -m pytest -q tests/test_v2_ocio_contract.py",
+    "python -m pytest -q tests/test_v2_cuda_lut.py",
+    "python -m pytest -q tests/test_v2_export_contract.py",
+    "python -m pytest -q tests/test_v2_icc_contract.py",
+    "python -m pytest -q tests/test_v2_offline_ai.py",
+    "python -m pytest -q tests/test_v2_camera_characterization.py",
+    "python -m pytest -q tests"
+  ],
+  "test_results": {
+    "final_regression": "143 passed, 2 skipped, 2 warnings in 8.35s",
+    "hygiene": "PASS after removal of build scratch directories"
+  },
+  "build": {
+    "command": "pyinstaller --noconfirm --clean --distpath release_build_final/dist --workpath release_build_final/work release_build/spec/LumenForge-2.0.0.spec",
+    "tool": "PyInstaller 6.22.3",
+    "python": "3.12.10",
+    "platform": "Windows 11",
+    "result": "exit 0"
+  },
+  "artifact": {
+    "type": "onedir distribution",
+    "path": "D:\\Lumenlabs\\SANDBOX_LAB\\V2_Integration_Worktree\\Lumenforge_develop\\release_build_final\\dist\\LumenForge-2.0.0",
+    "executable": "LumenForge-2.0.0.exe",
+    "sha256": "2334C14405021C50FE2FC44A55300DF9907A25AB3A408548346AC426CCE9BD69",
+    "file_count": 77,
+    "total_size_bytes": 20712007,
+    "source_import_test": "PASS",
+    "packaged_process_stability": "PASS: process remained alive for at least 5 seconds",
+    "packaged_window_title": "Unhandled exception in script"
+  },
+  "security": {
+    "secret_scan": "NO_MATCHES",
+    "hygiene_scan": "PASS",
+    "note": "No root LICENSE file was present in repository."
+  },
+  "license": {
+    "declared_in_docs": "MIT",
+    "root_license_file": "MISSING",
+    "sbom_license_metadata": "PARTIAL",
+    "status": "RE-VERIFY"
+  },
+  "sbom": {
+    "path": "verification/V2_SBOM.json",
+    "status": "GENERATED"
+  },
+  "blocked_gates": [
+    "PACKAGED_UI_RUNTIME: BLOCKED — packaged process remains alive but window title is 'Unhandled exception in script'; exact GUI exception output was not independently captured in windowed mode.",
+    "CAMERA_GATE_2A: NOT CLOSED",
+    "CAMERA_GATE_2B: BLOCKED",
+    "EXIF_XMP_CERTIFICATION: BLOCKED",
+    "CLEAN_MACHINE_PORTABILITY: UNVERIFIED",
+    "UNIVERSAL_GPU_BACKEND_PORTABILITY: NOT CLAIMED"
+  ],
+  "release_status": "RELEASE BLOCKED",
+  "blocker_reason": "Packaged GUI runtime is not yet cleanly verified; release evidence must not overstate a window showing 'Unhandled exception in script'.",
+  "next_step": "Resolve the packaged GUI runtime exception, rebuild from the resulting verified source commit, repeat artifact launch verification, then update this receipt and publish/tag only after clean verification.",
+  "generated_utc": "2026-10-08T18:30:58.628Z"
+}
