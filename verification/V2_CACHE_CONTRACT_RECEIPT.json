@@ -1,0 +1,14 @@
+﻿{
+    "focused_tests":  "python -m pytest -q tests/test_v2_cache_contract.py",
+    "sandbox_source_sha256":  "7209FBA63D55911963DEB5A2C81175F72AB7D99F8221B23BFA5D6C590C17E893",
+    "focused_result":  "4 passed",
+    "adapter_sha256":  "E6DED17D8B44BB115E8AF4B55C4C1E7A538FBBA80EC074C91ED78B11D39B97F5",
+    "timestamp_utc":  "2026-10-08T18:11:29.4969591Z",
+    "regression_result":  "123 passed, 2 skipped in 4.63s",
+    "component":  "cache_determinism_contract",
+    "sandbox_source":  "source/lumenforge_core/cache.py",
+    "limitations":  "Contract identity integrated as augmentation; existing V2 Eng cache remains execution owner.",
+    "status":  "PASS",
+    "regression":  "python -m pytest -q tests",
+    "adapter":  "source/v2_cache_contract.py"
+}
