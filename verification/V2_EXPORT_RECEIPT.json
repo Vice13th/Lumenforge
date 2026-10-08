@@ -1,0 +1,18 @@
+﻿{
+    "component":  "native_and_raster_export",
+    "adapter":  "source/v2_export_contract.py",
+    "receipts":  [
+                     "artifacts/EXPORT_NATIVE_RECEIPT_20261008.json",
+                     "artifacts/EXPORT_RASTER_RECEIPT_20261008.json"
+                 ],
+    "focused_tests":  "python -m pytest -q tests/test_v2_export_contract.py",
+    "sandbox_source_sha256":  "F06ADEE6C00437B4A848DB476826F4A6F076E811BBF36633DDF0529DC5E02817",
+    "limitations":  "PNG/JPEG/TIFF integer writers require display-referred input; EXR preserves scene/camera-linear headroom; ICC embedding is not ICC conversion certification; existing V2 export owner remains unchanged.",
+    "sandbox_source":  "source/lumenforge_core/export.py",
+    "regression_result":  "135 passed, 2 skipped, 1 warning in 5.64s",
+    "regression":  "python -m pytest -q tests",
+    "focused_result":  "6 passed in 0.19s",
+    "adapter_sha256":  "B7B78892D713C52CD5AB61514A814690E1028395E154AC7509DF5F6AE616DDE0",
+    "status":  "PASS",
+    "timestamp_utc":  "2026-10-08T18:18:24.2468126Z"
+}
