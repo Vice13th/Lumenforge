@@ -1,7 +1,7 @@
 ﻿{
     "repository":  "Vice13th/Lumenforge",
     "branch":  "integration-v2",
-    "source_commit":  "PENDING_FINAL_COMMIT",
+    "source_commit":  "78d33fb6b1a2022b6d6dea7395be0e0c11dbd5dc",
     "version":  "2.0.0",
     "sandbox_package":  {
                             "path":  "D:\\Lumenlabs\\SANDBOX_LAB\\LumenParallel_20261008_OCIOGPU.zip",
