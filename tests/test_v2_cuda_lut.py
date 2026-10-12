@@ -69,3 +69,63 @@ def test_cuda_matches_reference_on_measured_runtime():
     assert np.isfinite(actual).all()
     assert err <= 2e-5
     assert rms <= 2e-5
+
+def _valid_lut(dtype=np.float32):
+    table = np.zeros((2, 2, 2, 3), dtype=dtype)
+    return table, np.zeros(3, dtype=dtype), np.ones(3, dtype=dtype)
+
+
+@pytest.mark.parametrize(
+    "rgb",
+    [
+        np.zeros((3,), dtype=np.float32),
+        np.zeros((2, 2, 4), dtype=np.float32),
+        np.array([[[np.nan, 0.0, 0.0]]], dtype=np.float32),
+        np.array([[[np.inf, 0.0, 0.0]]], dtype=np.float32),
+    ],
+)
+def test_invalid_rgb_is_rejected_before_cuda_setup(rgb):
+    with pytest.raises(ValueError):
+        _M.tetrahedral_cuda(rgb, _valid_lut())
+
+
+@pytest.mark.parametrize(
+    ("dmin", "dmax"),
+    [
+        ((0.0, 0.0, 0.0), (1.0, 0.0, 1.0)),
+        ((0.0, 0.0, 0.0), (-1.0, 1.0, 1.0)),
+        ((0.0, 0.0, 0.0), (np.inf, 1.0, 1.0)),
+    ],
+)
+def test_invalid_lut_domain_is_rejected_before_cuda_setup(dmin, dmax):
+    table = np.zeros((2, 2, 2, 3), dtype=np.float32)
+    with pytest.raises(ValueError, match="domain"):
+        _M.tetrahedral_cuda(
+            np.zeros((1, 1, 3), dtype=np.float32),
+            (table, dmin, dmax),
+        )
+
+
+def test_lut_validation_normalizes_dtype_and_contiguity():
+    rgb = np.zeros((2, 3, 6), dtype=np.float64)[..., ::2]
+    table = np.zeros((2, 2, 2, 6), dtype=np.float64)[..., ::2]
+    x, normalized_table, dmin, dmax = _M._validate_inputs(
+        rgb,
+        (table, np.zeros(3, dtype=np.float64), np.ones(3, dtype=np.float64)),
+    )
+
+    for array in (x, normalized_table, dmin, dmax):
+        assert array.dtype == np.float32
+        assert array.flags.c_contiguous
+    assert x.shape == (2, 3, 3)
+    assert normalized_table.shape == (2, 2, 2, 3)
+
+
+def test_empty_rgb_is_a_noop_without_cuda_setup():
+    rgb = np.empty((0, 4, 3), dtype=np.float64)
+    result = _M.tetrahedral_cuda(rgb, _valid_lut(dtype=np.float64))
+
+    assert result.shape == rgb.shape
+    assert result.dtype == np.float32
+    assert result.size == 0
+
