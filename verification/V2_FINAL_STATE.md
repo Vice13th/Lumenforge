@@ -8,7 +8,7 @@
 - Application launcher: root `lumenforge.py`, importing `source.lumenforge`.
 - Active engine: `source/lumenforge.py`; NumPy-based rendering with selected optional Numba acceleration.
 - Historical candidate build environment: Windows 11 / Python 3.12.10 / PyInstaller 6.22.3.
-- Historical artifact path: `D:\Lumenlabs\RELEASE_CANDIDATES\LumenForge-2.0.0\dist_final\dist\LumenForge-2.0.0`.
+- Historical artifact path: **machine-local absolute path intentionally omitted**; distribution name `LumenForge-2.0.0` and executable SHA256 are retained as the stable identifying evidence.
 - Historical executable SHA256: `C338A6830E8467CB6874B63A0389BF7A4A99758A5D9CD9042DBB2F94617A9E7B`.
 - Historical distribution: 1,128 files / 349,868,017 bytes.
 - Historical smoke: process reportedly stayed alive for 8 seconds, window title `Lumen Forge - v2`, and then terminated cleanly.
@@ -17,7 +17,7 @@ The artifact/build receipt predates this documentation review. Its exact relatio
 
 ## Recorded verification (not rerun on 12 October)
 
-- Python tests: **143 passed, 2 skipped, 2 warnings in 9.63s**.
+- Aggregate Python tests: **143 passed, 2 skipped, 2 warnings** in the historical records. `V2_RELEASE_RECEIPT.json` records 6.51s; the integration matrix records 9.63s for a separately transcribed result. Treat durations as distinct historical observations, not as one run.
 - compileall: PASS in the historical receipt.
 - Hygiene: PASS in the historical receipt.
 - Secret scan: NO_MATCHES in the historical receipt.
