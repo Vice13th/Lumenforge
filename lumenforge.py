@@ -4497,6 +4497,23 @@ class Splash(tk.Toplevel):
             pass
         self.destroy()
 
+TOOLBAR_HEIGHT = 72
+
+
+def _make_toolbar_frame(parent):
+    """Create the fixed-height top toolbar used by the main application."""
+    top = tk.Frame(parent, bg=T["panel"], height=TOOLBAR_HEIGHT)
+    top.pack(fill="x")
+    top.pack_propagate(False)
+    return top
+
+
+def _pack_toolbar_groups(center, right):
+    """Reserve the right-side actions before allocating space to the center."""
+    right.pack(side="right", fill="y", padx=(8, 16))
+    center.pack(side="left", expand=True)
+
+
 class App(tk.Tk):
     _EG = {"negin": (NEGIN, "Dedicated to my beautiful Negin ❤️",
                      T["accent2"]),
@@ -5002,9 +5019,7 @@ class App(tk.Tk):
         self.after(150, lambda: Egg(self, m, a))
 
     def _mku(self):
-        top = tk.Frame(self, bg=T["panel"], height=62)
-        top.pack(fill="x")
-        top.pack_propagate(False)
+        top = _make_toolbar_frame(self)
 
         # LEFT: identity + current workspace state
         logo = tk.Frame(top, bg=T["panel"])
@@ -5020,9 +5035,12 @@ class App(tk.Tk):
                                   bg=T["panel"], fg=T["text_dim"])
         self._mode_lbl.pack(anchor="w", pady=(1, 0))
 
+        # RIGHT: reserve export actions before expanding the center group.
+        rf = tk.Frame(top, bg=T["panel"])
+
         # CENTER: essential workflow only.
         bf = tk.Frame(top, bg=T["panel"])
-        bf.pack(side="left", expand=True)
+        _pack_toolbar_groups(bf, rf)
         self._bo = Btn(bf, "Open", self.oi, w=94, kind="solid",
                        icon="▣", tip="Open an image (Ctrl+O)")
         self._bo.pack(side="left", padx=3, pady=15)
@@ -5069,9 +5087,6 @@ class App(tk.Tk):
 
         # RIGHT: export.  Command Palette remains available from Ctrl+K;
         # its toolbar icon is intentionally hidden to keep this area cleaner.
-        rf = tk.Frame(top, bg=T["panel"])
-        rf.pack(side="right", fill="y", padx=(8, 16))
-
         self._be = Btn(rf, "EXPORT", self.ex, w=132, h=38, fs=10,
                        kind="solid", icon="⇧", tip="Export current image (Ctrl+E)")
         self._be.pack(side="left", pady=11)

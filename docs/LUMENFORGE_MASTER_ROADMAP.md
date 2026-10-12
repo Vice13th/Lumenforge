@@ -92,6 +92,7 @@ See [`docs/VERSION_COMPARISON.md`](VERSION_COMPARISON.md).
 
 - verify native window chrome;
 - preserve the dark visual system;
+- Phase 1 toolbar geometry/packing correction: VERIFIED at 1920px; narrow-window center-action clipping remains OBSERVED; see the 2026-10-12 execution-ledger receipt;
 - keep heavy processing out of interaction-critical paths;
 - maintain predictable viewport, zoom, crop, mask and command interactions.
 
@@ -133,7 +134,8 @@ See [`docs/VERSION_COMPARISON.md`](VERSION_COMPARISON.md).
 | Source publication | VERIFIED | `lumenforge.py` present on `main` |
 | Documentation bootstrap | VERIFIED | `AGENTS.md`, roadmap, ledger present |
 | Dark Windows title bar | OBSERVED | Real Windows runtime/EXE visual confirmation |
-| Current self-test | UNVERIFIED | Fresh test receipt from current source |
+| Current self-test | VERIFIED | Windows source launch: 121 presets; built-in self-test passed in 3.9s; see 2026-10-12 ledger receipt |
+| Phase 1 toolbar geometry | PARTIALLY VERIFIED | Three behavioral Tk tests and 1920x1080 screenshot; Export/Batch remain visible at minimum window size, but center `Split` action text is clipped; exact 1120px app window blocked by existing minimum size |
 | Current packaged EXE | UNVERIFIED | New build + launch verification |
 | Performance baseline | UNVERIFIED | Fresh measured benchmark |
 | New public release | NOT STARTED | Release-specific validation |
