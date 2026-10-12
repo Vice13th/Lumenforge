@@ -6,9 +6,9 @@
   "recovered_source_modified": false,
   "current_source_archive_sha256": "aa25cd65b6fc6e6aac29a7c59f460f167807f700590724b3357c94a6953cd354",
   "historical_monolithic_source": {
-    "archive": "F:\\LumenForge_RELEASE_20261003_2238\\lumen.zip",
+    "archive": "[local path omitted]",
     "archive_sha256": "ce7b95e3eb8909fe1ca30fea6ab6044cecbf87616f6f7cb8a9af72bc2b6b261a",
-    "source_path": "F:\\LumenForge_Phase2_Reconciliation_20261012\\comparison_old_release_source\\source\\lumenforge.py",
+    "source_path": "[local path omitted]",
     "source_size_bytes": 407403,
     "source_sha256": "9dbaaa5fb1ff8bb5c403e5bbb5d0c1474f59195931daf8baedcbf7210a8457ab",
     "source_revision": "UNVERIFIED per release manifest"
@@ -803,7 +803,7 @@
     "attribution": "Static source comparison only. No measured speed attribution or root-cause claim is made. Render-layer/effect caching and export-path timing are distinct; the export path calls staged(), not Eng.render()."
   },
   "historical_measurements": {
-    "render_performance_report": "F:\\LumenForge_RELEASE_20261003_2238\\docs\\RENDER_PERFORMANCE_ROOT_CAUSE_2026-10-01.md",
+    "render_performance_report": "[local path omitted]",
     "reported_unchanged_render_before_effect_cache_s": 0.426,
     "reported_unchanged_render_after_effect_cache_s": 0.0008,
     "reported_exposure_only_after_cache_warm_s": 0.009,

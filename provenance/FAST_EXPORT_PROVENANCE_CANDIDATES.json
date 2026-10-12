@@ -1,580 +1,580 @@
 ﻿[
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\SOURCE_SHA256_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  13251,
         "last_write_utc":  "2026-10-12T16:34:18.0000000Z",
         "sha256":  "add38830af6f4e80074000a69b8bd134bc1af230503f83b0a530c8cb861acadc"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\EVIDENCE_SHA256_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  4942,
         "last_write_utc":  "2026-10-12T16:34:20.0000000Z",
         "sha256":  "58d390b99a2d6f52973cd1a8344a45addd6c6361190d269837c7db336a8361f3"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\REFERENCE_PROVENANCE.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  6353,
         "last_write_utc":  "2026-10-12T16:32:00.0000000Z",
         "sha256":  "5bb06677fda14006303a5f204bae9c473b62f59bd2c58a04d5751463488b30c5"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\SOURCE_STATE_COMPARISON.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  3627,
         "last_write_utc":  "2026-10-12T16:35:04.0000000Z",
         "sha256":  "dadd28c1c525121923e8c2766bb6b242c66cda38f1b8ad59d0df903ea5ee2700"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\BUNDLE_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  31163,
         "last_write_utc":  "2026-10-12T16:35:28.0000000Z",
         "sha256":  "02155581f8f9c37aed5be0cd4d5380837e41f024852801e0201aa3765371309b"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\source\\assets\\lumenforge_logo.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  2874,
         "last_write_utc":  "2026-10-12T13:14:28.0000000Z",
         "sha256":  "05776f1dbfb660bfc6019e92c709caff35c7a9f82e08feb41f43d453766362b8"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\evidence\\LumenForge.exe",
+        "path":  "[local path omitted]",
         "extension":  ".exe",
         "size_bytes":  85701950,
         "last_write_utc":  "2026-10-12T13:56:54.0000000Z",
         "sha256":  "2d6030411631aa1e28e95fcd9f16f95445ed49a0d250c5c4899e139a50ec3336"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\evidence\\lumenforge_smoke_receipt.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  8205,
         "last_write_utc":  "2026-10-12T13:56:16.0000000Z",
         "sha256":  "ac4ad3fa09eadb592082fcbd447d6a55c2c612eba8763534f1c8e353157e05bc"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\evidence\\LumenForge_UI_corrected_preview_1920.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  114853,
         "last_write_utc":  "2026-10-12T12:58:18.0000000Z",
         "sha256":  "17c5bb259501f144d0eea334711488c67fbd1a51232a8ab918ba1167623bef4c"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\evidence\\EXE_LAUNCH_TEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  699,
         "last_write_utc":  "2026-10-12T16:32:50.0000000Z",
         "sha256":  "898bfb1970a5662d1be78f73f18ac804e63f737d9fefc3257f3ea201cae7f794"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\evidence\\historical-phase1\\toolbar-1920x1080.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  83548,
         "last_write_utc":  "2026-10-12T14:23:46.0000000Z",
         "sha256":  "41286b1194fd09d78e5382347696cb180cf060b026130be26a2163b5fdaaf41d"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\evidence\\historical-phase1\\toolbar-minimum-width-1196x760.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  170898,
         "last_write_utc":  "2026-10-12T14:23:50.0000000Z",
         "sha256":  "5b805f0f93bdbd451c693b7487c8538238f6015111448155fa8d7ae680e68d7e"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\evidence\\current-source-tests\\CURRENT_SOURCE_TEST_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1965,
         "last_write_utc":  "2026-10-12T16:33:36.0000000Z",
         "sha256":  "7e9c0f3455c8105c38b14d5462e09a445d4f6c51d6ddebfd03e92c13d6ca49b0"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\reference-inputs\\Lumenbackupui-original.zip",
+        "path":  "[local path omitted]",
         "extension":  ".zip",
         "size_bytes":  551417,
         "last_write_utc":  "2026-10-12T16:05:24.0000000Z",
         "sha256":  "ef396a244f82b0dd697bae2fc772de243c15b097cc84b3cce332e5a3a42a1ec3"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\reference-docs\\repo-hygiene\\verification\\V2_RELEASE_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  3685,
         "last_write_utc":  "2026-10-12T16:28:28.0000000Z",
         "sha256":  "b5b82644c119f3789a1b559141af509eab2785226b531315f66b571f748c1a60"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\reference-docs\\repo-hygiene\\verification\\V2_FRAME_CONTRACT_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1077,
         "last_write_utc":  "2026-10-12T16:28:32.0000000Z",
         "sha256":  "2df7a5292a83ea14a61e7ade1c23fb453e1b3ef4ec154579e9e8a2502c1b4923"
     },
     {
-        "path":  "F:\\LumenForge_Phase2_Reconciliation_20261012\\recovered\\reference-docs\\repo-hygiene\\verification\\RAW_FIXTURE_METADATA_20261005.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1525,
         "last_write_utc":  "2026-10-12T16:28:34.0000000Z",
         "sha256":  "97a17c390472892d192353eaa58f2df9772834af26b4bbce0c6c286ab0915f3d"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\SOURCE_SHA256_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  13251,
         "last_write_utc":  "2026-10-12T16:34:18.0000000Z",
         "sha256":  "add38830af6f4e80074000a69b8bd134bc1af230503f83b0a530c8cb861acadc"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\EVIDENCE_SHA256_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  4942,
         "last_write_utc":  "2026-10-12T16:34:20.0000000Z",
         "sha256":  "58d390b99a2d6f52973cd1a8344a45addd6c6361190d269837c7db336a8361f3"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\REFERENCE_PROVENANCE.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  6353,
         "last_write_utc":  "2026-10-12T16:32:00.0000000Z",
         "sha256":  "5bb06677fda14006303a5f204bae9c473b62f59bd2c58a04d5751463488b30c5"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\SOURCE_STATE_COMPARISON.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  3627,
         "last_write_utc":  "2026-10-12T16:35:04.0000000Z",
         "sha256":  "dadd28c1c525121923e8c2766bb6b242c66cda38f1b8ad59d0df903ea5ee2700"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\BUNDLE_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  31163,
         "last_write_utc":  "2026-10-12T16:35:28.0000000Z",
         "sha256":  "02155581f8f9c37aed5be0cd4d5380837e41f024852801e0201aa3765371309b"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\source\\assets\\lumenforge_logo.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  2874,
         "last_write_utc":  "2026-10-12T13:14:28.0000000Z",
         "sha256":  "05776f1dbfb660bfc6019e92c709caff35c7a9f82e08feb41f43d453766362b8"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\LumenForge.exe",
+        "path":  "[local path omitted]",
         "extension":  ".exe",
         "size_bytes":  85701950,
         "last_write_utc":  "2026-10-12T13:56:54.0000000Z",
         "sha256":  "2d6030411631aa1e28e95fcd9f16f95445ed49a0d250c5c4899e139a50ec3336"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\lumenforge_smoke_receipt.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  8205,
         "last_write_utc":  "2026-10-12T13:56:16.0000000Z",
         "sha256":  "ac4ad3fa09eadb592082fcbd447d6a55c2c612eba8763534f1c8e353157e05bc"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\LumenForge_UI_corrected_preview_1920.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  114853,
         "last_write_utc":  "2026-10-12T12:58:18.0000000Z",
         "sha256":  "17c5bb259501f144d0eea334711488c67fbd1a51232a8ab918ba1167623bef4c"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\EXE_LAUNCH_TEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  699,
         "last_write_utc":  "2026-10-12T16:32:50.0000000Z",
         "sha256":  "898bfb1970a5662d1be78f73f18ac804e63f737d9fefc3257f3ea201cae7f794"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\historical-phase1\\toolbar-1920x1080.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  83548,
         "last_write_utc":  "2026-10-12T14:23:46.0000000Z",
         "sha256":  "41286b1194fd09d78e5382347696cb180cf060b026130be26a2163b5fdaaf41d"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\historical-phase1\\toolbar-minimum-width-1196x760.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  170898,
         "last_write_utc":  "2026-10-12T14:23:50.0000000Z",
         "sha256":  "5b805f0f93bdbd451c693b7487c8538238f6015111448155fa8d7ae680e68d7e"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\current-source-tests\\CURRENT_SOURCE_TEST_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1965,
         "last_write_utc":  "2026-10-12T16:33:36.0000000Z",
         "sha256":  "7e9c0f3455c8105c38b14d5462e09a445d4f6c51d6ddebfd03e92c13d6ca49b0"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\reference-inputs\\Lumenbackupui-original.zip",
+        "path":  "[local path omitted]",
         "extension":  ".zip",
         "size_bytes":  551417,
         "last_write_utc":  "2026-10-12T16:05:24.0000000Z",
         "sha256":  "ef396a244f82b0dd697bae2fc772de243c15b097cc84b3cce332e5a3a42a1ec3"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\reference-docs\\repo-hygiene\\verification\\V2_RELEASE_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  3685,
         "last_write_utc":  "2026-10-12T16:28:28.0000000Z",
         "sha256":  "b5b82644c119f3789a1b559141af509eab2785226b531315f66b571f748c1a60"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\reference-docs\\repo-hygiene\\verification\\V2_FRAME_CONTRACT_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1077,
         "last_write_utc":  "2026-10-12T16:28:32.0000000Z",
         "sha256":  "2df7a5292a83ea14a61e7ade1c23fb453e1b3ef4ec154579e9e8a2502c1b4923"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\reference-docs\\repo-hygiene\\verification\\RAW_FIXTURE_METADATA_20261005.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1525,
         "last_write_utc":  "2026-10-12T16:28:34.0000000Z",
         "sha256":  "97a17c390472892d192353eaa58f2df9772834af26b4bbce0c6c286ab0915f3d"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\FINAL_PACKAGE_STATUS.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1138,
         "last_write_utc":  "2026-10-03T19:07:20.0000000Z",
         "sha256":  "013a83c8d79e20404d083433667f32ff4d5e67dc2d4dd1a91b12991943abc6fb"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\RELEASE_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  18325,
         "last_write_utc":  "2026-10-03T19:08:10.0000000Z",
         "sha256":  "2536d7f739ba4e1db0303419df4920ed80294eb3d7ebd0629692eb49959f053c"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\lumen.zip",
+        "path":  "[local path omitted]",
         "extension":  ".zip",
         "size_bytes":  339638,
         "last_write_utc":  "2026-10-06T14:15:34.0000000Z",
         "sha256":  "ce7b95e3eb8909fe1ca30fea6ab6044cecbf87616f6f7cb8a9af72bc2b6b261a"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\app\\LumenForge.exe",
+        "path":  "[local path omitted]",
         "extension":  ".exe",
         "size_bytes":  134362758,
         "last_write_utc":  "2026-10-03T18:10:02.0000000Z",
         "sha256":  "3ec942113e6270709e7c3100e15e361cadcfebbb43f3578f43fe07a43ce0c936"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\docs\\SANDBOX_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  460,
         "last_write_utc":  "2026-10-03T17:48:06.0000000Z",
         "sha256":  "14da497a2c5b6fd48ab98f4d8440f3a91fc9aeba51e8971a6e3b69f6c0bee6a2"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G2_BENCHMARK_2026-10-03T2200.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1361,
         "last_write_utc":  "2026-10-03T18:00:52.0000000Z",
         "sha256":  "34548a1db4341b3831fd926c7676989474076953cd31d3001303e17a0ca2d1bd"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G3_HSL_NUMERICAL_PARITY_2026-10-03T2218.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  455,
         "last_write_utc":  "2026-10-03T18:03:58.0000000Z",
         "sha256":  "cb078d04eb95743cff71845e887d987d22c0330c641030f72150e5bbd8981a6d"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G4_HSL_GPU_REJECT_2026-10-03T2220.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  574,
         "last_write_utc":  "2026-10-03T18:04:02.0000000Z",
         "sha256":  "aef8cb35a22f5bc35a755344dab63bebeb5e07814d86d690906ced6404bae480"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G4_VIBRANCE_GPU_MEASURED_2026-10-03T2222.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1246,
         "last_write_utc":  "2026-10-03T18:04:10.0000000Z",
         "sha256":  "55d636523d1834099a6059338c1e4f491d9f3fc37785489b6a353f538d9110fb"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G5_MEMORY_SOAK_2026-10-03T2245.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  428,
         "last_write_utc":  "2026-10-03T18:10:44.0000000Z",
         "sha256":  "f984951ad2807c984f69b6607a53aa52421eb6acec6f10005b8e9c853c6a8ef7"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G6_EXPORT_READBACK_2026-10-03T2236.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  604,
         "last_write_utc":  "2026-10-03T18:07:24.0000000Z",
         "sha256":  "8acc395ae1d234b08fa6d0dfcee11386b7b632add854b8cbbe9a5a4ba6dfbaaa"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G6_RAW_E2E_2026-10-03T2235.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  586,
         "last_write_utc":  "2026-10-03T18:07:20.0000000Z",
         "sha256":  "d4c5f22dbae78ef07bd25c36a900d727692ba58d112020b1a7e97c9c0f3a2639"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G7_PACKAGED_UI_SCREENSHOT_2026-10-03T2250.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  535,
         "last_write_utc":  "2026-10-03T18:12:04.0000000Z",
         "sha256":  "a5cf0a773bd674c196a6bda3ebe654c1050033c43957c95d70962c766dd65f23"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G7_PACKAGE_2026-10-03T2247.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  629,
         "last_write_utc":  "2026-10-03T18:10:48.0000000Z",
         "sha256":  "584fa340b786ae7fed04cc7a410bc9b7be39a5d44f1a4533ed72b2c9264561fa"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G8_CLOSURE_SPRINT_2026-10-03.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  2651,
         "last_write_utc":  "2026-10-03T18:29:28.0000000Z",
         "sha256":  "f370510e398ac939f0c01e6e8a61bfd5942a5ca83289c720a3dacc16b87c8640"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\G8_RECOVERY_ATTEMPT_PACKAGED_20261003_221702.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1620,
         "last_write_utc":  "2026-10-03T18:47:02.0000000Z",
         "sha256":  "5fa247f73c1faec83813ee2e6cfc1afd69858b145c2c659ced0a1ec768e71b3f"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\PACKAGING_FREEZE_RECEIPT_20261003_2235.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  2142,
         "last_write_utc":  "2026-10-03T19:03:14.0000000Z",
         "sha256":  "6aa550a3e59d37341d553849b500608eb8b1cc3b61907bc9730c21632760fb0e"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\REGRESSION_2026-10-03T2208.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  349,
         "last_write_utc":  "2026-10-03T18:01:08.0000000Z",
         "sha256":  "3f0b4a3dea0c864769f9abcde9a47ff9741fe848fe9ff402df62f2ff44f4d20e"
     },
     {
-        "path":  "F:\\LumenForge_RELEASE_20261003_2238\\verification\\receipts\\RELEASE_CLOSURE_2026-10-03.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  3696,
         "last_write_utc":  "2026-10-03T18:21:20.0000000Z",
         "sha256":  "2e4924463a5e7d1fee9129a1bf82f67bdacfa87190faa733e1f74549a41b00e5"
     },
     {
-        "path":  "F:\\tempwork\\blackveil-evidence-2026-10-12.zip",
+        "path":  "[local path omitted]",
         "extension":  ".zip",
         "size_bytes":  65011,
         "last_write_utc":  "2026-10-12T01:33:54.0000000Z",
         "sha256":  "701e44d779da95d87784f05476bb9cb1a0e522cc5d7e6e1d6babd6c593f1301d"
     },
     {
-        "path":  "F:\\tempwork\\blackveil-final-pack-r6.zip",
+        "path":  "[local path omitted]",
         "extension":  ".zip",
         "size_bytes":  135520,
         "last_write_utc":  "2026-10-12T01:31:04.0000000Z",
         "sha256":  "cc14f269a32ea26b25f1ac7425a0538f13e7b91c0be95b663365fe2907a09a81"
     },
     {
-        "path":  "F:\\tempwork\\blackveil-final-pack-r7.zip",
+        "path":  "[local path omitted]",
         "extension":  ".zip",
         "size_bytes":  136751,
         "last_write_utc":  "2026-10-12T05:52:22.0000000Z",
         "sha256":  "67a057ad75ed64270eac1aa37542e13db09359b988998342488150c2a239234c"
     },
     {
-        "path":  "F:\\tempwork\\build-pack.zip",
+        "path":  "[local path omitted]",
         "extension":  ".zip",
         "size_bytes":  79908,
         "last_write_utc":  "2026-10-12T06:10:00.0000000Z",
         "sha256":  "0b52cde1b6d90ab3680cfc30d6d2beb6b7fee9a2845b938d1a9c3b2ab3372eed"
     },
     {
-        "path":  "F:\\tempwork\\lumenforge-develop-fixed (2).zip",
+        "path":  "[local path omitted] (2).zip",
         "extension":  ".zip",
         "size_bytes":  139796,
         "last_write_utc":  "2026-10-12T07:15:14.0000000Z",
         "sha256":  "c5ad097aee1854b975dea0a8551689d8ce172a3f58b5f9c50826fd22619f010d"
     },
     {
-        "path":  "F:\\tempwork\\lumenforge_pkg (6).zip",
+        "path":  "[local path omitted] (6).zip",
         "extension":  ".zip",
         "size_bytes":  147135,
         "last_write_utc":  "2026-10-12T11:53:48.0000000Z",
         "sha256":  "aa25cd65b6fc6e6aac29a7c59f460f167807f700590724b3357c94a6953cd354"
     },
     {
-        "path":  "F:\\tempwork\\LumenForge_Standard\\STATE.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  496,
         "last_write_utc":  "2026-10-12T05:08:10.0000000Z",
         "sha256":  "c0d2d86f7e7467897d16f0be37cdc65d3346c0afe33120236a99351cacefd777"
     },
     {
-        "path":  "F:\\tempwork\\LumenForge_Standard\\docs\\archive\\SANDBOX_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  460,
         "last_write_utc":  "2026-10-12T05:08:10.0000000Z",
         "sha256":  "14da497a2c5b6fd48ab98f4d8440f3a91fc9aeba51e8971a6e3b69f6c0bee6a2"
     },
     {
-        "path":  "F:\\tempwork\\LumenForge_Standard\\tests\\golden\\refs.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  4209,
         "last_write_utc":  "2026-10-12T05:08:10.0000000Z",
         "sha256":  "18e4973f1d3eda2544e347c39837c6d0e89c6442a37f04aa7364af82ca9afcc5"
     },
     {
-        "path":  "F:\\tempwork\\blackveil-final-pack-r6\\config.example.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  559,
         "last_write_utc":  "2026-10-08T16:07:02.0000000Z",
         "sha256":  "723463b99af611f7e2db88f365e3447ff69c85db84a769fe694ccb11b05b892f"
     },
     {
-        "path":  "F:\\tempwork\\blackveil-final-pack-r6\\config.schema.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  948,
         "last_write_utc":  "2026-10-08T16:01:34.0000000Z",
         "sha256":  "a7f95fc98c7eb225597feb7ed94e529c323e8404770c7bcad37f61d48f0d6fc0"
     },
     {
-        "path":  "F:\\tempwork\\blackveil-final-pack-r7\\config.example.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  559,
         "last_write_utc":  "2026-10-08T16:07:02.0000000Z",
         "sha256":  "723463b99af611f7e2db88f365e3447ff69c85db84a769fe694ccb11b05b892f"
     },
     {
-        "path":  "F:\\tempwork\\blackveil-final-pack-r7\\config.schema.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  948,
         "last_write_utc":  "2026-10-08T16:01:34.0000000Z",
         "sha256":  "a7f95fc98c7eb225597feb7ed94e529c323e8404770c7bcad37f61d48f0d6fc0"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\SOURCE_SHA256_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  13251,
         "last_write_utc":  "2026-10-12T16:34:18.0000000Z",
         "sha256":  "add38830af6f4e80074000a69b8bd134bc1af230503f83b0a530c8cb861acadc"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\EVIDENCE_SHA256_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  4942,
         "last_write_utc":  "2026-10-12T16:34:20.0000000Z",
         "sha256":  "58d390b99a2d6f52973cd1a8344a45addd6c6361190d269837c7db336a8361f3"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\REFERENCE_PROVENANCE.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  6353,
         "last_write_utc":  "2026-10-12T16:32:00.0000000Z",
         "sha256":  "5bb06677fda14006303a5f204bae9c473b62f59bd2c58a04d5751463488b30c5"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\SOURCE_STATE_COMPARISON.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  3627,
         "last_write_utc":  "2026-10-12T16:35:04.0000000Z",
         "sha256":  "dadd28c1c525121923e8c2766bb6b242c66cda38f1b8ad59d0df903ea5ee2700"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\BUNDLE_MANIFEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  31163,
         "last_write_utc":  "2026-10-12T16:35:28.0000000Z",
         "sha256":  "02155581f8f9c37aed5be0cd4d5380837e41f024852801e0201aa3765371309b"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\source\\assets\\lumenforge_logo.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  2874,
         "last_write_utc":  "2026-10-12T13:14:28.0000000Z",
         "sha256":  "05776f1dbfb660bfc6019e92c709caff35c7a9f82e08feb41f43d453766362b8"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\LumenForge.exe",
+        "path":  "[local path omitted]",
         "extension":  ".exe",
         "size_bytes":  85701950,
         "last_write_utc":  "2026-10-12T13:56:54.0000000Z",
         "sha256":  "2d6030411631aa1e28e95fcd9f16f95445ed49a0d250c5c4899e139a50ec3336"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\lumenforge_smoke_receipt.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  8205,
         "last_write_utc":  "2026-10-12T13:56:16.0000000Z",
         "sha256":  "ac4ad3fa09eadb592082fcbd447d6a55c2c612eba8763534f1c8e353157e05bc"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\LumenForge_UI_corrected_preview_1920.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  114853,
         "last_write_utc":  "2026-10-12T12:58:18.0000000Z",
         "sha256":  "17c5bb259501f144d0eea334711488c67fbd1a51232a8ab918ba1167623bef4c"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\EXE_LAUNCH_TEST.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  699,
         "last_write_utc":  "2026-10-12T16:32:50.0000000Z",
         "sha256":  "898bfb1970a5662d1be78f73f18ac804e63f737d9fefc3257f3ea201cae7f794"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\historical-phase1\\toolbar-1920x1080.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  83548,
         "last_write_utc":  "2026-10-12T14:23:46.0000000Z",
         "sha256":  "41286b1194fd09d78e5382347696cb180cf060b026130be26a2163b5fdaaf41d"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\historical-phase1\\toolbar-minimum-width-1196x760.png",
+        "path":  "[local path omitted]",
         "extension":  ".png",
         "size_bytes":  170898,
         "last_write_utc":  "2026-10-12T14:23:50.0000000Z",
         "sha256":  "5b805f0f93bdbd451c693b7487c8538238f6015111448155fa8d7ae680e68d7e"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\evidence\\current-source-tests\\CURRENT_SOURCE_TEST_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1965,
         "last_write_utc":  "2026-10-12T16:33:36.0000000Z",
         "sha256":  "7e9c0f3455c8105c38b14d5462e09a445d4f6c51d6ddebfd03e92c13d6ca49b0"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\reference-inputs\\Lumenbackupui-original.zip",
+        "path":  "[local path omitted]",
         "extension":  ".zip",
         "size_bytes":  551417,
         "last_write_utc":  "2026-10-12T16:05:24.0000000Z",
         "sha256":  "ef396a244f82b0dd697bae2fc772de243c15b097cc84b3cce332e5a3a42a1ec3"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\reference-docs\\repo-hygiene\\verification\\V2_RELEASE_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  3685,
         "last_write_utc":  "2026-10-12T16:28:28.0000000Z",
         "sha256":  "b5b82644c119f3789a1b559141af509eab2785226b531315f66b571f748c1a60"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\reference-docs\\repo-hygiene\\verification\\V2_FRAME_CONTRACT_RECEIPT.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1077,
         "last_write_utc":  "2026-10-12T16:28:32.0000000Z",
         "sha256":  "2df7a5292a83ea14a61e7ade1c23fb453e1b3ef4ec154579e9e8a2502c1b4923"
     },
     {
-        "path":  "F:\\LumenForge_Latest_UI_Recovery_20261012T162600Z\\reference-docs\\repo-hygiene\\verification\\RAW_FIXTURE_METADATA_20261005.json",
+        "path":  "[local path omitted]",
         "extension":  ".json",
         "size_bytes":  1525,
         "last_write_utc":  "2026-10-12T16:28:34.0000000Z",

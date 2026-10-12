@@ -1,7 +1,7 @@
 # Git Recovery Decision — LumenForge UI
 
 ## Local workspace evidence
-- Inspected workspace: `F:\bc`.
+- Inspected workspace: `[local path omitted]`.
 - No `.git` directory exists at the workspace root.
 - Therefore there is no recoverable local branch name, HEAD, upstream, commit graph, staged diff, unstaged diff, or objective way to label current source edits as Git-uncommitted.
 - The source workspace and its adjacent archive are byte-identical for the non-cache payload. This supports packaging from the current workspace content, but does not prove Git provenance.

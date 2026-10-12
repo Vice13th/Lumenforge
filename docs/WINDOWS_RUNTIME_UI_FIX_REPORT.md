@@ -2,7 +2,7 @@
 Date: 2026-10-12
 
 ## Target
-`C:\Users\Amirs\Downloads\LumenForge_v12_Toolbar_Scroll_Fix`
+`[local workstation path omitted]`
 
 ## Root causes fixed
 1. Toolbar shell height was 56px while toolbar children required about 66px with vertical padding. The shell is now 72px; a fresh full-desktop capture shows controls are no longer clipped vertically.

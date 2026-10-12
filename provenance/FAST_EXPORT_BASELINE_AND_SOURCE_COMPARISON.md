@@ -5,8 +5,8 @@
 ## Protected artifacts
 - Recovery ZIP SHA-256 reverified: 3e17193f2cc74077b411038b5b7e557bce1aa823ddb6a616334e02436c8629a4.
 - Current recovered source archive SHA-256: aa25cd65b6fc6e6aac29a7c59f460f167807f700590724b3357c94a6953cd354.
-- Current candidate modular executable: F:\LumenForge_Phase2_Reconciliation_20261012\recovered\evidence\LumenForge.exe, 85,701,950 bytes, SHA-256 2d6030411631aa1e28e95fcd9f16f95445ed49a0d250c5c4899e139a50ec3336. Its preserved launch receipt says alive after 8s but no main-window handle/title; visual verification was not performed.
-- Older release candidate executable: F:\LumenForge_RELEASE_20261003_2238\app\LumenForge.exe, 134,362,758 bytes, SHA-256 3ec942113e6270709e7c3100e15e361cadcfebbb43f3578f43fe07a43ce0c936. Release manifest says source_revision: UNVERIFIED.
+- Current candidate modular executable: [local executable path omitted], 85,701,950 bytes, SHA-256 2d6030411631aa1e28e95fcd9f16f95445ed49a0d250c5c4899e139a50ec3336. Its preserved launch receipt says alive after 8s but no main-window handle/title; visual verification was not performed.
+- Older release candidate executable: [local executable path omitted], 134,362,758 bytes, SHA-256 3ec942113e6270709e7c3100e15e361cadcfebbb43f3578f43fe07a43ce0c936. Release manifest says source_revision: UNVERIFIED.
 - Neither candidate is proven to be the exact build currently tested by the user.
 
 ## Critical recovered-source hashes
@@ -28,7 +28,7 @@
 | tests/test_packaging_contract.py | 07586a9fb9dde0616c6523e3d4ec5a418c8e0c121e5cf42efaf02773d0dd65ee |
 
 ## Historical source found
-- Archive: F:\LumenForge_RELEASE_20261003_2238\lumen.zip.
+- Archive: [local archive path omitted].
 - Archive SHA-256: ce7b95e3eb8909fe1ca30fea6ab6044cecbf87616f6f7cb8a9af72bc2b6b261a.
 - Extracted older monolithic source: comparison_old_release_source\source\lumenforge.py.
 - Source SHA-256: 9dbaaa5fb1ff8bb5c403e5bbb5d0c1474f59195931daf8baedcbf7210a8457ab.

@@ -3,7 +3,7 @@
     "status":  "COMPLETE",
     "created_at_utc":  "2026-10-12T16:35:26.6271853Z",
     "recovery_id":  "20261012T162600Z",
-    "source_workspace":  "F:\\bc",
+    "source_workspace":  "[local path omitted]",
     "source_copy":  "source/",
     "source_file_count":  55,
     "source_manifest_sha256":  "add38830af6f4e80074000a69b8bd134bc1af230503f83b0a530c8cb861acadc",
@@ -15,7 +15,7 @@
                                 },
     "previous_enriched_handoff":  {
                                       "reused_as_source":  false,
-                                      "path":  "C:\\Users\\Amirs\\Downloads\\LumenForge_UI_Handoff_Enriched_20261012T161551Z.zip",
+                                      "path":  "[local path omitted]",
                                       "sha256":  "1d28986fa5ffc6a7886d4cc1018685809e9df8468a788784cc86d0d5ffb054d0",
                                       "historical_status":  "INCOMPLETE",
                                       "size_bytes":  558512

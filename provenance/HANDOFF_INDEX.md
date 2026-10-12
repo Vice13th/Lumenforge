@@ -3,12 +3,12 @@
 **Package status: COMPLETE** for source preservation, reference retrieval, and source/archive validation. **EXE visual qualification remains INCONCLUSIVE.**
 
 ## Canonical state
-- Live workspace inspected: F:\bc
-- Recovery snapshot: F:\LumenForge_Latest_UI_Recovery_20261012T162600Z\source
-- Original source archive: F:\bc\Lumenbackupui.zip
+- Live workspace inspected: [local path omitted]
+- Recovery snapshot: [local recovery source path omitted]
+- Original source archive: [local path omitted]
 - Original archive SHA-256: ef396a244f82b0dd697bae2fc772de243c15b097cc84b3cce332e5a3a42a1ec3
 - 55 source files copied from live workspace; 55/55 SHA-256 matches.
-- The source archive and live workspace match on all non-cache payload files (66 identical entries; 35 differences all *.pyc cache files; no missing files and no non-cache source differences). The recovery copy was still copied directly from F:\bc.
+- The source archive and live workspace match on all non-cache payload files (66 identical entries; 35 differences all *.pyc cache files; no missing files and no non-cache source differences). The recovery copy was still copied directly from [local path omitted]
 - No .git directory exists in the live workspace, so local branch/HEAD/remotes/staged or unstaged diff cannot be determined.
 
 ## Key artifacts
@@ -32,6 +32,6 @@
 - No Git push, merge, release or other remote write was performed.
 
 ## Final paths
-- Full recovery directory: F:\LumenForge_Latest_UI_Recovery_20261012T162600Z
-- ZIP: F:\LumenForge_Latest_UI_Recovery_20261012T162600Z.zip
-- Copy in Downloads: C:\Users\Amirs\Downloads\LumenForge_Latest_UI_Recovery_20261012T162600Z.zip
+- Full recovery directory: [local recovery directory omitted]
+- ZIP: [local recovery archive path omitted]
+- Copy in Downloads: [local Downloads path omitted]

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "inspected_at_utc": "2026-10-12T16:33:00Z",
-  "live_workspace": "F:\\bc",
+  "live_workspace": "[local path omitted]",
   "live_workspace_git_metadata": {
     "git_directory_found": false,
     "branch": null,
@@ -10,7 +10,7 @@
     "working_tree_status": "UNAVAILABLE_NO_GIT_DIRECTORY"
   },
   "current_source_archive": {
-    "path": "F:\\bc\\Lumenbackupui.zip",
+    "path": "[local path omitted]",
     "size_bytes": 551417,
     "sha256": "ef396a244f82b0dd697bae2fc772de243c15b097cc84b3cce332e5a3a42a1ec3",
     "zip_file_entries": 101
@@ -46,7 +46,7 @@
     ]
   },
   "previous_enriched_handoff": {
-    "path": "C:\\Users\\Amirs\\Downloads\\LumenForge_UI_Handoff_Enriched_20261012T161551Z.zip",
+    "path": "[local path omitted]",
     "size_bytes": 558512,
     "sha256": "1d28986fa5ffc6a7886d4cc1018685809e9df8468a788784cc86d0d5ffb054d0",
     "entries": 107,
