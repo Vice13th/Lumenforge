@@ -1,0 +1,55 @@
+name: LumenForge CI
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  source-smoke:
+    name: Source smoke (${{ matrix.os }}, Python ${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - name: Install runtime dependencies
+        run: python -m pip install --upgrade pip numpy Pillow
+      - name: Verify package inventory
+        run: python tools/verify_package.py
+      - name: Run source smoke and regression suite
+        run: python tools/ci_smoke.py
+
+  windows-portable-build:
+    name: Windows PyInstaller build
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install build dependencies
+        run: python -m pip install --upgrade pip numpy Pillow pyinstaller
+      - name: Build Windows GUI executable
+        run: python -m PyInstaller --noconfirm --clean lumenforge.spec
+      - name: Verify executable exists and is non-empty
+        shell: pwsh
+        run: |
+          $exe = Resolve-Path "dist/LumenForge.exe"
+          if ((Get-Item $exe).Length -lt 100000) { throw "LumenForge.exe is unexpectedly small" }
+          Get-FileHash $exe -Algorithm SHA256 | Format-List
+      - name: Preserve build artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: lumenforge-windows-pyinstaller
+          path: dist/LumenForge.exe
+          if-no-files-found: error

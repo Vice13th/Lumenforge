@@ -1,0 +1,128 @@
+﻿[
+    {
+        "path":  "lumenforge/engine.py",
+        "size_bytes":  162247,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "a3f4a6602e19c3f1ee9cd82527317f73a91f60924b4fa8aabb44a59db8c63891",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/export.py",
+        "size_bytes":  13936,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "a2ab477757ac165eb1385bf512647bc2a2a86018ec84ac82abde54b93c5e1c96",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/rendering.py",
+        "size_bytes":  4946,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "cfcf69052ea88fd0c07fc688ddec83e7269276b99564ac617d6835dd4dea5848",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/app.py",
+        "size_bytes":  48023,
+        "last_write_utc":  "2026-10-12T13:53:42.0000000Z",
+        "sha256":  "e9145d73be5defb02cc058f5a4d20c5905fde7c2f53d6ec0ba2ae41acc7adbf0",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/params.py",
+        "size_bytes":  17289,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "e953030298ef5e8dbbd09c7106a47b1f8bb3da800fcdb91077abd888d6a6a834",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/project.py",
+        "size_bytes":  7181,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "7d940e7f8a0a6dbd76c111c81674d14f12b164a6348fc1c8860544ff7d17389e",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/undo.py",
+        "size_bytes":  5095,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "10951db9569c5018c59a3140f4a265d84b07eb7953ca57998c4be209571cc477",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/config.py",
+        "size_bytes":  869,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "c542455eb6e31328758a3a53fb204e7fe31bf39aad85933bed321e7e3d008480",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/deps.py",
+        "size_bytes":  366,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "06725d3535acfa0e75ecb61b4ecd596eae91f4ce08d31edceb5e2dda69498ae8",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge/selftest.py",
+        "size_bytes":  24465,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "c5e4cfbd7a7b3113a2c47d780d02603b25dd3bab2bff7085587487b082a020b5",
+        "exists":  true
+    },
+    {
+        "path":  "tools/ci_smoke.py",
+        "size_bytes":  5818,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "c350e711ed3018630eec7f59ab7c69d18ffb74d6047554b880699e3b3b52b9ab",
+        "exists":  true
+    },
+    {
+        "path":  "tools/verify_package.py",
+        "size_bytes":  6548,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "f63a4ec35dfaf59f860402c7ffdba31f147dc12453bae2379db5a0d82c393530",
+        "exists":  true
+    },
+    {
+        "path":  "tests/test_engine.py",
+        "size_bytes":  6584,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "36bd73e146eb9e28936af8016c953bf4d65830a8cc07bc9f4a428c8e88389dda",
+        "exists":  true
+    },
+    {
+        "path":  "tests/test_packaging_contract.py",
+        "size_bytes":  2185,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "07586a9fb9dde0616c6523e3d4ec5a418c8e0c121e5cf42efaf02773d0dd65ee",
+        "exists":  true
+    },
+    {
+        "path":  "pyproject.toml",
+        "size_bytes":  634,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "35d627c3470e4236a37cc48f47388f06c35dd1031b65d10b8b2cf0fc6d7e5a45",
+        "exists":  true
+    },
+    {
+        "path":  "run_lumenforge.py",
+        "size_bytes":  117,
+        "last_write_utc":  "2026-10-12T13:06:00.0000000Z",
+        "sha256":  "ad8dfc2a952618961d2f4b10a8910ead866985077bd58b91523b082ed27a8457",
+        "exists":  true
+    },
+    {
+        "path":  "lumenforge.spec",
+        "size_bytes":  1515,
+        "last_write_utc":  "2026-10-12T13:32:16.0000000Z",
+        "sha256":  "39e141afb9bb05deabe7d75545cb961c8875fcbc48c523fc97a5c1f9e3fc977f",
+        "exists":  true
+    },
+    {
+        "path":  "SHA256SUMS.txt",
+        "size_bytes":  4801,
+        "last_write_utc":  "2026-10-12T13:57:48.0000000Z",
+        "sha256":  "bc602266cf6ef434824c07f81bdcb257cfdaa49ac8440431bfa810eb4d55ec8a",
+        "exists":  true
+    }
+]

@@ -1,0 +1,580 @@
+﻿{
+    "schema_version":  1,
+    "status":  "COMPLETE",
+    "created_at_utc":  "2026-10-12T16:35:26.6271853Z",
+    "recovery_id":  "20261012T162600Z",
+    "source_workspace":  "F:\\bc",
+    "source_copy":  "source/",
+    "source_file_count":  55,
+    "source_manifest_sha256":  "add38830af6f4e80074000a69b8bd134bc1af230503f83b0a530c8cb861acadc",
+    "evidence_manifest_sha256":  "58d390b99a2d6f52973cd1a8344a45addd6c6361190d269837c7db336a8361f3",
+    "original_source_archive":  {
+                                    "path":  "reference-inputs/Lumenbackupui-original.zip",
+                                    "sha256":  "ef396a244f82b0dd697bae2fc772de243c15b097cc84b3cce332e5a3a42a1ec3",
+                                    "size_bytes":  551417
+                                },
+    "previous_enriched_handoff":  {
+                                      "reused_as_source":  false,
+                                      "path":  "C:\\Users\\Amirs\\Downloads\\LumenForge_UI_Handoff_Enriched_20261012T161551Z.zip",
+                                      "sha256":  "1d28986fa5ffc6a7886d4cc1018685809e9df8468a788784cc86d0d5ffb054d0",
+                                      "historical_status":  "INCOMPLETE",
+                                      "size_bytes":  558512
+                                  },
+    "imported_reference_documents":  14,
+    "imported_reference_blob_verification":  "14/14 PASS",
+    "reference_json_validation":  "3/3 PASS",
+    "source_tests":  {
+                         "gates":  [
+                                       {
+                                           "name":  "package-integrity",
+                                           "command":  "python tools/verify_package.py --root \u003crecovery source\u003e",
+                                           "exit_code":  0,
+                                           "result":  "OK: exact package inventory verified (54 files)"
+                                       },
+                                       {
+                                           "name":  "syntax-compile",
+                                           "command":  "python -m compileall -q lumenforge tests tools",
+                                           "exit_code":  0,
+                                           "result":  "PASS"
+                                       },
+                                       {
+                                           "name":  "unit-tests",
+                                           "command":  "python -m unittest discover tests -q",
+                                           "exit_code":  0,
+                                           "result":  "40 tests passed"
+                                       },
+                                       {
+                                           "name":  "built-in-selftest",
+                                           "command":  "fresh supplemental_smoke.py helper: self_tests()",
+                                           "exit_code":  0,
+                                           "result":  "0 failures"
+                                       },
+                                       {
+                                           "name":  "deterministic-render",
+                                           "command":  "fresh supplemental_smoke.py helper",
+                                           "exit_code":  0,
+                                           "result":  {
+                                                          "shape":  [
+                                                                        32,
+                                                                        48,
+                                                                        3
+                                                                    ],
+                                                          "dtype":  "float32",
+                                                          "min":  0,
+                                                          "max":  0.9587550163269043,
+                                                          "render_sha256":  "5d879627c2f4df490d8d677524241cbaad3f288b508462c38edc16ccb6701302"
+                                                      }
+                                       }
+                                   ],
+                         "status":  "PASS"
+                     },
+    "exe_launch":  {
+                       "visual_verification":  "NOT_PERFORMED",
+                       "status":  "LAUNCHED_ALIVE_8S_CLOSE_DID_NOT_EXIT_TEST_PROCESS_TERMINATED",
+                       "qualification":  "INCONCLUSIVE; process alive after 8s but no main-window handle/title"
+                   },
+    "git_state":  {
+                      "branch":  null,
+                      "status":  "UNAVAILABLE_NO_GIT_DIRECTORY",
+                      "remote_writes_performed":  false,
+                      "head":  null,
+                      "local_git_directory_found":  false
+                  },
+    "exclusions":  [
+                       "source/**/__pycache__/**",
+                       "source/**/*.pyc",
+                       "source/**/*.pyo",
+                       "source/**/.pytest_cache/**",
+                       "source/build/**",
+                       "source/dist/**"
+                   ],
+    "excluded_build_evidence":  [
+                                    "Live workspace dist/LumenForge.exe was preserved at evidence/LumenForge.exe",
+                                    "Live workspace build/smoke-receipt/lumenforge_smoke_receipt.json was preserved at evidence/lumenforge_smoke_receipt.json",
+                                    "Build intermediates were excluded from source/ and are not represented as source."
+                                ],
+    "self_hash_policy":  "BUNDLE_MANIFEST.json does not list or hash itself; the adjacent archive.manifest.json hashes the final ZIP.",
+    "included_file_count":  96,
+    "files":  [
+                  {
+                      "path":  "evidence/current-source-tests/built-in-selftest.stderr.txt",
+                      "size_bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/built-in-selftest.stdout.txt",
+                      "size_bytes":  31,
+                      "sha256":  "f8adeb84790410cc0f50651e2398d212d306dd1ac1b9f0f562007a31bf0282e2"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/CURRENT_SOURCE_TEST_RECEIPT.json",
+                      "size_bytes":  1965,
+                      "sha256":  "7e9c0f3455c8105c38b14d5462e09a445d4f6c51d6ddebfd03e92c13d6ca49b0"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/deterministic-render.stderr.txt",
+                      "size_bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/deterministic-render.stdout.txt",
+                      "size_bytes":  156,
+                      "sha256":  "a8e963902c333e5c1d9896527239b152db6780fecc99b066ce867e60658d4ecc"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/package-integrity.stderr.txt",
+                      "size_bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/package-integrity.stdout.txt",
+                      "size_bytes":  48,
+                      "sha256":  "23c5ca7f0bc984917cb591949d06d4cfda954719a5f7d493247034b14efab1cf"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/supplemental_smoke.py",
+                      "size_bytes":  1089,
+                      "sha256":  "ab910cc8040c63ac87e950a07ad93a54dc94ee5b61287742d7f7d74fe3f2e6af"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/syntax-compile.stderr.txt",
+                      "size_bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/syntax-compile.stdout.txt",
+                      "size_bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/unit-tests.stderr.txt",
+                      "size_bytes":  2458,
+                      "sha256":  "2b723738705f5a5d3c0ff692950580e179966c713fdb6d0e52cd1c3cfd9830ac"
+                  },
+                  {
+                      "path":  "evidence/current-source-tests/unit-tests.stdout.txt",
+                      "size_bytes":  0,
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "evidence/EXE_LAUNCH_TEST.json",
+                      "size_bytes":  699,
+                      "sha256":  "898bfb1970a5662d1be78f73f18ac804e63f737d9fefc3257f3ea201cae7f794"
+                  },
+                  {
+                      "path":  "evidence/historical-phase1/toolbar-1920x1080.png",
+                      "size_bytes":  83548,
+                      "sha256":  "41286b1194fd09d78e5382347696cb180cf060b026130be26a2163b5fdaaf41d"
+                  },
+                  {
+                      "path":  "evidence/historical-phase1/toolbar-minimum-width-1196x760.png",
+                      "size_bytes":  170898,
+                      "sha256":  "5b805f0f93bdbd451c693b7487c8538238f6015111448155fa8d7ae680e68d7e"
+                  },
+                  {
+                      "path":  "evidence/LumenForge.exe",
+                      "size_bytes":  85701950,
+                      "sha256":  "2d6030411631aa1e28e95fcd9f16f95445ed49a0d250c5c4899e139a50ec3336"
+                  },
+                  {
+                      "path":  "evidence/lumenforge_smoke_receipt.json",
+                      "size_bytes":  8205,
+                      "sha256":  "ac4ad3fa09eadb592082fcbd447d6a55c2c612eba8763534f1c8e353157e05bc"
+                  },
+                  {
+                      "path":  "evidence/LumenForge_UI_corrected_preview_1920.png",
+                      "size_bytes":  114853,
+                      "sha256":  "17c5bb259501f144d0eea334711488c67fbd1a51232a8ab918ba1167623bef4c"
+                  },
+                  {
+                      "path":  "evidence/SCREENSHOT_PROVENANCE.md",
+                      "size_bytes":  599,
+                      "sha256":  "d7a15843626bc8a4b8e84d694f4f63c71462e0c3e4207e42cbdff913fc77f433"
+                  },
+                  {
+                      "path":  "EVIDENCE_SHA256_MANIFEST.json",
+                      "size_bytes":  4942,
+                      "sha256":  "58d390b99a2d6f52973cd1a8344a45addd6c6361190d269837c7db336a8361f3"
+                  },
+                  {
+                      "path":  "GIT_RECOVERY_DECISION.md",
+                      "size_bytes":  2792,
+                      "sha256":  "988a37433ded66ef69266ce10c85f9139345d041b2392e51f9acb57c159074ba"
+                  },
+                  {
+                      "path":  "HANDOFF_INDEX.md",
+                      "size_bytes":  2742,
+                      "sha256":  "36ddec5d9ba78f7b34149777e60ec41b98524dd10267d026c228e1d908079e69"
+                  },
+                  {
+                      "path":  "RECOVERY_STATE_REPORT.md",
+                      "size_bytes":  3434,
+                      "sha256":  "a827def78fb1470826b8e9abb1a9ff4a7d4b16f567e991b966589ca3c1a85fd8"
+                  },
+                  {
+                      "path":  "REFERENCE_PROVENANCE.json",
+                      "size_bytes":  6353,
+                      "sha256":  "5bb06677fda14006303a5f204bae9c473b62f59bd2c58a04d5751463488b30c5"
+                  },
+                  {
+                      "path":  "reference-docs/cuda-handoff/verification/CUDA_LUT_HARDENING_HANDOFF_2026-10-12.md",
+                      "size_bytes":  2532,
+                      "sha256":  "3bd8b28ec0e0650b8cab9544e8c228391c33182688b2546533d54d17fc7d3894"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/docs/ARCHITECTURE.md",
+                      "size_bytes":  10867,
+                      "sha256":  "b7f1ffe2d8a5d2bcac6d540a3d4cc2b331c73c72aaf5807f8dd3d57fd3f89140"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/docs/DEPENDENCY_MATRIX.md",
+                      "size_bytes":  3132,
+                      "sha256":  "e0b6e2502b99b45e28bd5119f2cea6859b962c093e702c72f4f73d17a61ba61f"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/docs/README.md",
+                      "size_bytes":  4502,
+                      "sha256":  "2eec106f7c462dfcf7775519bddc9779fd48fb5f0e4773b346d0e8ccb692c8d5"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/docs/RELEASE_MANIFEST.md",
+                      "size_bytes":  1274,
+                      "sha256":  "9693c271f1c211027bcd36571d1ddf07727bdb45b126be6f2b01c9250b06c6ca"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/docs/V2_ARCHITECTURE_REVIEW_2026-10-12.md",
+                      "size_bytes":  10448,
+                      "sha256":  "755cc4380e985268445fb7aa12fb1ed5ca06ff0bafe238a80d1cc0ec17b479fd"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/README.md",
+                      "size_bytes":  2268,
+                      "sha256":  "3d2535d339a0c8e9e0918ff4954aa597859421e637100a9f2b3bd7ec78839dae"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/RELEASE_MANIFEST_20261004.txt",
+                      "size_bytes":  2047,
+                      "sha256":  "79a10ead7e8642700398eedf1156207aead9dc77a7dbebf610b15cb05961db35"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/verification/ARTIFACT_HYGIENE_REPORT_20261005.md",
+                      "size_bytes":  3935,
+                      "sha256":  "d876e5098f82d2f1ae757dc495e70f29ef114b550a1853bbbe735f8cbc877c3e"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/verification/RAW_FIXTURE_METADATA_20261005.json",
+                      "size_bytes":  1525,
+                      "sha256":  "97a17c390472892d192353eaa58f2df9772834af26b4bbce0c6c286ab0915f3d"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/verification/V2_FINAL_STATE.md",
+                      "size_bytes":  3944,
+                      "sha256":  "db7ee1f424974a6b1cde8bc33af6009b1a80325ce614d4d44226adcefa20ef01"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/verification/V2_FRAME_CONTRACT_RECEIPT.json",
+                      "size_bytes":  1077,
+                      "sha256":  "2df7a5292a83ea14a61e7ade1c23fb453e1b3ef4ec154579e9e8a2502c1b4923"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/verification/V2_INTEGRATION_MATRIX.md",
+                      "size_bytes":  5726,
+                      "sha256":  "ce271c4357514be4086ba849cde164f6d0496f58d1f3468491d7344978180d0a"
+                  },
+                  {
+                      "path":  "reference-docs/repo-hygiene/verification/V2_RELEASE_RECEIPT.json",
+                      "size_bytes":  3685,
+                      "sha256":  "b5b82644c119f3789a1b559141af509eab2785226b531315f66b571f748c1a60"
+                  },
+                  {
+                      "path":  "reference-inputs/Lumenbackupui-original.zip",
+                      "size_bytes":  551417,
+                      "sha256":  "ef396a244f82b0dd697bae2fc772de243c15b097cc84b3cce332e5a3a42a1ec3"
+                  },
+                  {
+                      "path":  "source/.github/workflows/ci.yml",
+                      "size_bytes":  2045,
+                      "sha256":  "5b25f5586458141b625cec04c1ba0b465875a8081cb33203a7b5983205f43534"
+                  },
+                  {
+                      "path":  "source/assets/lumenforge.ico",
+                      "size_bytes":  13202,
+                      "sha256":  "37a984370d1183575f860d80cf03e2b65fb6ca831db6c01bd6a07aa951d00892"
+                  },
+                  {
+                      "path":  "source/assets/lumenforge_logo.png",
+                      "size_bytes":  2874,
+                      "sha256":  "05776f1dbfb660bfc6019e92c709caff35c7a9f82e08feb41f43d453766362b8"
+                  },
+                  {
+                      "path":  "source/docs/FINAL_PHASE_UPDATE_REPORT.md",
+                      "size_bytes":  6102,
+                      "sha256":  "3119fdcbcebf1c3742da4b61df9f68d7d7138c9996fe1597d505ef2be0b0360c"
+                  },
+                  {
+                      "path":  "source/docs/UI_CORRECTIVE_PASS_REPORT.md",
+                      "size_bytes":  2960,
+                      "sha256":  "6973cd7600e7ee3f258c48fbeff53b2ef56f3663c0d99033020826bcb83a8a16"
+                  },
+                  {
+                      "path":  "source/docs/UI_TOOLBAR_SCROLL_CORRECTIVE_PASS.md",
+                      "size_bytes":  1033,
+                      "sha256":  "e2a18dcc7a48abc1170cf6cf300d180e4cef89afe2b308417ec88c4f49e3b173"
+                  },
+                  {
+                      "path":  "source/docs/WINDOWS_RUNTIME_UI_FIX_REPORT.md",
+                      "size_bytes":  2327,
+                      "sha256":  "799d92d3e9f45338735cf9e5d9ca36b8334d50c609b3d13efbc26ba418859e75"
+                  },
+                  {
+                      "path":  "source/lumenforge.spec",
+                      "size_bytes":  1515,
+                      "sha256":  "39e141afb9bb05deabe7d75545cb961c8875fcbc48c523fc97a5c1f9e3fc977f"
+                  },
+                  {
+                      "path":  "source/lumenforge/__init__.py",
+                      "size_bytes":  31,
+                      "sha256":  "d3d62ce81bfcb10ba9c00a3964a2c72e28ec0cbda8ad4b1d364b69e03176a7f4"
+                  },
+                  {
+                      "path":  "source/lumenforge/__main__.py",
+                      "size_bytes":  61,
+                      "sha256":  "f3beb1653aa13de0c10f618a2abf29297df701ff0f8454e8b0023c6d842c1604"
+                  },
+                  {
+                      "path":  "source/lumenforge/app.py",
+                      "size_bytes":  48023,
+                      "sha256":  "e9145d73be5defb02cc058f5a4d20c5905fde7c2f53d6ec0ba2ae41acc7adbf0"
+                  },
+                  {
+                      "path":  "source/lumenforge/autotone.py",
+                      "size_bytes":  1016,
+                      "sha256":  "fe8b6ee580abf52bc8b8bf15f9f1cda0af888ef9c0d95a15cf993d68828daf62"
+                  },
+                  {
+                      "path":  "source/lumenforge/camera.py",
+                      "size_bytes":  7480,
+                      "sha256":  "089d10137653d04eccbb8b95e2ec1b179a866d90dd1999d61a8a018c576d0d4c"
+                  },
+                  {
+                      "path":  "source/lumenforge/clipview.py",
+                      "size_bytes":  774,
+                      "sha256":  "f92634a403cbe977395be5e07bc0ad8f6cdbd926a50222851f7961cc090ddd1e"
+                  },
+                  {
+                      "path":  "source/lumenforge/compare.py",
+                      "size_bytes":  1895,
+                      "sha256":  "3651451b9c5c678017114a3e28d078b2c716964dca2b03b857b008b3809cb4c4"
+                  },
+                  {
+                      "path":  "source/lumenforge/config.py",
+                      "size_bytes":  869,
+                      "sha256":  "c542455eb6e31328758a3a53fb204e7fe31bf39aad85933bed321e7e3d008480"
+                  },
+                  {
+                      "path":  "source/lumenforge/crop.py",
+                      "size_bytes":  4223,
+                      "sha256":  "2cf655c95e043fb234dfaf0be1c01035421e8099e9096503cd22cf60c6030e09"
+                  },
+                  {
+                      "path":  "source/lumenforge/deps.py",
+                      "size_bytes":  366,
+                      "sha256":  "06725d3535acfa0e75ecb61b4ecd596eae91f4ce08d31edceb5e2dda69498ae8"
+                  },
+                  {
+                      "path":  "source/lumenforge/dialogs.py",
+                      "size_bytes":  7087,
+                      "sha256":  "ed3f6de2c65d408906fb70bc06edf978d935dc880f1b27e36ce232478a64124f"
+                  },
+                  {
+                      "path":  "source/lumenforge/editors.py",
+                      "size_bytes":  12554,
+                      "sha256":  "39786aa5a29fbc7ad0b56f353cd9117c7b811b335bdd6c197e6c32351dbed625"
+                  },
+                  {
+                      "path":  "source/lumenforge/engine.py",
+                      "size_bytes":  162247,
+                      "sha256":  "a3f4a6602e19c3f1ee9cd82527317f73a91f60924b4fa8aabb44a59db8c63891"
+                  },
+                  {
+                      "path":  "source/lumenforge/export.py",
+                      "size_bytes":  13936,
+                      "sha256":  "a2ab477757ac165eb1385bf512647bc2a2a86018ec84ac82abde54b93c5e1c96"
+                  },
+                  {
+                      "path":  "source/lumenforge/feedback.py",
+                      "size_bytes":  4737,
+                      "sha256":  "0fef2aac47b78df6bf3db9672517ed963cd1e01c9917dd7d69d17ca6d18d2497"
+                  },
+                  {
+                      "path":  "source/lumenforge/heal.py",
+                      "size_bytes":  1556,
+                      "sha256":  "70d6ca0af067f0776c7404c2cf3b6db90c8083e3c251c5da4c460a53bd1d03b4"
+                  },
+                  {
+                      "path":  "source/lumenforge/huepick.py",
+                      "size_bytes":  1416,
+                      "sha256":  "797d9c58e6e1ea161d5402c52a655dddc6474d264c9c23f02836089d20282875"
+                  },
+                  {
+                      "path":  "source/lumenforge/layout.py",
+                      "size_bytes":  10875,
+                      "sha256":  "ecb4950707d9ee2a78e69cf7c6911896335d01f1c628251e61c9a41f5853cb78"
+                  },
+                  {
+                      "path":  "source/lumenforge/params.py",
+                      "size_bytes":  17289,
+                      "sha256":  "e953030298ef5e8dbbd09c7106a47b1f8bb3da800fcdb91077abd888d6a6a834"
+                  },
+                  {
+                      "path":  "source/lumenforge/presets.py",
+                      "size_bytes":  9293,
+                      "sha256":  "da8316c223835f1bcfae4fd413ec79c08158dbdd0d2275db8231dbef996415da"
+                  },
+                  {
+                      "path":  "source/lumenforge/presets_modern.py",
+                      "size_bytes":  8889,
+                      "sha256":  "42cbe29c58b933d809674f892138dce6ba510880f267125174b99218509c6fc8"
+                  },
+                  {
+                      "path":  "source/lumenforge/project.py",
+                      "size_bytes":  7181,
+                      "sha256":  "7d940e7f8a0a6dbd76c111c81674d14f12b164a6348fc1c8860544ff7d17389e"
+                  },
+                  {
+                      "path":  "source/lumenforge/rendering.py",
+                      "size_bytes":  4946,
+                      "sha256":  "cfcf69052ea88fd0c07fc688ddec83e7269276b99564ac617d6835dd4dea5848"
+                  },
+                  {
+                      "path":  "source/lumenforge/sections.py",
+                      "size_bytes":  4022,
+                      "sha256":  "1e0ab527ada461fabdc59413eae2020c87a8a832a9237a238d6c7398813f815a"
+                  },
+                  {
+                      "path":  "source/lumenforge/selftest.py",
+                      "size_bytes":  24465,
+                      "sha256":  "c5e4cfbd7a7b3113a2c47d780d02603b25dd3bab2bff7085587487b082a020b5"
+                  },
+                  {
+                      "path":  "source/lumenforge/shortcuts.py",
+                      "size_bytes":  4834,
+                      "sha256":  "3cff46b6cd063ffbb7fad0423e08b50825fe0400f925598d7ad5258d9b090e09"
+                  },
+                  {
+                      "path":  "source/lumenforge/snapshots.py",
+                      "size_bytes":  1255,
+                      "sha256":  "65e6abf8c0ff82f02ead72a6f98d4c3004f5c2d0b501c85e6edfeb28071319ca"
+                  },
+                  {
+                      "path":  "source/lumenforge/theme.py",
+                      "size_bytes":  8286,
+                      "sha256":  "3e2af7a50c6b05a93c1122fd82417fb0be12b5885a1be7688a33378ad35f2e75"
+                  },
+                  {
+                      "path":  "source/lumenforge/tools.py",
+                      "size_bytes":  24651,
+                      "sha256":  "80aec6e262259e197f3e3e517be94e455c782dff10bad9e67d378bebb5d710f3"
+                  },
+                  {
+                      "path":  "source/lumenforge/undo.py",
+                      "size_bytes":  5095,
+                      "sha256":  "10951db9569c5018c59a3140f4a265d84b07eb7953ca57998c4be209571cc477"
+                  },
+                  {
+                      "path":  "source/lumenforge/view.py",
+                      "size_bytes":  16713,
+                      "sha256":  "c045bed5bdf3f2aa2ce71c9d423cbd0201c150506ab6363aac7fb564a4318600"
+                  },
+                  {
+                      "path":  "source/lumenforge/whitebal.py",
+                      "size_bytes":  2884,
+                      "sha256":  "01fd557faab8e1916ccfbd2853b7412f40119f1132100bb5a8f27b20ccc78bb9"
+                  },
+                  {
+                      "path":  "source/lumenforge/widgets.py",
+                      "size_bytes":  26128,
+                      "sha256":  "dff8f1e563405748cd918ed97ea095fb4b30cf5578599e41a98f471f5ada1fff"
+                  },
+                  {
+                      "path":  "source/lumenforge/winchrome.py",
+                      "size_bytes":  1799,
+                      "sha256":  "f18150eccab4a79684bbbafe836c0ed3052397a713913629e66f8f9ddba1bf5e"
+                  },
+                  {
+                      "path":  "source/pyproject.toml",
+                      "size_bytes":  634,
+                      "sha256":  "35d627c3470e4236a37cc48f47388f06c35dd1031b65d10b8b2cf0fc6d7e5a45"
+                  },
+                  {
+                      "path":  "source/README.md",
+                      "size_bytes":  2052,
+                      "sha256":  "9211e1f4682e6a4629bb38208c4cbdb8ee0ce766636eeb028650994f5fd24174"
+                  },
+                  {
+                      "path":  "source/run_lumenforge.py",
+                      "size_bytes":  117,
+                      "sha256":  "ad8dfc2a952618961d2f4b10a8910ead866985077bd58b91523b082ed27a8457"
+                  },
+                  {
+                      "path":  "source/SHA256SUMS.txt",
+                      "size_bytes":  4801,
+                      "sha256":  "bc602266cf6ef434824c07f81bdcb257cfdaa49ac8440431bfa810eb4d55ec8a"
+                  },
+                  {
+                      "path":  "source/tests/preset_qa.py",
+                      "size_bytes":  3179,
+                      "sha256":  "4aaae3fcc98422ec60131da16fdf18a1a2a59ff2a2d81edc3a271c50a596eda4"
+                  },
+                  {
+                      "path":  "source/tests/test_engine.py",
+                      "size_bytes":  6584,
+                      "sha256":  "36bd73e146eb9e28936af8016c953bf4d65830a8cc07bc9f4a428c8e88389dda"
+                  },
+                  {
+                      "path":  "source/tests/test_packaging_contract.py",
+                      "size_bytes":  2185,
+                      "sha256":  "07586a9fb9dde0616c6523e3d4ec5a418c8e0c121e5cf42efaf02773d0dd65ee"
+                  },
+                  {
+                      "path":  "source/tests/test_presets.py",
+                      "size_bytes":  828,
+                      "sha256":  "3cdcde3b1b792880246bf9e003b3ab56208b4d7e05d4060ceea8331253cad1db"
+                  },
+                  {
+                      "path":  "source/tests/test_theme.py",
+                      "size_bytes":  3039,
+                      "sha256":  "171a1d46b93aec9295b40fc93fd9b9c6a887eeebcc52a2cd959b622ef0754f8b"
+                  },
+                  {
+                      "path":  "source/tests/test_ui_branding_layout.py",
+                      "size_bytes":  4595,
+                      "sha256":  "f83fc6a26a94d796730140dd95ab1ebe714f18f829a1f9faed9cb01cc12f90f3"
+                  },
+                  {
+                      "path":  "source/tests/test_winchrome.py",
+                      "size_bytes":  983,
+                      "sha256":  "babc4bdc1495ec8e0d70b7f32090f5ebd3dd73035e1765355e5ed57ad5463afd"
+                  },
+                  {
+                      "path":  "source/tools/ci_smoke.py",
+                      "size_bytes":  5818,
+                      "sha256":  "c350e711ed3018630eec7f59ab7c69d18ffb74d6047554b880699e3b3b52b9ab"
+                  },
+                  {
+                      "path":  "source/tools/verify_package.py",
+                      "size_bytes":  6548,
+                      "sha256":  "f63a4ec35dfaf59f860402c7ffdba31f147dc12453bae2379db5a0d82c393530"
+                  },
+                  {
+                      "path":  "SOURCE_SHA256_MANIFEST.json",
+                      "size_bytes":  13251,
+                      "sha256":  "add38830af6f4e80074000a69b8bd134bc1af230503f83b0a530c8cb861acadc"
+                  },
+                  {
+                      "path":  "SOURCE_STATE_COMPARISON.json",
+                      "size_bytes":  3627,
+                      "sha256":  "dadd28c1c525121923e8c2766bb6b242c66cda38f1b8ad59d0df903ea5ee2700"
+                  }
+              ]
+}

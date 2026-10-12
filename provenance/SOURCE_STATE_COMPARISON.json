@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "inspected_at_utc": "2026-10-12T16:33:00Z",
+  "live_workspace": "F:\\bc",
+  "live_workspace_git_metadata": {
+    "git_directory_found": false,
+    "branch": null,
+    "head": null,
+    "remote": null,
+    "working_tree_status": "UNAVAILABLE_NO_GIT_DIRECTORY"
+  },
+  "current_source_archive": {
+    "path": "F:\\bc\\Lumenbackupui.zip",
+    "size_bytes": 551417,
+    "sha256": "ef396a244f82b0dd697bae2fc772de243c15b097cc84b3cce332e5a3a42a1ec3",
+    "zip_file_entries": 101
+  },
+  "workspace_vs_source_archive": {
+    "archive_file_entries": 101,
+    "byte_identical_entries": 66,
+    "differing_entries": 35,
+    "missing_workspace_entries": 0,
+    "differing_entry_classification": "All 35 observed differences were Python bytecode cache files (*.pyc) under __pycache__; no non-cache source or documentation differences were observed.",
+    "source_only_differences": [],
+    "workspace_only_evidence": [
+      {
+        "path": "dist/LumenForge.exe",
+        "size_bytes": 85701950,
+        "sha256": "2d6030411631aa1e28e95fcd9f16f95445ed49a0d250c5c4899e139a50ec3336",
+        "preserved_as": "evidence/LumenForge.exe"
+      },
+      {
+        "path": "build/smoke-receipt/lumenforge_smoke_receipt.json",
+        "size_bytes": 8205,
+        "sha256": "ac4ad3fa09eadb592082fcbd447d6a55c2c612eba8763534f1c8e353157e05bc",
+        "preserved_as": "evidence/lumenforge_smoke_receipt.json"
+      },
+      {
+        "path": "build/lumenforge/*",
+        "preserved_as": "excluded disposable build intermediates; individual files listed in RECOVERY_STATE_REPORT.md"
+      },
+      {
+        "path": ".pytest_cache/* and __pycache__/*.pyc",
+        "preserved_as": "excluded disposable caches"
+      }
+    ]
+  },
+  "previous_enriched_handoff": {
+    "path": "C:\\Users\\Amirs\\Downloads\\LumenForge_UI_Handoff_Enriched_20261012T161551Z.zip",
+    "size_bytes": 558512,
+    "sha256": "1d28986fa5ffc6a7886d4cc1018685809e9df8468a788784cc86d0d5ffb054d0",
+    "entries": 107,
+    "result": "Historical INCOMPLETE handoff: contained README_NOT_INCLUDED.md and a retrieval manifest instead of the 13 repository-hygiene documents' actual contents. It was not used as the source for this recovery copy."
+  },
+  "latest_ui_files": [
+    {
+      "path": "lumenforge/app.py",
+      "sha256": "e9145d73be5defb02cc058f5a4d20c5905fde7c2f53d6ec0ba2ae41acc7adbf0"
+    },
+    {
+      "path": "lumenforge/layout.py",
+      "sha256": "ecb4950707d9ee2a78e69cf7c6911896335d01f1c628251e61c9a41f5853cb78"
+    },
+    {
+      "path": "lumenforge/theme.py",
+      "sha256": "3e2af7a50c6b05a93c1122fd82417fb0be12b5885a1be7688a33378ad35f2e75"
+    },
+    {
+      "path": "lumenforge/winchrome.py",
+      "sha256": "f18150eccab4a79684bbbafe836c0ed3052397a713913629e66f8f9ddba1bf5e"
+    },
+    {
+      "path": "assets/lumenforge_logo.png",
+      "sha256": "05776f1dbfb660bfc6019e92c709caff35c7a9f82e08feb41f43d453766362b8"
+    },
+    {
+      "path": "assets/lumenforge.ico",
+      "sha256": "37a984370d1183575f860d80cf03e2b65fb6ca831db6c01bd6a07aa951d00892"
+    },
+    {
+      "path": "lumenforge.spec",
+      "sha256": "39e141afb9bb05deabe7d75545cb961c8875fcbdc48c523fc97a5c1f9e3fc977f"
+    },
+    {
+      "path": "tests/test_ui_branding_layout.py",
+      "sha256": "f83fc6a26a94d796730140dd95ab1ebebe714f18f829a1f9faed9cb01cc12f90f"
+    }
+  ],
+  "conclusion": "Current UI source payload is identical to the supplied source archive for all non-cache files. The live workspace was still copied directly to the recovery snapshot. Generated executable and smoke receipt existed only outside the source archive and were preserved separately."
+}

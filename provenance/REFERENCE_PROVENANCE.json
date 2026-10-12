@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "repository": "Vice13th/Lumenforge",
+  "retrieved_at_utc": "2026-10-12T16:30:00Z",
+  "docs_branch": {
+    "name": "docs/repo-hygiene-20261012",
+    "head_commit": "da18b3a9b2106829005649ea83d334b0a252eb6e",
+    "pull_request": {
+      "number": 3,
+      "url": "https://github.com/Vice13th/Lumenforge/pull/3",
+      "state": "open",
+      "merged": false,
+      "base": "integration-v2",
+      "base_sha": "033e8e48b82fa50efaeda304071b0f6b5c8a0ac1"
+    }
+  },
+  "cuda_pr": {
+    "number": 4,
+    "url": "https://github.com/Vice13th/Lumenforge/pull/4",
+    "state": "open",
+    "merged": false,
+    "head_branch": "fix/cuda-lut-input-contract-20261012",
+    "head_commit": "67c552c28e57c0eba16e8269f24fe654375693a9",
+    "base": "integration-v2",
+    "base_sha": "033e8e48b82fa50efaeda304071b0f6b5c8a0ac1"
+  },
+  "ui_branch": {
+    "name": "fix/phase1-toolbar-layout-20261012",
+    "head_commit": "e4fc71628901c1003e6221a93e2ddf45848116be",
+    "url": "https://github.com/Vice13th/Lumenforge/commit/e4fc71628901c1003e6221a93e2ddf45848116be",
+    "state": "remote branch commit exists; no matching PR found in the connector search; not main"
+  },
+  "main": {
+    "head_commit": "b3bb65c054a74727a2eeaf275d533967be192b6f",
+    "url": "https://github.com/Vice13th/Lumenforge/commit/b3bb65c054a74727a2eeaf275d533967be192b6f"
+  },
+  "documents": [
+    {
+      "path": "README.md",
+      "destination": "reference-docs/repo-hygiene/README.md",
+      "blob_sha": "f1d10231faa078fe75c1c203d2f70913e9fe2da8",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/README.md"
+    },
+    {
+      "path": "docs/README.md",
+      "destination": "reference-docs/repo-hygiene/docs/README.md",
+      "blob_sha": "119b27e04d85687de36efcaf7da0528e73051d63",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/docs/README.md"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "destination": "reference-docs/repo-hygiene/docs/ARCHITECTURE.md",
+      "blob_sha": "cab093946bbda5c8beef66dc1a930ceac1e52792",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/docs/ARCHITECTURE.md"
+    },
+    {
+      "path": "docs/DEPENDENCY_MATRIX.md",
+      "destination": "reference-docs/repo-hygiene/docs/DEPENDENCY_MATRIX.md",
+      "blob_sha": "e86583c9dcf8d1b42445a3b44de2a63b3a73da9f",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/docs/DEPENDENCY_MATRIX.md"
+    },
+    {
+      "path": "docs/RELEASE_MANIFEST.md",
+      "destination": "reference-docs/repo-hygiene/docs/RELEASE_MANIFEST.md",
+      "blob_sha": "3f76d7727c17c4d79c27f6d4c1258b0f0e833b7a",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/docs/RELEASE_MANIFEST.md"
+    },
+    {
+      "path": "docs/V2_ARCHITECTURE_REVIEW_2026-10-12.md",
+      "destination": "reference-docs/repo-hygiene/docs/V2_ARCHITECTURE_REVIEW_2026-10-12.md",
+      "blob_sha": "c6a2a7b88c3ca85c1e746ec5f09988b3b1531959",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/docs/V2_ARCHITECTURE_REVIEW_2026-10-12.md"
+    },
+    {
+      "path": "verification/V2_INTEGRATION_MATRIX.md",
+      "destination": "reference-docs/repo-hygiene/verification/V2_INTEGRATION_MATRIX.md",
+      "blob_sha": "edbf275c6d1816542e87f683a8e9c85f288e1728",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/verification/V2_INTEGRATION_MATRIX.md"
+    },
+    {
+      "path": "verification/V2_FINAL_STATE.md",
+      "destination": "reference-docs/repo-hygiene/verification/V2_FINAL_STATE.md",
+      "blob_sha": "8684ea455872ac1ecd189ed469ac0c0b1690f008",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/verification/V2_FINAL_STATE.md"
+    },
+    {
+      "path": "verification/V2_RELEASE_RECEIPT.json",
+      "destination": "reference-docs/repo-hygiene/verification/V2_RELEASE_RECEIPT.json",
+      "blob_sha": "ccfe1099e1d5d2dd701a96ab324217e691fe3891",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/verification/V2_RELEASE_RECEIPT.json"
+    },
+    {
+      "path": "verification/V2_FRAME_CONTRACT_RECEIPT.json",
+      "destination": "reference-docs/repo-hygiene/verification/V2_FRAME_CONTRACT_RECEIPT.json",
+      "blob_sha": "dd6285b217a0f5532a4850ce77b5bccd406ff254",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/verification/V2_FRAME_CONTRACT_RECEIPT.json"
+    },
+    {
+      "path": "verification/RAW_FIXTURE_METADATA_20261005.json",
+      "destination": "reference-docs/repo-hygiene/verification/RAW_FIXTURE_METADATA_20261005.json",
+      "blob_sha": "5b0953c8f1f6e124a9293c47281e853f6e20add7",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/verification/RAW_FIXTURE_METADATA_20261005.json"
+    },
+    {
+      "path": "verification/ARTIFACT_HYGIENE_REPORT_20261005.md",
+      "destination": "reference-docs/repo-hygiene/verification/ARTIFACT_HYGIENE_REPORT_20261005.md",
+      "blob_sha": "f01118cf2195c815a0b325c0b0549bc63f091bb6",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/verification/ARTIFACT_HYGIENE_REPORT_20261005.md"
+    },
+    {
+      "path": "RELEASE_MANIFEST_20261004.txt",
+      "destination": "reference-docs/repo-hygiene/RELEASE_MANIFEST_20261004.txt",
+      "blob_sha": "912f39abc27a8ae9b5412582d564598b7d7c429b",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/RELEASE_MANIFEST_20261004.txt"
+    },
+    {
+      "path": "verification/CUDA_LUT_HARDENING_HANDOFF_2026-10-12.md",
+      "destination": "reference-docs/cuda-handoff/verification/CUDA_LUT_HARDENING_HANDOFF_2026-10-12.md",
+      "blob_sha": "de059e04b1e0644fe41ce293850663a68c10014c",
+      "url": "https://github.com/Vice13th/Lumenforge/blob/docs/repo-hygiene-20261012/verification/CUDA_LUT_HARDENING_HANDOFF_2026-10-12.md",
+      "note": "This handoff document was retrieved from docs/repo-hygiene-20261012, not from the CUDA PR branch; the document path was absent on the CUDA PR branch during prior inspection."
+    }
+  ],
+  "source_policy": "Only the 14 listed reference documents were imported. No CUDA source or tests from PR #4 were merged into the recovered UI source tree."
+}

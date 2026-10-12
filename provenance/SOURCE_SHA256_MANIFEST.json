@@ -1,0 +1,332 @@
+﻿[
+    {
+        "path":  ".github/workflows/ci.yml",
+        "size_bytes":  2045,
+        "sha256":  "5b25f5586458141b625cec04c1ba0b465875a8081cb33203a7b5983205f43534",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "assets/lumenforge.ico",
+        "size_bytes":  13202,
+        "sha256":  "37a984370d1183575f860d80cf03e2b65fb6ca831db6c01bd6a07aa951d00892",
+        "last_write_time_utc":  "2026-10-12T13:14:28.0000000Z"
+    },
+    {
+        "path":  "assets/lumenforge_logo.png",
+        "size_bytes":  2874,
+        "sha256":  "05776f1dbfb660bfc6019e92c709caff35c7a9f82e08feb41f43d453766362b8",
+        "last_write_time_utc":  "2026-10-12T13:14:28.0000000Z"
+    },
+    {
+        "path":  "docs/FINAL_PHASE_UPDATE_REPORT.md",
+        "size_bytes":  6102,
+        "sha256":  "3119fdcbcebf1c3742da4b61df9f68d7d7138c9996fe1597d505ef2be0b0360c",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "docs/UI_CORRECTIVE_PASS_REPORT.md",
+        "size_bytes":  2960,
+        "sha256":  "6973cd7600e7ee3f258c48fbeff53b2ef56f3663c0d99033020826bcb83a8a16",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "docs/UI_TOOLBAR_SCROLL_CORRECTIVE_PASS.md",
+        "size_bytes":  1033,
+        "sha256":  "e2a18dcc7a48abc1170cf6cf300d180e4cef89afe2b308417ec88c4f49e3b173",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "docs/WINDOWS_RUNTIME_UI_FIX_REPORT.md",
+        "size_bytes":  2327,
+        "sha256":  "799d92d3e9f45338735cf9e5d9ca36b8334d50c609b3d13efbc26ba418859e75",
+        "last_write_time_utc":  "2026-10-12T13:57:42.0000000Z"
+    },
+    {
+        "path":  "lumenforge.spec",
+        "size_bytes":  1515,
+        "sha256":  "39e141afb9bb05deabe7d75545cb961c8875fcbc48c523fc97a5c1f9e3fc977f",
+        "last_write_time_utc":  "2026-10-12T13:32:16.0000000Z"
+    },
+    {
+        "path":  "lumenforge/__init__.py",
+        "size_bytes":  31,
+        "sha256":  "d3d62ce81bfcb10ba9c00a3964a2c72e28ec0cbda8ad4b1d364b69e03176a7f4",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/__main__.py",
+        "size_bytes":  61,
+        "sha256":  "f3beb1653aa13de0c10f618a2abf29297df701ff0f8454e8b0023c6d842c1604",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/app.py",
+        "size_bytes":  48023,
+        "sha256":  "e9145d73be5defb02cc058f5a4d20c5905fde7c2f53d6ec0ba2ae41acc7adbf0",
+        "last_write_time_utc":  "2026-10-12T13:53:42.0000000Z"
+    },
+    {
+        "path":  "lumenforge/autotone.py",
+        "size_bytes":  1016,
+        "sha256":  "fe8b6ee580abf52bc8b8bf15f9f1cda0af888ef9c0d95a15cf993d68828daf62",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/camera.py",
+        "size_bytes":  7480,
+        "sha256":  "089d10137653d04eccbb8b95e2ec1b179a866d90dd1999d61a8a018c576d0d4c",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/clipview.py",
+        "size_bytes":  774,
+        "sha256":  "f92634a403cbe977395be5e07bc0ad8f6cdbd926a50222851f7961cc090ddd1e",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/compare.py",
+        "size_bytes":  1895,
+        "sha256":  "3651451b9c5c678017114a3e28d078b2c716964dca2b03b857b008b3809cb4c4",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/config.py",
+        "size_bytes":  869,
+        "sha256":  "c542455eb6e31328758a3a53fb204e7fe31bf39aad85933bed321e7e3d008480",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/crop.py",
+        "size_bytes":  4223,
+        "sha256":  "2cf655c95e043fb234dfaf0be1c01035421e8099e9096503cd22cf60c6030e09",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/deps.py",
+        "size_bytes":  366,
+        "sha256":  "06725d3535acfa0e75ecb61b4ecd596eae91f4ce08d31edceb5e2dda69498ae8",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/dialogs.py",
+        "size_bytes":  7087,
+        "sha256":  "ed3f6de2c65d408906fb70bc06edf978d935dc880f1b27e36ce232478a64124f",
+        "last_write_time_utc":  "2026-10-12T13:26:52.0000000Z"
+    },
+    {
+        "path":  "lumenforge/editors.py",
+        "size_bytes":  12554,
+        "sha256":  "39786aa5a29fbc7ad0b56f353cd9117c7b811b335bdd6c197e6c32351dbed625",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/engine.py",
+        "size_bytes":  162247,
+        "sha256":  "a3f4a6602e19c3f1ee9cd82527317f73a91f60924b4fa8aabb44a59db8c63891",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/export.py",
+        "size_bytes":  13936,
+        "sha256":  "a2ab477757ac165eb1385bf512647bc2a2a86018ec84ac82abde54b93c5e1c96",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/feedback.py",
+        "size_bytes":  4737,
+        "sha256":  "0fef2aac47b78df6bf3db9672517ed963cd1e01c9917dd7d69d17ca6d18d2497",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/heal.py",
+        "size_bytes":  1556,
+        "sha256":  "70d6ca0af067f0776c7404c2cf3b6db90c8083e3c251c5da4c460a53bd1d03b4",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/huepick.py",
+        "size_bytes":  1416,
+        "sha256":  "797d9c58e6e1ea161d5402c52a655dddc6474d264c9c23f02836089d20282875",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/layout.py",
+        "size_bytes":  10875,
+        "sha256":  "ecb4950707d9ee2a78e69cf7c6911896335d01f1c628251e61c9a41f5853cb78",
+        "last_write_time_utc":  "2026-10-12T13:55:46.0000000Z"
+    },
+    {
+        "path":  "lumenforge/params.py",
+        "size_bytes":  17289,
+        "sha256":  "e953030298ef5e8dbbd09c7106a47b1f8bb3da800fcdb91077abd888d6a6a834",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/presets.py",
+        "size_bytes":  9293,
+        "sha256":  "da8316c223835f1bcfae4fd413ec79c08158dbdd0d2275db8231dbef996415da",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/presets_modern.py",
+        "size_bytes":  8889,
+        "sha256":  "42cbe29c58b933d809674f892138dce6ba510880f267125174b99218509c6fc8",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/project.py",
+        "size_bytes":  7181,
+        "sha256":  "7d940e7f8a0a6dbd76c111c81674d14f12b164a6348fc1c8860544ff7d17389e",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/rendering.py",
+        "size_bytes":  4946,
+        "sha256":  "cfcf69052ea88fd0c07fc688ddec83e7269276b99564ac617d6835dd4dea5848",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/sections.py",
+        "size_bytes":  4022,
+        "sha256":  "1e0ab527ada461fabdc59413eae2020c87a8a832a9237a238d6c7398813f815a",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/selftest.py",
+        "size_bytes":  24465,
+        "sha256":  "c5e4cfbd7a7b3113a2c47d780d02603b25dd3bab2bff7085587487b082a020b5",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/shortcuts.py",
+        "size_bytes":  4834,
+        "sha256":  "3cff46b6cd063ffbb7fad0423e08b50825fe0400f925598d7ad5258d9b090e09",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/snapshots.py",
+        "size_bytes":  1255,
+        "sha256":  "65e6abf8c0ff82f02ead72a6f98d4c3004f5c2d0b501c85e6edfeb28071319ca",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/theme.py",
+        "size_bytes":  8286,
+        "sha256":  "3e2af7a50c6b05a93c1122fd82417fb0be12b5885a1be7688a33378ad35f2e75",
+        "last_write_time_utc":  "2026-10-12T13:11:04.0000000Z"
+    },
+    {
+        "path":  "lumenforge/tools.py",
+        "size_bytes":  24651,
+        "sha256":  "80aec6e262259e197f3e3e517be94e455c782dff10bad9e67d378bebb5d710f3",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/undo.py",
+        "size_bytes":  5095,
+        "sha256":  "10951db9569c5018c59a3140f4a265d84b07eb7953ca57998c4be209571cc477",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/view.py",
+        "size_bytes":  16713,
+        "sha256":  "c045bed5bdf3f2aa2ce71c9d423cbd0201c150506ab6363aac7fb564a4318600",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/whitebal.py",
+        "size_bytes":  2884,
+        "sha256":  "01fd557faab8e1916ccfbd2853b7412f40119f1132100bb5a8f27b20ccc78bb9",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/widgets.py",
+        "size_bytes":  26128,
+        "sha256":  "dff8f1e563405748cd918ed97ea095fb4b30cf5578599e41a98f471f5ada1fff",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "lumenforge/winchrome.py",
+        "size_bytes":  1799,
+        "sha256":  "f18150eccab4a79684bbbafe836c0ed3052397a713913629e66f8f9ddba1bf5e",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "pyproject.toml",
+        "size_bytes":  634,
+        "sha256":  "35d627c3470e4236a37cc48f47388f06c35dd1031b65d10b8b2cf0fc6d7e5a45",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "README.md",
+        "size_bytes":  2052,
+        "sha256":  "9211e1f4682e6a4629bb38208c4cbdb8ee0ce766636eeb028650994f5fd24174",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "run_lumenforge.py",
+        "size_bytes":  117,
+        "sha256":  "ad8dfc2a952618961d2f4b10a8910ead866985077bd58b91523b082ed27a8457",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "SHA256SUMS.txt",
+        "size_bytes":  4801,
+        "sha256":  "bc602266cf6ef434824c07f81bdcb257cfdaa49ac8440431bfa810eb4d55ec8a",
+        "last_write_time_utc":  "2026-10-12T13:57:48.0000000Z"
+    },
+    {
+        "path":  "tests/preset_qa.py",
+        "size_bytes":  3179,
+        "sha256":  "4aaae3fcc98422ec60131da16fdf18a1a2a59ff2a2d81edc3a271c50a596eda4",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "tests/test_engine.py",
+        "size_bytes":  6584,
+        "sha256":  "36bd73e146eb9e28936af8016c953bf4d65830a8cc07bc9f4a428c8e88389dda",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "tests/test_packaging_contract.py",
+        "size_bytes":  2185,
+        "sha256":  "07586a9fb9dde0616c6523e3d4ec5a418c8e0c121e5cf42efaf02773d0dd65ee",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "tests/test_presets.py",
+        "size_bytes":  828,
+        "sha256":  "3cdcde3b1b792880246bf9e003b3ab56208b4d7e05d4060ceea8331253cad1db",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "tests/test_theme.py",
+        "size_bytes":  3039,
+        "sha256":  "171a1d46b93aec9295b40fc93fd9b9c6a887eeebcc52a2cd959b622ef0754f8b",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "tests/test_ui_branding_layout.py",
+        "size_bytes":  4595,
+        "sha256":  "f83fc6a26a94d796730140dd95ab1ebe714f18f829a1f9faed9cb01cc12f90f3",
+        "last_write_time_utc":  "2026-10-12T13:55:54.0000000Z"
+    },
+    {
+        "path":  "tests/test_winchrome.py",
+        "size_bytes":  983,
+        "sha256":  "babc4bdc1495ec8e0d70b7f32090f5ebd3dd73035e1765355e5ed57ad5463afd",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "tools/ci_smoke.py",
+        "size_bytes":  5818,
+        "sha256":  "c350e711ed3018630eec7f59ab7c69d18ffb74d6047554b880699e3b3b52b9ab",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    },
+    {
+        "path":  "tools/verify_package.py",
+        "size_bytes":  6548,
+        "sha256":  "f63a4ec35dfaf59f860402c7ffdba31f147dc12453bae2379db5a0d82c393530",
+        "last_write_time_utc":  "2026-10-12T13:06:00.0000000Z"
+    }
+]

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lumenforge"
+version = "12.0"
+description = "LumenForge: film-emulation photo editor with a headless colour engine"
+requires-python = ">=3.10"
+dependencies = ["numpy", "Pillow"]
+
+[project.optional-dependencies]
+fast = ["opencv-python-headless", "numba"]
+raw = ["rawpy"]
+dev = ["ruff", "pyinstaller"]
+
+[project.scripts]
+lumenforge = "lumenforge.app:main"
+
+[tool.setuptools.packages.find]
+include = ["lumenforge*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82", "F401"]
