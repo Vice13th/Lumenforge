@@ -65,23 +65,71 @@ def _kernel():
     return _KERNEL
 
 
-def tetrahedral_cuda(rgb, lut3d):
-    import cupy as cp
-    x = np.asarray(rgb, np.float32)
-    shape = x.shape
-    tbl, dmin, dmax = lut3d
+def _validate_inputs(rgb, lut3d):
+    """Validate and normalize the public input contract without requiring CuPy."""
+    try:
+        x = np.asarray(rgb, dtype=np.float32)
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise ValueError("RGB input must be a numeric array") from exc
+
     if x.ndim < 2 or x.shape[-1] != 3:
-        raise ValueError("RGB input must have last dimension 3")
-    if tbl.ndim != 4 or tbl.shape[-1] != 3 or tbl.shape[0] < 2 or tbl.shape[1] != tbl.shape[0] or tbl.shape[2] != tbl.shape[0]:
-        raise ValueError("invalid 3D LUT")
-    dx = cp.asarray(np.ascontiguousarray(x.reshape(-1, 3)))
-    dt = cp.asarray(np.ascontiguousarray(tbl.reshape(-1, 3)))
-    total = dx.shape[0]
-    out = cp.empty_like(dx)
-    dm = np.asarray(dmin, np.float32)
-    dxm = np.asarray(dmax, np.float32)
+        raise ValueError("RGB input must have at least 2 dimensions and last dimension 3")
+    if not np.isfinite(x).all():
+        raise ValueError("RGB input must contain only finite values")
+
+    if not isinstance(lut3d, (tuple, list)) or len(lut3d) != 3:
+        raise ValueError("lut3d must be (table, domain_min, domain_max)")
+
+    try:
+        tbl = np.asarray(lut3d[0], dtype=np.float32)
+        dm = np.asarray(lut3d[1], dtype=np.float32)
+        dxm = np.asarray(lut3d[2], dtype=np.float32)
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise ValueError("LUT table and domain bounds must be numeric") from exc
+
+    if (
+        tbl.ndim != 4
+        or tbl.shape[-1] != 3
+        or tbl.shape[0] < 2
+        or tbl.shape[1] != tbl.shape[0]
+        or tbl.shape[2] != tbl.shape[0]
+    ):
+        raise ValueError("invalid 3D LUT; expected a cubic N x N x N x 3 table with N >= 2")
     if dm.shape != (3,) or dxm.shape != (3,):
         raise ValueError("LUT domain bounds must be RGB triples")
+    if not np.isfinite(dm).all() or not np.isfinite(dxm).all():
+        raise ValueError("LUT domain bounds must contain only finite values")
+    if not np.isfinite(tbl).all():
+        raise ValueError("LUT table must contain only finite values")
+
+    # Check the span itself as float32 because that is the precision used by the kernel.
+    with np.errstate(over="ignore", invalid="ignore"):
+        span = dxm - dm
+    if not np.isfinite(span).all() or np.any(span <= 0):
+        raise ValueError("each LUT domain maximum must exceed its minimum by a finite span")
+
+    return (
+        np.ascontiguousarray(x),
+        np.ascontiguousarray(tbl),
+        np.ascontiguousarray(dm),
+        np.ascontiguousarray(dxm),
+    )
+
+
+def tetrahedral_cuda(rgb, lut3d):
+    x, tbl, dm, dxm = _validate_inputs(rgb, lut3d)
+    shape = x.shape
+
+    # A valid empty input is a no-op; do not require CuPy or launch a zero-block grid.
+    if x.size == 0:
+        return x.copy()
+
+    import cupy as cp
+
+    dx = cp.asarray(x.reshape(-1, 3))
+    dt = cp.asarray(tbl.reshape(-1, 3))
+    total = dx.shape[0]
+    out = cp.empty_like(dx)
     k = _kernel()
     threads = 256
     blocks = (total + threads - 1) // threads
