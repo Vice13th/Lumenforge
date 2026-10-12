@@ -14,7 +14,20 @@ _M = importlib.util.module_from_spec(_SPEC)
 sys.modules[_SPEC.name] = _M
 _SPEC.loader.exec_module(_M)
 
-MODEL_DIR = Path(r"C:\Users\Amirs\.cache\huggingface\hub\models--sentence-transformers--all-MiniLM-L6-v2\snapshots\1110a243fdf4706b3f48f1d95db1a4f5529b4d41")
+MODEL_DIR = Path(
+    os.environ.get(
+        "LUMENFORGE_TEST_MODEL_DIR",
+        str(
+            Path.home()
+            / ".cache"
+            / "huggingface"
+            / "hub"
+            / "models--sentence-transformers--all-MiniLM-L6-v2"
+            / "snapshots"
+            / "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+        ),
+    )
+)
 MODEL_SHA = "6fd5d72fe4589f189f8ebc006442dbb529bb7ce38f8082112682524616046452"
 TOKENIZER_SHA = "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
 
