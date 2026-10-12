@@ -1,8 +1,10 @@
 ﻿# Artifact Hygiene Verification — 2026-10-05
 
+> Historical scan snapshot. Its PASS applies only to the workspace state observed on 5 October 2026; it was not rerun for the October 12 documentation branch. Workstation-local absolute paths are redacted in this repository copy.
+
 ## Status
 
-PASS for repository/index hygiene at the current un-staged state. No forbidden or oversized artifact is tracked. The only untracked forbidden-extension files remaining are five explicitly allowlisted representative PNG evidence artifacts.
+PASS for repository/index hygiene at the recorded scan state. No forbidden or oversized artifact was reported as tracked by that scan. The only untracked forbidden-extension files reported then were five explicitly allowlisted representative PNG evidence artifacts.
 
 ## Scan
 
@@ -20,8 +22,8 @@ PASS for repository/index hygiene at the current un-staged state. No forbidden o
 
 ## External RAW Protection
 
-- E:\Remote\DSCF0833.RAF remains external to the repository.
-- DSCF0839.RAF was relocated from the repository root to E:\LumenForge_VERIFICATION_ARCHIVE_20261005\raw_fixtures\DSCF0839.RAF.
+- DSCF0833.RAF (external fixture; absolute workstation path omitted) remains external to the repository.
+- DSCF0839.RAF was relocated from the repository root to an external verification archive; the absolute workstation path is omitted.
 
 ## Important Artifacts
 
@@ -36,8 +38,8 @@ PASS for repository/index hygiene at the current un-staged state. No forbidden o
 | verification\ui_a11y\focus_old_crop2.png | canonical crop | 20650 bytes | 269CD434A380868920D944446EF4641C2F8A16C431B16B1AB5B84005DE296C0F | NO | NO | FOCUS icon-removal comparison; allowlisted |
 | verification\ui_a11y\focus_new_crop2.png | canonical crop | 18558 bytes | 357374B034E15FFDCD8429EC691B31C85358BB5366BBDBF505A55DA8A968E20A | NO | NO | FOCUS icon-removal comparison; allowlisted |
 | build\nuitka_candidate_20261005g\lumenforge.dist\lumenforge.exe | Nuitka runtime executable | 110829568 bytes | D0E6B7DCA57F114039033B2B012282AC568617C49DA43F3939BCBD8051E573F7 | NO (ignored build workspace) | CANDIDATE ONLY | Self-contained packaged candidate; not repository content |
-| E:\Remote\DSCF0833.RAF | external RAW fixture | 28365392 bytes | 2746DAE753858897FDD5DC75A4E6C87254FB73C3E853A626075A4F996117AAED | NO | NO | Real test input; permanently external |
-| E:\LumenForge_VERIFICATION_ARCHIVE_20261005\raw_fixtures\DSCF0839.RAF | external RAW fixture archive | 28095648 bytes | 32DC5260D247E9B57763985E3359444A1677D800687A0017B917BA886990D592 | NO | NO | Relocated from repository root; permanently external |
+| DSCF0833.RAF (external path omitted) | external RAW fixture | 28365392 bytes | 2746DAE753858897FDD5DC75A4E6C87254FB73C3E853A626075A4F996117AAED | NO | NO | Real test input; permanently external |
+| DSCF0839.RAF (external archive path omitted) | external RAW fixture archive | 28095648 bytes | 32DC5260D247E9B57763985E3359444A1677D800687A0017B917BA886990D592 | NO | NO | Relocated from repository root; permanently external |
 
 ## Release Package
 
