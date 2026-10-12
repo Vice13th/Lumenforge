@@ -1,24 +1,27 @@
-# Core (required to run lumenforge.py)
+# LEGACY OPTIONAL-COMPATIBILITY LIST — NOT A V2 LOCK FILE OR COMPLETE INSTALL RECIPE
+# For the integration-v2 source tree, see pyproject.toml, uv.lock and
+# docs/DEPENDENCY_MATRIX.md. This legacy list intentionally remains for older
+# compatibility notes; it differs from the V2 project metadata (including
+# opencv-python-headless here vs opencv-python in pyproject.toml).
+# It does not include every adapter-specific dependency (e.g. CuPy, tifffile,
+# OpenEXR, ONNX Runtime or tokenizers) and must not be used as proof of a
+# reproducible V2 environment.
+
+# Core compatibility baseline (older application path)
 numpy>=1.24
 Pillow>=10.0
 
-# Optional acceleration — app runs correctly without it, just slower
-# on full-res export (falls back to pure numpy automatically)
+# Optional acceleration — older path uses a NumPy fallback when available
 numba>=0.58
 
-# Optional RAW file support (.arw/.cr2/.cr3/.nef/.dng/...) — without
-# it, RAW files simply won't open; everything else is unaffected
+# Optional RAW file support (.arw/.cr2/.cr3/.nef/.dng/...)
 rawpy>=0.19
 
-# Optional — used for a couple of blur/resize fast-paths if present;
-# app runs fine without it
+# Optional older OpenCV fast paths
 opencv-python-headless>=4.8
 
-# Optional real ACES/OpenColorIO color management. Not pip-installable
-# on every platform (it's a compiled C++ binding) — install via conda
-# if you want it: `conda install -c conda-forge opencolorio-python`.
-# Without it, ColorManager uses a pure-numpy ACES-inspired fallback fit.
-# PyOpenColorIO   (pip package `opencolorio` also provides it; verified on Linux/py3.12, v2.5.2)
+# Optional OpenColorIO binding. Availability and config must be checked at runtime.
+# PyOpenColorIO is commonly provided by the opencolorio distribution or conda-forge.
 
-# Only needed for `pytest tests/test_lumenforge.py`
+# Test dependency for older single-file test invocation
 pytest>=7.4
