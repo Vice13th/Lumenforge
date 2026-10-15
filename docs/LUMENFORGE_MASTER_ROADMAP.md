@@ -5,7 +5,7 @@
 **Current branch:** `main`  
 **Current repository state:** active development snapshot  
 **Historical first release:** `v1.0.0`  
-**Latest published Windows handoff/build:** [`handoff-2026-10-15`](https://github.com/Vice13th/Lumenforge/releases/tag/handoff-2026-10-15)  
+**Latest published Windows release:** [`v2.0.0`](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0) (legacy handoff entry: `handoff-2026-10-15`)  
 **Application/render-engine version in source:** `12.0`
 
 ---
@@ -129,9 +129,9 @@ See [`docs/VERSION_COMPARISON.md`](VERSION_COMPARISON.md).
 
 ## 4. Immediate gates
 
-### Published Windows handoff status (2026-10-15)
+### Published Windows release status (2026-10-15)
 
-The GitHub Release `handoff-2026-10-15` exists with the Windows x64 ZIP, standalone EXE and engineering handoff ZIP. The release reports 129 tests passed, 7 skipped, 32 subtests passed and Ruff passed. The executable startup smoke process remained alive for 8 seconds before the harness stopped it. This is build-host evidence only: clean-machine certification and full external-machine open/edit/export remain unverified. Exact source ancestry to the historical `v1.0.0` commit is not established. See [`docs/RELEASE_NOTES_2.0.md`](RELEASE_NOTES_2.0.md).
+The canonical GitHub Release [`v2.0.0`](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0) contains the Windows x64 ZIP, standalone EXE and engineering handoff ZIP; the older `handoff-2026-10-15` release entry remains available as a legacy handoff. The existing release record reports 129 tests passed, 7 skipped, 32 subtests passed and Ruff passed. The executable startup smoke process remained alive for 8 seconds before the harness stopped it. This is build-host evidence only: clean-machine certification and full external-machine open/edit/export remain unverified. Exact source ancestry to the historical `v1.0.0` commit is not established. See [`docs/RELEASE_NOTES_2.0.md`](RELEASE_NOTES_2.0.md).
 
 
 | Gate | State | Evidence needed |
@@ -142,7 +142,7 @@ The GitHub Release `handoff-2026-10-15` exists with the Windows x64 ZIP, standal
 | Current self-test | UNVERIFIED | Fresh test receipt from current source |
 | Current packaged EXE | UNVERIFIED | New build + launch verification |
 | Performance baseline | UNVERIFIED | Fresh measured benchmark |
-| New public release | NOT STARTED | Release-specific validation |
+| Current public release | PUBLISHED | [GitHub Release v2.0.0](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0); existing build-host evidence and limitations are documented |
 
 ---
 
