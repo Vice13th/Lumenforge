@@ -15,7 +15,7 @@ LumenForge is a color-first desktop image editor organized around an explicit im
   SHA-256: `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
 - [Standalone Windows executable](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe)  
   SHA-256: `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
-- [Engineering handoff ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0_ENGINEERING_HANDOFF.zip)  
+- [Engineering handoff ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0.zip)  
   SHA-256: `5B1F91827F3B46B0FF67F2D0EF6307D2EFDCEA2C74095E90D979054A55DA7F82`
 - [Historical v1.0.0 release](https://github.com/Vice13th/Lumenforge/releases/tag/v1.0.0) — preserved as a separate release.
 
@@ -70,8 +70,8 @@ Human visual attention is sensitive to color, but its effects depend on the task
 For LumenForge, the defensible product implication is modest: a consistent visual hierarchy and carefully differentiated controls can help users locate and interpret editing tools. These studies do **not** establish that LumenForge improves cognition, brain performance, mental health, or photographic outcomes. No neuroscience or clinical validation of LumenForge is claimed.
 
 Selected peer-reviewed references:
-- Wolfe, J. M. et al. (2019), “The attentional guidance of individual colours in increasingly complex displays,” *Applied Ergonomics*. https://doi.org/10.1016/j.apergo.2019.102885
-- “Attention affordances: Applying attention theory to the design of complex visual interfaces” (2021), *Journal of Experimental Psychology: Applied*. https://doi.org/10.1037/xap0000349
+- Andersen, E., & Maier, A. (2019), “The attentional guidance of individual colours in increasingly complex displays,” *Applied Ergonomics*. https://doi.org/10.1016/j.apergo.2019.102885
+- Andersen, E., Goucher-Lambert, K., Cagan, J., & Maier, A. (2021). “Attention affordances: Applying attention theory to the design of complex visual interfaces.” *Journal of Experimental Psychology: Applied*, 27(2), 338–351. https://doi.org/10.1037/xap0000349
 
 ## Recommended next verification gates
 
