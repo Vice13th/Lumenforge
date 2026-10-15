@@ -19,9 +19,9 @@ Git source
      GitHub Release
 ```
 
-The historical first public release is **v1.0.0**. The latest published Windows x64 handoff/build is [LumenForge 2.0 — Engineering Handoff + Windows x64 Build](https://github.com/Vice13th/Lumenforge/releases/tag/handoff-2026-10-15).
+The historical first public release is **v1.0.0**. The current canonical Windows x64 release is [LumenForge 2.0 — v2.0.0](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0).
 
-The handoff tag is not a semantic-version tag, and its binary must not be assumed to represent every commit on `main`. Keep the `v1.0.0` artifact as a separate historical release.
+The older `handoff-2026-10-15` entry is not a semantic-version tag; retain it as a legacy handoff record, but use `v2.0.0` as the current public release link. Neither binary should be assumed to represent every commit on `main`. Keep the `v1.0.0` artifact as a separate historical release.
 
 ---
 
@@ -49,7 +49,7 @@ Do not imply that a published EXE represents every commit on `main`.
 
 For example:
 
-`v1.0.0` points to the historical first Windows release. `handoff-2026-10-15` points to the published 2.0 handoff/build release. `main` contains source/documentation work, and exact source ancestry for the 2.0 binary has not been established.
+`v1.0.0` points to the historical first Windows release. `v2.0.0` is the canonical versioned LumenForge 2.0 release; `handoff-2026-10-15` remains a legacy handoff entry. `main` contains source/documentation work, and exact source ancestry for the 2.0 binary has not been established.
 
 The current `main` branch also includes a native Windows dark title-bar implementation that is **not** retroactively part of the v1.0.0 binary.
 
