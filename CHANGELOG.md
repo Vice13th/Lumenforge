@@ -4,10 +4,34 @@ All notable Lumen Forge changes are documented here.
 
 The project uses two versioning layers:
 
-- **Distribution release:** the published desktop release currently remains `v1.0.0`.
+- **Historical first release:** `v1.0.0` remains published and unchanged.
+- **Windows build handoff:** `handoff-2026-10-15` publishes a LumenForge 2.0 Windows x64 build and engineering handoff.
 - **Application/render-engine version:** the current source identifies itself as **Render Engine 12.0**.
 
-A newer source snapshot on `main` does not automatically mean a new binary release.
+A published handoff/build is not proof that every commit on `main` is represented by the binary.
+
+---
+
+## LumenForge 2.0 — Windows x64 handoff build (2026-10-15)
+
+Published under tag [`handoff-2026-10-15`](https://github.com/Vice13th/Lumenforge/releases/tag/handoff-2026-10-15). This is a handoff/build release, while `v1.0.0` remains the historical first public release.
+
+### Artifact validation reported by the release
+
+- Clean CPython 3.12.10 virtual environment; NumPy 2.5.4 and Pillow 12.3.0.
+- PyInstaller 6.22.3 clean build passed.
+- Tests: **129 passed, 7 skipped, 32 subtests passed**; Ruff passed.
+- Startup smoke test: executable process remained alive for 8 seconds before the harness stopped it.
+- ZIP extraction and embedded executable SHA-256 equality passed.
+
+### Limits
+
+This is build-host verification, not clean-machine certification. Full open/edit/export was not exhaustively tested on a separate Windows installation. Optional RAW/HEIF and acceleration integrations are not guaranteed bundled. Exact source ancestry to the `v1.0.0` commit is not established; no claim is made that the binary was built from a particular committed source SHA.
+
+### Published artifacts
+
+- `LumenForge-2.0.0-Windows-x64.zip` — SHA-256 `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
+- `LumenForge.exe` — SHA-256 `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
 
 ---
 
