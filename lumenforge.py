@@ -2631,8 +2631,8 @@ LAYER_KEYS = {
 class Eng:
     """v12: fused per-channel LUT + 3-layer cache.
     Effects layer (grain/halation/etc) is NEVER cached (grain is
-    stochastic). Changing grain only re-runs effects — tone/color
-    layers return cached arrays → ~2x faster slider drags."""
+    stochastic). Changing grain only re-runs effects; tone/color
+    layers can reuse cached arrays during repeated slider edits."""
     def __init__(self):
         self._pc = None
         self._skc = None
