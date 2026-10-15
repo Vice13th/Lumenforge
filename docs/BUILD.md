@@ -2,7 +2,7 @@
 
 This guide covers the **current source tree on `main`**.
 
-The historical `v1.0.0` executable remains available and is not regenerated automatically from every commit on `main`. The latest published Windows x64 handoff/build is [LumenForge 2.0 — Engineering Handoff + Windows x64 Build](https://github.com/Vice13th/Lumenforge/releases/tag/handoff-2026-10-15). This artifact is not clean-machine certified; consult [the 2.0 release notes](RELEASE_NOTES_2.0.md) for validation evidence and limitations.
+The historical `v1.0.0` executable remains available and is not regenerated automatically from every commit on `main`. The current published Windows x64 release is [LumenForge 2.0 — v2.0.0](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0). This artifact is not clean-machine certified; consult [the 2.0 release notes](RELEASE_NOTES_2.0.md) for validation evidence and limitations.
 
 ---
 
@@ -67,7 +67,7 @@ pyinstaller --onefile --noconsole --name "LumenForge" lumenforge.py
 
 The resulting executable is a **new build** and must not be described as an official release until it has passed the project's relevant validation gates.
 
-The historical `v1.0.0` Windows binary and the `handoff-2026-10-15` 2.0 build are separate release artifacts. Neither is an automatically updated representation of `main`.
+The historical `v1.0.0` Windows binary, canonical `v2.0.0` release, and legacy `handoff-2026-10-15` handoff entry are distinct GitHub release entries. The recommended current download page is `v2.0.0`; none is an automatically updated representation of `main`.
 
 ---
 
