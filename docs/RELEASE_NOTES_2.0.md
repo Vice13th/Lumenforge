@@ -1,7 +1,7 @@
 # LumenForge 2.0 — Windows x64 Build & Engineering Handoff
 
-**Release tag:** `handoff-2026-10-15`  
-**Release type:** Windows x64 build and engineering handoff  
+**Release tag:** `v2.0.0`  
+**Release type:** Versioned Windows x64 release with engineering handoff package  
 **Historical baseline:** `v1.0.0` remains available and unchanged  
 **Application engine label:** Render Engine 12.0
 
@@ -11,11 +11,11 @@ LumenForge is a color-first desktop image editor organized around an explicit im
 
 ## Downloads
 
-- [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge-2.0.0-Windows-x64.zip)  
+- [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/v2.0.0/LumenForge-2.0.0-Windows-x64.zip)  
   SHA-256: `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
-- [Standalone Windows executable](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe)  
+- [Standalone Windows executable](https://github.com/Vice13th/Lumenforge/releases/download/v2.0.0/LumenForge.exe)  
   SHA-256: `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
-- [Engineering handoff ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0.zip)  
+- [Engineering handoff ZIP](https://github.com/Vice13th/Lumenforge/releases/download/v2.0.0/LumenForge_2_0.zip)  
   SHA-256: `5B1F91827F3B46B0FF67F2D0EF6307D2EFDCEA2C74095E90D979054A55DA7F82`
 - [Historical v1.0.0 release](https://github.com/Vice13th/Lumenforge/releases/tag/v1.0.0) — preserved as a separate release.
 
