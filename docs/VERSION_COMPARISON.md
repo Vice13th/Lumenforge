@@ -111,7 +111,7 @@ The published v1.0.0 EXE remains the historical release artifact. The separate 2
 
 The v1.0.0 Windows executable has SHA-256:
 
-`349361449982613edad854fee9f968f687cd6868040ac51f645e25f9c5df7`
+`349361449982613edad854fee9f968f687cd6868040ac37651f645e25f9c5df7`
 
 The current source snapshot is not represented by that digest.
 
