@@ -90,7 +90,7 @@ Release artifact:
 
 SHA-256:
 
-`349361449982613edad854fee9f968f687cd6868040ac51f645e25f9c5df7`
+`349361449982613edad854fee9f968f687cd6868040ac37651f645e25f9c5df7`
 
 See the historical release page for the exact v1.0.0 packaging and release text.
 
