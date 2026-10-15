@@ -5,16 +5,17 @@ All notable Lumen Forge changes are documented here.
 The project uses two versioning layers:
 
 - **Historical first release:** `v1.0.0` remains published and unchanged.
-- **Windows build handoff:** `handoff-2026-10-15` publishes a LumenForge 2.0 Windows x64 build and engineering handoff.
+- **Current versioned Windows release:** [v2.0.0](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0) is the canonical public release page.
+- **Legacy engineering handoff:** `handoff-2026-10-15` remains available as an older release entry.
 - **Application/render-engine version:** the current source identifies itself as **Render Engine 12.0**.
 
 A published handoff/build is not proof that every commit on `main` is represented by the binary.
 
 ---
 
-## LumenForge 2.0 — Windows x64 handoff build (2026-10-15)
+## LumenForge 2.0 — Windows x64 release (2026-10-15)
 
-Published under tag [`handoff-2026-10-15`](https://github.com/Vice13th/Lumenforge/releases/tag/handoff-2026-10-15). This is a handoff/build release, while `v1.0.0` remains the historical first public release.
+Published under tag [`v2.0.0`](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0). This is the canonical versioned Windows x64 release; the older `handoff-2026-10-15` entry remains available as a legacy release page, while `v1.0.0` remains the historical first public release.
 
 ### Artifact validation reported by the release
 
@@ -30,8 +31,9 @@ This is build-host verification, not clean-machine certification. Full open/edit
 
 ### Published artifacts
 
-- `LumenForge-2.0.0-Windows-x64.zip` — SHA-256 `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
-- `LumenForge.exe` — SHA-256 `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
+- [LumenForge-2.0.0-Windows-x64.zip](https://github.com/Vice13th/Lumenforge/releases/download/v2.0.0/LumenForge-2.0.0-Windows-x64.zip) — SHA-256 `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
+- [LumenForge.exe](https://github.com/Vice13th/Lumenforge/releases/download/v2.0.0/LumenForge.exe) — SHA-256 `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
+- [Engineering handoff ZIP](https://github.com/Vice13th/Lumenforge/releases/download/v2.0.0/LumenForge_2_0.zip) — SHA-256 `5B1F91827F3B46B0FF67F2D0EF6307D2EFDCEA2C74095E90D979054A55DA7F82`
 
 ---
 
