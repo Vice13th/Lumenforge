@@ -47,3 +47,15 @@ Do not create repetitive progress entries with no new evidence.
 - Release boundary: `v1.0.0` Windows EXE remains the historical published binary; current `main` is not silently represented by that artifact.
 - Runtime gates: current source self-test, newly packaged EXE, performance baseline, and Windows title-bar visual verification remain UNVERIFIED.
 - Result: OBSERVED.
+
+
+## 2026-10-15 — LumenForge 2.0 Release Documentation Closeout
+
+- Gate/task: release metadata documentation, artifact traceability and source-backed claims.
+- Actions: verified repository permissions, fetched the live GitHub release and asset metadata, compared `v1.0.0` to `main`, inspected README/changelog/build/publishing/architecture/version comparison/manifest and relevant source/dependency files; added `docs/RELEASE_NOTES_2.0.md`; reconciled README, CHANGELOG and publishing guide; corrected README's release section and linked the new notes; updated build guide, roadmap and version comparison to reflect the published handoff and live compare counts.
+- Live compare evidence: 35 commits ahead, 0 behind; 18 changed paths in the GitHub compare response. Historical audit figures are retained as historical, not current totals.
+- Release asset evidence: release `handoff-2026-10-15` exists; ZIP, EXE and engineering handoff ZIP names, sizes and SHA-256 digests were read back from GitHub. No binary was rebuilt or modified.
+- Research: located peer-reviewed papers on attentional guidance by color and attention affordances in complex visual interfaces. Release notes limit implications to interface visual hierarchy and explicitly disclaim clinical/neuroscience validation of LumenForge.
+- Result: VERIFIED for repository text writes and read-back; OBSERVED for release metadata and compare results. Build-host test results are reported from the existing release record, not rerun in this session.
+- Remaining blockers: available GitHub connector exposes release GET operations but no release-body update operation, so the published Release body itself remains unchanged; no local Windows build/runtime session was available for fresh clean-machine, full open/edit/export or title-bar verification.
+- Next action: update the existing Release body to point to `docs/RELEASE_NOTES_2.0.md` and preserve the current artifact limitations; then perform Windows runtime gates when a target environment is available.
