@@ -68,3 +68,12 @@ Do not create repetitive progress entries with no new evidence.
 - Artifact evidence: GitHub release metadata for [v2.0.0](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0) lists the Windows x64 ZIP, standalone EXE and engineering handoff ZIP. Asset names, sizes and SHA-256 digests match the previously recorded release artifacts.
 - Validation: repository file contents were read back from GitHub after the writes; release-body metadata editing is not exposed by the available GitHub connector, so the body on the GitHub Releases page requires a separate manual edit if its embedded URLs are to match this canonical tag.
 - Result: VERIFIED for repository text writes and GitHub read-back; OBSERVED for live release metadata. The GitHub Releases body itself remains unchanged because the available connector exposes release reads but no release-body edit operation; its embedded download links still require a manual edit on the release page.
+
+
+## 2026-10-15 — Vicelabs LumenForge Release Card
+
+- Gate/task: public portfolio link alignment.
+- Action: updated `Vice13th/Vicelabs:index.html` so the LumenForge 2.0 EXE and release-notes links target `v2.0.0`; removed all four stale `handoff-2026-10-15` references from that page.
+- Evidence: GitHub read-back verified the new EXE URL and release-page URL and confirmed no legacy handoff tag remains in that HTML file.
+- Deployment status: live GitHub Pages rendering was not independently verified in this pass.
+- Result: VERIFIED for repository source write and read-back; UNVERIFIED for the live rendered site.
