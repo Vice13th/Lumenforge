@@ -186,9 +186,9 @@ The repository has moved significantly beyond the original binary-only public di
 ```text
 v1.0.0 release
     ↓
-source published in main
+application source added to the repository
     ↓
-open-source licensing + build/security/publishing docs
+MIT source licensing + build/security/publishing docs
     ↓
 agent bootstrap + execution roadmap
     ↓
