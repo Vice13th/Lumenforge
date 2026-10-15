@@ -59,3 +59,12 @@ Do not create repetitive progress entries with no new evidence.
 - Result: VERIFIED for repository text writes and read-back; OBSERVED for release metadata and compare results. Build-host test results are reported from the existing release record, not rerun in this session.
 - Remaining blockers: available GitHub connector exposes release GET operations but no release-body update operation, so the published Release body itself remains unchanged; no local Windows build/runtime session was available for fresh clean-machine, full open/edit/export or title-bar verification.
 - Next action: update the existing Release body to point to `docs/RELEASE_NOTES_2.0.md` and preserve the current artifact limitations; then perform Windows runtime gates when a target environment is available.
+
+
+## 2026-10-15 — Canonical v2.0.0 Release Link Reconciliation
+
+- Gate/task: current release links and publication documentation.
+- Action: updated README, changelog, build guide, publishing guide, master roadmap, release notes, version comparison and repository landing page to use `v2.0.0` as the canonical Windows x64 release link; retained `handoff-2026-10-15` only as a legacy release-history reference where appropriate.
+- Artifact evidence: GitHub release metadata for [v2.0.0](https://github.com/Vice13th/Lumenforge/releases/tag/v2.0.0) lists the Windows x64 ZIP, standalone EXE and engineering handoff ZIP. Asset names, sizes and SHA-256 digests match the previously recorded release artifacts.
+- Validation: repository file contents were read back from GitHub after the writes; release-body metadata editing is not exposed by the available GitHub connector, so the body on the GitHub Releases page requires a separate manual edit if its embedded URLs are to match this canonical tag.
+- Result: pending until repository writes and read-back complete.
