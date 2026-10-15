@@ -208,6 +208,7 @@ For an exact before/after audit, see:
 | [Master roadmap](docs/LUMENFORGE_MASTER_ROADMAP.md) | Autonomous execution state and delivery gates |
 | [Execution ledger](docs/AGENT_EXECUTION_LEDGER.md) | Durable evidence log for material engineering work |
 | [Changelog](CHANGELOG.md) | Human-readable product history |
+| [LumenForge 2.0 release notes](docs/RELEASE_NOTES_2.0.md) | Windows x64 artifact links, validation evidence, limitations and research context |
 
 ---
 
