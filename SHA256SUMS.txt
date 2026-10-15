@@ -1,12 +1,11 @@
 # Lumen Forge — Release Integrity Manifest
 #
-# Scope: immutable release assets and project branding assets.
-# Tracked source/documentation files are versioned by Git and are intentionally
-# not duplicated here, because this manifest must not become stale after
-# ordinary documentation commits.
+# Scope: tracked project branding assets only.
+# Published release binaries are hosted by GitHub Releases, not tracked here.
+# Their digests are recorded on the release page and in the release notes.
+# Source/documentation files are versioned by Git rather than duplicated here.
 #
-# Historical public release: v1.0.0
 
 000af7c56dc3b1cd394dd46d673e62768aea9b7c63aa5c2db727ce21433b9c8e  assets/lumenforge_logo.png
 a1ff73a64b453a93de63674c1cc78f90791facef26b0013e88cc19a0fb33e8d8  assets/lumenforge.ico
-349361449982613edad854fee9f968f687cd6868040ac51f645e25f9c5df7  dist/LumenForge.exe
+
