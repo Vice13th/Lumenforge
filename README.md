@@ -18,7 +18,7 @@ LumenForge is a color-first Windows desktop image laboratory for photographers a
 
 **Recorded build-host validation:** 129 passed, 7 skipped, 32 subtests passed; Ruff checks passed; the clean PyInstaller build passed; the executable remained alive for the 8-second startup smoke test. These checks do not constitute clean-machine certification or a complete open/edit/export validation.
 
-> **Access and verification:** GitHub currently marks this repository as private, so release downloads may require repository access. The published build passed the documented build-host checks, but is not clean-machine certified; its exact source-to-binary commit provenance has not been established.
+> **Access and verification:** This repository and its release assets are public on GitHub. The published build passed the documented build-host checks, but is not clean-machine certified; its exact source-to-binary commit provenance has not been established.
 
 ---
 
@@ -163,7 +163,7 @@ For packaging instructions, see [`docs/BUILD.md`](docs/BUILD.md).
 
 ## 📦 Windows releases
 
-The published Windows x64 handoff/build is **LumenForge 2.0** (tag: `handoff-2026-10-15`). It is a separate distribution artifact, not a claim that every commit on `main` is represented by the executable. GitHub currently marks this repository private, so access to release assets follows the repository's permission settings.
+The published Windows x64 handoff/build is **LumenForge 2.0** (tag: `handoff-2026-10-15`). It is a separate distribution artifact, not a claim that every commit on `main` is represented by the executable. The repository and release assets are publicly accessible.
 
 - [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge-2.0.0-Windows-x64.zip) — SHA-256: `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
 - [Standalone LumenForge.exe](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe) — SHA-256: `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
@@ -252,7 +252,7 @@ Lumen Forge started as a personal project built around a simple idea:
 
 > **Colour should feel intentional, not accidental.**
 
-The project-owned source carries an MIT license. License terms and repository visibility are separate: GitHub currently marks this repository private, so source access is limited to authorized collaborators.
+The source is published in this public repository under the MIT License, so the implementation and engineering notes can be inspected rather than hidden behind the executable. The binary remains a separate artifact: the exact source commit used to produce it has not been established.
 
 ### Contact
 
