@@ -99,11 +99,11 @@ The current documentation uses 121 for the present source snapshot and avoids pr
 
 ### 3. Versioning
 
-The historical first public release is **v1.0.0**. The latest published Windows x64 handoff/build is tagged **`handoff-2026-10-15`**, while the application source identifies the render engine as **12.0**. These are separate identifiers and should not be conflated.
+The historical first public release is **v1.0.0**. The current canonical published Windows x64 release is **`v2.0.0`**; the older **`handoff-2026-10-15`** entry remains available as a legacy handoff page. The application source identifies the render engine as **12.0**. Release tags and engine version are separate identifiers and should not be conflated.
 
 ### 4. Release artifact boundary
 
-The published v1.0.0 EXE remains the historical release artifact. The separate 2.0 handoff/build release has its own ZIP and EXE hashes. A commit on `main` does not silently update either executable, and exact source ancestry for the 2.0 binary has not been established.
+The published v1.0.0 EXE remains the historical release artifact. The canonical v2.0.0 release and the legacy 2.0 handoff entry each expose the published ZIP/EXE artifacts. A commit on `main` does not silently update any executable, and exact source ancestry for the 2.0 binary has not been established.
 
 ---
 
