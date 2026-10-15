@@ -8,9 +8,13 @@ This document compares the published **Git tag `v1.0.0`** with the current **`ma
 - audit snapshot on main before this documentation pass: `59a4458f237e2509d0f1a761180a73e411bd66484`
 - Git status at that snapshot: **10 commits ahead**, 0 behind.
 - Subsequent commits in this documentation pass are control-plane/documentation changes and do not change the substantive code comparison.
-- Changed paths reported by GitHub: **13**.
+- Changed paths reported by GitHub at that audit snapshot: **13**.
 
 This is a repository comparison, not a claim that the current source is the same binary as v1.0.0.
+
+### Current live comparison (2026-10-15)
+
+A fresh GitHub compare of `v1.0.0` with `main` reports **35 commits ahead, 0 behind**, with **18 changed paths** in the comparison response. The older 10-commit/13-path figures above describe the historical audit snapshot and must not be read as the current branch totals. The 35 commits are not 35 user-facing features; they include documentation and repository governance changes.
 
 ---
 
@@ -95,21 +99,15 @@ The current documentation uses 121 for the present source snapshot and avoids pr
 
 ### 3. Versioning
 
-The public release is **v1.0.0**.
-
-The application source identifies the render engine as **12.0**.
-
-These are now documented as separate version layers.
+The historical first public release is **v1.0.0**. The latest published Windows x64 handoff/build is tagged **`handoff-2026-10-15`**, while the application source identifies the render engine as **12.0**. These are separate identifiers and should not be conflated.
 
 ### 4. Release artifact boundary
 
-The published v1.0.0 EXE remains the historical release artifact.
-
-A commit on `main` does not silently update that executable.
+The published v1.0.0 EXE remains the historical release artifact. The separate 2.0 handoff/build release has its own ZIP and EXE hashes. A commit on `main` does not silently update either executable, and exact source ancestry for the 2.0 binary has not been established.
 
 ---
 
-## Current release artifact
+## Historical v1.0.0 release artifact
 
 The v1.0.0 Windows executable has SHA-256:
 
