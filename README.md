@@ -14,7 +14,7 @@ LumenForge is a color-first Windows desktop image laboratory for photographers a
 
 **LumenForge 2.0 — Engineering Handoff + Windows x64 Build** · tag: `handoff-2026-10-15`
 
-**Downloads:** [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge-2.0.0-Windows-x64.zip) · [Standalone EXE](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe) · [Engineering handoff package](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0_ENGINEERING_HANDOFF.zip) · [Release notes, checksums, and validation limits](docs/RELEASE_NOTES_2.0.md)
+**Downloads:** [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge-2.0.0-Windows-x64.zip) · [Standalone EXE](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe) · [Engineering handoff package](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0.zip) · [Release notes, checksums, and validation limits](docs/RELEASE_NOTES_2.0.md)
 
 **Recorded build-host validation:** 129 passed, 7 skipped, 32 subtests passed; Ruff checks passed; the clean PyInstaller build passed; the executable remained alive for the 8-second startup smoke test. These checks do not constitute clean-machine certification or a complete open/edit/export validation.
 
@@ -167,7 +167,7 @@ The published Windows x64 handoff/build is **LumenForge 2.0** (tag: `handoff-202
 
 - [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge-2.0.0-Windows-x64.zip) — SHA-256: `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
 - [Standalone LumenForge.exe](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe) — SHA-256: `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
-- [Engineering handoff ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0_ENGINEERING_HANDOFF.zip)
+- [Engineering handoff ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0.zip)
 
 **Historical first release:** [LumenForge v1.0.0](https://github.com/Vice13th/Lumenforge/releases/tag/v1.0.0) remains available and unchanged.
 
