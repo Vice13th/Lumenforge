@@ -1,14 +1,22 @@
-# Lumen Forge
+# LumenForge 2.0
 
-> **A color-first desktop image laboratory for photographers, filmmakers, and anyone obsessed with light.**
+> **Colour should feel intentional, not accidental.**
 
-Lumen Forge is a Python desktop photo editor built around a layered image-processing pipeline rather than a pile of disconnected sliders. The current source snapshot combines RAW-aware image loading, perceptual colour operations, film/look emulation, Camera DNA matching, local masks, 3D LUT processing, and a performance-oriented preview path in a single application.
+LumenForge is a color-first Windows desktop image laboratory for photographers and filmmakers who want control over the full path from source data to final image. Its explicit processing pipeline moves through camera interpretation, scene preparation, tone, colour, local adjustments, and optical/film finishing—rather than treating editing as a pile of disconnected sliders.
 
 <div align="center">
 
-**Windows desktop** · **Python / Tkinter** · **MIT-licensed source** · **Render Engine 12.0**
+**Windows x64 build** · **Python / Tkinter source** · **MIT project license** · **Render Engine 12.0**
 
 </div>
+
+### Current release · Windows x64
+
+**LumenForge 2.0 — Engineering Handoff + Windows x64 Build** · tag: `handoff-2026-10-15`
+
+**Downloads:** [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge-2.0.0-Windows-x64.zip) · [Standalone EXE](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe) · [Engineering handoff package](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0_ENGINEERING_HANDOFF.zip) · [Release notes, checksums, and validation limits](docs/RELEASE_NOTES_2.0.md)
+
+> **Access and verification:** GitHub currently marks this repository as private, so release downloads may require repository access. The published build passed the documented build-host checks, but is not clean-machine certified; its exact source-to-binary commit provenance has not been established.
 
 ---
 
@@ -153,7 +161,7 @@ For packaging instructions, see [`docs/BUILD.md`](docs/BUILD.md).
 
 ## 📦 Windows releases
 
-The latest published Windows x64 build is **LumenForge 2.0 — Engineering Handoff + Windows x64 Build** (tag: `handoff-2026-10-15`). This is a published handoff/build release, not a claim that every commit on `main` is represented by the executable.
+The published Windows x64 handoff/build is **LumenForge 2.0** (tag: `handoff-2026-10-15`). It is a separate distribution artifact, not a claim that every commit on `main` is represented by the executable. GitHub currently marks this repository private, so access to release assets follows the repository's permission settings.
 
 - [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge-2.0.0-Windows-x64.zip) — SHA-256: `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
 - [Standalone LumenForge.exe](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe) — SHA-256: `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
@@ -242,7 +250,7 @@ Lumen Forge started as a personal project built around a simple idea:
 
 > **Colour should feel intentional, not accidental.**
 
-It is now available as an open-source codebase so the architecture, experiments, and tools can be inspected rather than hidden behind the executable.
+The project-owned source carries an MIT license. License terms and repository visibility are separate: GitHub currently marks this repository private, so source access is limited to authorized collaborators.
 
 ### Contact
 
