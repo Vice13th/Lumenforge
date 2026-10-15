@@ -151,19 +151,23 @@ For packaging instructions, see [`docs/BUILD.md`](docs/BUILD.md).
 
 ---
 
-## 📦 Windows release
+## 📦 Windows releases
 
-The first public release is **LumenForge v1.0.0**.
+The latest published Windows x64 build is **LumenForge 2.0 — Engineering Handoff + Windows x64 Build** (tag: `handoff-2026-10-15`). This is a published handoff/build release, not a claim that every commit on `main` is represented by the executable.
 
-Download the published executable from [GitHub Releases](https://github.com/Vice13th/Lumenforge/releases/tag/v1.0.0); it is not tracked in the source tree:
+- [Recommended Windows x64 ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge-2.0.0-Windows-x64.zip) — SHA-256: `5899C72FB9F5DFFBF8B1BD7E0F2F40C8C234C6B251C0934B2FB58F5B496758AA`
+- [Standalone LumenForge.exe](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge.exe) — SHA-256: `23D3191DD86DCFD97D7DF3F1DF2C51484F4EC0A74AC6AC89A475AF4F79F8490E`
+- [Engineering handoff ZIP](https://github.com/Vice13th/Lumenforge/releases/download/handoff-2026-10-15/LumenForge_2_0_ENGINEERING_HANDOFF.zip)
 
-**LumenForge.exe — SHA-256**
+**Historical first release:** [LumenForge v1.0.0](https://github.com/Vice13th/Lumenforge/releases/tag/v1.0.0) remains available and unchanged.
+
+Historical `LumenForge.exe` SHA-256:
 
 ```
-349361449982613edad854fee9f968f687cd6868040ac51f645e25f9c5df7
+349361449982613edad854fee9f968f687cd6868040ac37651f645e25f9c5df7
 ```
 
-> The executable above belongs to the published `v1.0.0` release. The current `main` branch is a newer development snapshot and is **not** automatically represented by that binary.
+The 2.0 build was validated on its build host, but it is not a clean-machine certification. The release notes document the exact test results and limitations. The current `main` source and the published binary must be treated as separate artifacts unless build provenance explicitly links them.
 
 ---
 
